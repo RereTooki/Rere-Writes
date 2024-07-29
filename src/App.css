@@ -76,3 +76,14 @@
     opacity: 1;
   }
 }
+.w3-animate-zoom {
+  animation: animatezoom 4s;
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
