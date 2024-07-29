@@ -28,14 +28,14 @@ const ImageSlides = () => {
   };
   return (
     <>
-      <div className="quoteBG h-[40vh] nsm:h-[50vh] flex flex-col items-center justify-center text-center text-white text-[14px] md:text-[16px] nsm:text-[18px] nxl:text-[22px] px-[10vw] mySlides pt-[12%] rounded-tr-[80px] rounded-bl-[80px] w3-animate-opacitys">
-        <p className="exoFont">“Quote 1” - Speaker 1</p>
+      <div className="quoteBG h-[40vh] nsm:h-[50vh] flex flex-col items-center justify-center text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] px-[10vw] mySlides spt-[33%] rounded-tr-[20px] rounded-bl-[20px] w3-animate-opacitys">
+        <p className="exoFont relative top-[45%]">“Quote 1” - Speaker 1</p>
       </div>
-      <div className="quoteBG2 h-[40vh] nsm:h-[50vh] flex flex-col items-center justify-center text-center text-white text-[14px] md:text-[16px] nsm:text-[18px] nxl:text-[22px] px-[10vw] mySlides pt-[12%] rounded-tr-[80px] rounded-bl-[80px] w3-animate-opacitys">
-        <p className="exoFont">“Quote 2” - Speaker 2</p>
+      <div className="quoteBG2 h-[40vh] nsm:h-[50vh] flex flex-col items-center justify-center text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] px-[10vw] mySlides spt-[33%] rounded-tr-[20px] rounded-bl-[20px] w3-animate-opacitys">
+        <p className="exoFont relative top-[45%]">“Quote 2” - Speaker 2</p>
       </div>
-      <div className="quoteBG3 h-[40vh] nsm:h-[50vh] flex flex-col items-center justify-center text-center text-white text-[14px] md:text-[16px] nsm:text-[18px] nxl:text-[22px] px-[10vw] mySlides pt-[12%] rounded-tr-[80px] rounded-bl-[80px] w3-animate-opacitys">
-        <p className="exoFont">“Quote 2” - Speaker 3</p>
+      <div className="quoteBG3 h-[40vh] nsm:h-[50vh] flex flex-col items-center justify-center text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] px-[10vw] mySlides spt-[33%] rounded-tr-[20px] rounded-bl-[20px] w3-animate-opacitys">
+        <p className="exoFont relative top-[45%]">“Quote 2” - Speaker 3</p>
       </div>
     </>
   );

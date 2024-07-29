@@ -29,7 +29,7 @@
     ),
     url(./assets/images/1.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: auto 100vh;
   background-attachment: fixed;
 }
 .quoteBG2 {
@@ -40,7 +40,7 @@
     ),
     url(./assets/images/2.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: auto 100vh;
   background-attachment: fixed;
 }
 
@@ -52,18 +52,10 @@
     ),
     url(./assets/images/3.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: auto 100vh;
   background-attachment: fixed;
 }
 
-@media (min-width: 376px) {
-  /*Mid-Mobile screens*/
-  .quoteBG,
-  .quoteBG2,
-  .quoteBG3 {
-    background-size: auto 100vh;
-  }
-}
 @media (min-width: 640px) {
   /*Mid-Mobile screens*/
   .quoteBG,
