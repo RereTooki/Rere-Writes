@@ -66,7 +66,7 @@ const NavigationBar = () => {
               </div>
               <hr />
               <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
-                <Link to="/services">Services</Link>
+                <Link to="/services">Projects</Link>
               </div>
               <hr />
               <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
@@ -85,7 +85,7 @@ const NavigationBar = () => {
             <Link to="/about">About Me</Link>
           </div>
           <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
-            <Link to="/services">Services</Link>
+            <Link to="/Projects">Projects</Link>
           </div>
           <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
             <Link to="/contactUs">Contact Us</Link>

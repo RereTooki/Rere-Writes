@@ -4,6 +4,7 @@ import ImageSlides from "../components/ImageSlides";
 import Intro from "../components/Intro";
 import Testing from "../components/Testing";
 import NavigationBar from "../components/NavigationBar";
+import Projects from "../components/Projects";
 const Homepage = () => {
   return (
     <>
@@ -12,6 +13,9 @@ const Homepage = () => {
       </div>{" "}
       <div className="">
         <Intro />
+      </div>{" "}
+      <div className="">
+        <Projects />
       </div>{" "}
       <div className="">
         <Testing />
