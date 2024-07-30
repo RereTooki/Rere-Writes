@@ -12,8 +12,8 @@ const NavigationBar = () => {
   return (
     <>
       <div className="h-[25vw] md:h-[70px] w-[100vw] fixed flex flex-row justify-between items-center bg-white z-20 shadow-md md:shadow-lg px-[4vw] nxl:pl-[58px] nxl:pr-[34px]">
-        <div className="border-2s flex gap-[20px]">
-          <div className="w-[39px] h-[39px] sborder-2 border-2 border-black rounded-md">
+        <div className="flex tab:justify-between gap-[20px] w-[62vw] md:w-[52vw] lg:w-auto">
+          <div className="w-[39px] h-[39px] sborder-2 border-2 border-clrtransparentgreen rounded-md">
             <NavLink to="/" className="">
               <picture className="">
                 <source className="" media="(min-width: 565px)" srcSet={logo} />
@@ -25,7 +25,9 @@ const NavigationBar = () => {
               </picture>
             </NavLink>
           </div>
-          <h1 className="exoFont self-center">RERE WRITES</h1>
+          <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreen decoration-double font-bold text-xl whitespace-nowraps">
+            RERE WRITES
+          </h1>
         </div>
 
         <div
@@ -43,13 +45,13 @@ const NavigationBar = () => {
               <img /* For Mobile screens*/
                 src={navIcon}
                 alt="A law image"
-                className="w-full h-full object-cover h-[9vw] max-h-[29px]"
+                className="w-full h-full object-cover h-[12vw] max-h-[39px]"
               />
             )}
             {navIsVisible && (
               <IoClose
                 color="#000033"
-                className="w-full h-full object-cover h-[9vw] max-h-[29px]"
+                className="w-full h-full object-cover h-[12vw] max-h-[39px]"
               />
             )}
           </button>
