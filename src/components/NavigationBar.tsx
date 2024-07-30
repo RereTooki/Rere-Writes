@@ -1,0 +1,92 @@
+import React from "react";
+import "../App.css";
+import navIcon from "../assets/icons/navIcon2.svg";
+import logo from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { IoClose } from "react-icons/io5";
+
+const NavigationBar = () => {
+  const [navIsVisible, setNavIsVisible] = useState(false);
+
+  return (
+    <>
+      <div className="h-[25vw] md:h-[70px] w-[100vw] fixed flex flex-row justify-between items-center bg-white z-20 shadow-md md:shadow-lg px-[4vw] nxl:pl-[58px] nxl:pr-[34px] ">
+        <div
+          className="w-[70%] md:w-auto h-[40%] md:w-auto nxl:max-h-[130px] "
+          data-aoss="fade-right"
+          data-aoss-duration="900"
+        >
+          <img /* For Mobile screens*/
+            src={logo}
+            alt="A law image"
+            className="w-fit md:w-full h-fit md:h-full object-cover"
+          />
+        </div>
+        <div
+          className="w-fit  lack lg:hidden"
+          data-aoss="fade-left"
+          data-aoss-duration="900"
+        >
+          <button
+            onClick={() =>
+              !navIsVisible ? setNavIsVisible(true) : setNavIsVisible(false)
+            }
+          >
+            {" "}
+            {!navIsVisible && (
+              <img /* For Mobile screens*/
+                src={navIcon}
+                alt="A law image"
+                className="w-full h-full object-cover h-[9vw] max-h-[29px]"
+              />
+            )}
+            {navIsVisible && (
+              <IoClose
+                color="#000033"
+                className="w-full h-full object-cover h-[9vw] max-h-[29px]"
+              />
+            )}
+          </button>
+          {navIsVisible && (
+            <div className="lg:hidden absolute top-[23vw] sm:top-[60px] right-[4vw] nxl:right-[34px] w-[60vw] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] bg-whites font-overpass flex flex-col gap-[5px]">
+              <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
+                <Link to="/">Home</Link>
+              </div>
+              <hr />
+              <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
+                <Link to="/about">About Me</Link>
+              </div>
+              <hr />
+              <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
+                <Link to="/services">Services</Link>
+              </div>
+              <hr />
+              <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
+                <Link to="/contactUs">Contact Us</Link>
+              </div>
+            </div>
+          )}{" "}
+        </div>
+
+        <div className="vsm:hidden lg:flex flex-row justify-between  w-[50vw] max-w-[384px]">
+          {" "}
+          <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
+            <Link to="/">Home</Link>
+          </div>
+          <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
+            <Link to="/about">About Me</Link>
+          </div>
+          <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
+            <Link to="/services">Services</Link>
+          </div>
+          <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
+            <Link to="/contactUs">Contact Us</Link>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default NavigationBar;

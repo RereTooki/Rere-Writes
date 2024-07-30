@@ -3,10 +3,13 @@ import "../App.css";
 import ImageSlides from "../components/ImageSlides";
 import Intro from "../components/Intro";
 import Testing from "../components/Testing";
-
+import NavigationBar from "../components/NavigationBar";
 const Homepage = () => {
   return (
     <>
+      <div className="">
+        <NavigationBar />
+      </div>{" "}
       <div className="">
         <Intro />
       </div>{" "}

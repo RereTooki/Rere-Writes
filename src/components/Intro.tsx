@@ -5,8 +5,8 @@ import Carousel from "./Carousel";
 const Intro = () => {
   return (
     <>
-      <div className="h-[80vh] bg-blackS/80 testings exoFont my-10 rounded-[50px] tab:rounded-bl-[80px] mySlidesInt mx-[5vw] quoteBG quoteBGA">
-        <div className="flex flex-col items-center justify-center h-full gap-[10px] w3-animate-zoom">
+      <div className="h-[80vh] bg-blackS/80 testings exoFont mb-10 lg:my-10 lg:rounded-[50px] rounded-bl-[80px] mySlidesInt lg:mx-[5vw] quoteBG quoteBGA">
+        <div className="flex flex-col items-center justify-center h-full gap-[10px] ">
           <div className="w-[30vw] h-[30vw] tab:w-[150px] tab:h-[150px] ">
             <picture className="">
               <source className="" media="(min-width: 565px)" srcSet={logo} />
@@ -22,8 +22,8 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="h-[80vh] bg-blackS/80 testings exoFont my-10 rounded-[50px] tab:rounded-bl-[80px] mySlidesInt mx-[5vw] quoteBG quoteBGB">
-        <div className="flex flex-col items-center justify-center h-full gap-[10px] w3-animate-zoom">
+      <div className="h-[80vh] bg-blackS/80 testings exoFont mb-10 lg:my-10 lg:rounded-[50px] rounded-bl-[80px] mySlidesInt lg:mx-[5vw] quoteBG quoteBGB">
+        <div className="flex flex-col items-center justify-center h-full gap-[10px] ">
           <div className="w-[30vw] h-[30vw] tab:w-[150px] tab:h-[150px] ">
             <picture className="">
               <source className="" media="(min-width: 565px)" srcSet={logo} />
@@ -39,8 +39,8 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="h-[80vh] bg-blackS/80 testings exoFont my-10 rounded-[50px] tab:rounded-bl-[80px] mySlidesInt mx-[5vw] quoteBG quoteBGC">
-        <div className="flex flex-col items-center justify-center h-full gap-[10px] w3-animate-zoom">
+      <div className="h-[80vh] bg-blackS/80 testings exoFont mb-10 lg:my-10 lg:rounded-[50px] rounded-bl-[80px] mySlidesInt lg:mx-[5vw] quoteBG quoteBGC">
+        <div className="flex flex-col items-center justify-center h-full gap-[10px] ">
           <div className="w-[30vw] h-[30vw] tab:w-[150px] tab:h-[150px] ">
             <picture className="">
               <source className="" media="(min-width: 565px)" srcSet={logo} />
