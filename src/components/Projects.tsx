@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import img from "../assets/images/1.jpg";
 import img2 from "../assets/images/2.jpg";
 import img3 from "../assets/images/3.jpg";
@@ -12,36 +14,84 @@ import imgF from "../assets/images/F.jpg";
 import imgG from "../assets/images/G.jpg";
 
 const projects = [
-  { title: "we forgot", imgSrc: img, imgAlt: "we forgot" },
-  { title: "Life's Kitchen", imgSrc: img2, imgAlt: "Life's Kitchen" },
-  { title: "The Hate U Give", imgSrc: imgG, imgAlt: "The Hate U Give" },
-  { title: "Stand By Me", imgSrc: img2, imgAlt: "Stand By Me" },
-  { title: "we forgot", imgSrc: img, imgAlt: "we forgot" },
-  { title: "The Mandem", imgSrc: img2, imgAlt: "The Mandem" },
+  {
+    title: "we forgot",
+    imgSrc: img,
+    imgAlt: "we forgot",
+    route: "/poem-1",
+  },
+  {
+    title: "Life's Kitchen",
+    imgSrc: img2,
+    imgAlt: "Life's Kitchen",
+    route: "/poem-1",
+  },
+  {
+    title: "The Hate U Give",
+    imgSrc: imgG,
+    imgAlt: "The Hate U Give",
+    route: "/poem-1",
+  },
+  {
+    title: "Stand By Me",
+    imgSrc: img2,
+    imgAlt: "Stand By Me",
+    route: "/poem-1",
+  },
+  {
+    title: "we forgot",
+    imgSrc: img,
+    imgAlt: "we forgot",
+    route: "/poem-1",
+  },
+  {
+    title: "The Mandem",
+    imgSrc: img2,
+    imgAlt: "The Mandem",
+    route: "/poem-1",
+  },
   {
     title: "New Semester, New Me",
     imgSrc: img3,
     imgAlt: "New Semester New Me",
+    route: "/poem-1",
   },
-  { title: "...they said", imgSrc: imgA, imgAlt: "...they said" },
+  {
+    title: "...they said",
+    imgSrc: imgA,
+    imgAlt: "...they said",
+    route: "/poem-1",
+  },
   {
     title: "mizaru, kikazaru, iwazaru",
     imgSrc: imgB,
     imgAlt: "mizaru, kikazaru, iwazaru",
+    route: "/poem-1",
   },
-  { title: "Marriage", imgSrc: imgC, imgAlt: "Marriage" },
+  {
+    title: "Marriage",
+    imgSrc: imgC,
+    imgAlt: "Marriage",
+    route: "/poem-1",
+  },
   {
     title: "Better Me, Better Us, Better Working World",
     imgSrc: imgD,
     imgAlt: "Better Me, Better Us, Better Working World",
+    route: "/poem-1",
   },
-  { title: "Joyeux Noël", imgSrc: imgE, imgAlt: "Joyeux Noël" },
+  {
+    title: "Joyeux Noël",
+    imgSrc: imgE,
+    imgAlt: "Joyeux Noël",
+    route: "/poem-1",
+  },
 ];
 
 const Projects = () => {
   return (
     <>
-      <div className="mx-[3vw]">
+      <div className="mx-[3vw] mb-8">
         <div className="w3-container pb-[48px]" id="projects">
           <h3 className="w3-border-bottomS w3-border-light-greyS border-b-2 border-clrtransparentgreen rounded-sm border-dasheds text-2xl">
             Poems

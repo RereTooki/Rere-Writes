@@ -18,10 +18,10 @@ const Homepage = () => {
         <Projects />
       </div>{" "}
       <div className="">
-        <Testing />
+        <ImageSlides />
       </div>
       <div className="">
-        <ImageSlides />
+        <Testing />
       </div>
       <div className="h-[100vh]">Homepage</div>{" "}
     </>
