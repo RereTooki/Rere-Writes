@@ -1,8 +1,8 @@
 import React from "react";
 import "../App.css";
 import navIcon from "../assets/icons/navIcon2.svg";
-import logo from "../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import logo from "../assets/images/logoblack.png";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 
@@ -11,18 +11,23 @@ const NavigationBar = () => {
 
   return (
     <>
-      <div className="h-[25vw] md:h-[70px] w-[100vw] fixed flex flex-row justify-between items-center bg-white z-20 shadow-md md:shadow-lg px-[4vw] nxl:pl-[58px] nxl:pr-[34px] ">
-        <div
-          className="w-[70%] md:w-auto h-[40%] md:w-auto nxl:max-h-[130px] "
-          data-aoss="fade-right"
-          data-aoss-duration="900"
-        >
-          <img /* For Mobile screens*/
-            src={logo}
-            alt="A law image"
-            className="w-fit md:w-full h-fit md:h-full object-cover"
-          />
+      <div className="h-[25vw] md:h-[70px] w-[100vw] fixed flex flex-row justify-between items-center bg-white z-20 shadow-md md:shadow-lg px-[4vw] nxl:pl-[58px] nxl:pr-[34px]">
+        <div className="border-2s flex gap-[20px]">
+          <div className="w-[39px] h-[39px] sborder-2 border-2 border-black rounded-md">
+            <NavLink to="/" className="">
+              <picture className="">
+                <source className="" media="(min-width: 565px)" srcSet={logo} />
+                <img
+                  src={logo}
+                  alt="A dashboard icon"
+                  className="w-fit h-fit object-cover px-[4px] pt-[2.5px]"
+                />
+              </picture>
+            </NavLink>
+          </div>
+          <h1 className="exoFont self-center">RERE WRITES</h1>
         </div>
+
         <div
           className="w-fit  lack lg:hidden"
           data-aoss="fade-left"
@@ -49,7 +54,7 @@ const NavigationBar = () => {
             )}
           </button>
           {navIsVisible && (
-            <div className="lg:hidden absolute top-[23vw] sm:top-[60px] right-[4vw] nxl:right-[34px] w-[60vw] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] bg-whites font-overpass flex flex-col gap-[5px]">
+            <div className="lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] bg-whites font-overpass flex flex-col gap-[5px]">
               <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
                 <Link to="/">Home</Link>
               </div>

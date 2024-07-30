@@ -5,7 +5,7 @@ import Carousel from "./Carousel";
 const Intro = () => {
   return (
     <>
-      <div className="h-[80vh] bg-blackS/80 testings exoFont mb-10 lg:my-10 lg:rounded-[50px] rounded-bl-[80px] mySlidesInt lg:mx-[5vw] quoteBG quoteBGA">
+      <div className="h-[80vh] bg-blackS/80 testings exoFont mb-10 lg:mb-40 lg:my-10s lg:relative top-28 lg:rounded-[50px] rounded-bl-[80px] mySlidesInt lg:mx-[5vw] quoteBG quoteBGA">
         <div className="flex flex-col items-center justify-center h-full gap-[10px] ">
           <div className="w-[30vw] h-[30vw] tab:w-[150px] tab:h-[150px] ">
             <picture className="">
@@ -22,7 +22,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="h-[80vh] bg-blackS/80 testings exoFont mb-10 lg:my-10 lg:rounded-[50px] rounded-bl-[80px] mySlidesInt lg:mx-[5vw] quoteBG quoteBGB">
+      <div className="h-[80vh] bg-blackS/80 testings exoFont mb-10 lg:mb-40 lg:my-10s lg:relative top-28 lg:rounded-[50px] rounded-bl-[80px] mySlidesInt lg:mx-[5vw] quoteBG quoteBGB">
         <div className="flex flex-col items-center justify-center h-full gap-[10px] ">
           <div className="w-[30vw] h-[30vw] tab:w-[150px] tab:h-[150px] ">
             <picture className="">
@@ -39,7 +39,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="h-[80vh] bg-blackS/80 testings exoFont mb-10 lg:my-10 lg:rounded-[50px] rounded-bl-[80px] mySlidesInt lg:mx-[5vw] quoteBG quoteBGC">
+      <div className="h-[80vh] bg-blackS/80 testings exoFont mb-10 lg:mb-40 lg:my-10s lg:relative top-28 lg:rounded-[50px] rounded-bl-[80px] mySlidesInt lg:mx-[5vw] quoteBG quoteBGC">
         <div className="flex flex-col items-center justify-center h-full gap-[10px] ">
           <div className="w-[30vw] h-[30vw] tab:w-[150px] tab:h-[150px] ">
             <picture className="">
