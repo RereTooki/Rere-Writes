@@ -16,6 +16,7 @@
 
 body {
   background-image: url("./assets/images/grad1.webp");
+  background-size: auto 200vh;
 }
 /* 
 body {

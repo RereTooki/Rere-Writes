@@ -23,7 +23,8 @@ const Homepage = () => {
       <div className="">
         <Testing />
       </div>
-      <div className="h-[100vh]">Homepage</div>{" "}
+      <div className="h-[90vh]">Homepage</div>{" "}
+      <div className="h-[90vh]">2Homepage</div>{" "}
     </>
   );
 };
