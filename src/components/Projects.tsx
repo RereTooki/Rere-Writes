@@ -12,6 +12,7 @@ import imgD from "../assets/images/D.jpg";
 import imgE from "../assets/images/E.jpg";
 import imgF from "../assets/images/F.jpg";
 import imgG from "../assets/images/G.jpg";
+import PoemImageSlides from "./PoemImageSlides";
 
 const projects = [
   {
@@ -101,6 +102,10 @@ const Projects = () => {
           {projects.slice(0, 4).map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
+        </div>
+
+        <div className="">
+          <PoemImageSlides />
         </div>
         <div className="w3-row-padding">
           {projects.slice(4).map((project, index) => (

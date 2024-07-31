@@ -57,19 +57,19 @@ const NavigationBar = () => {
           </button>
           {navIsVisible && (
             <div className="lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] bg-whites font-overpass flex flex-col gap-[5px]">
-              <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
+              <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.05]">
                 <Link to="/">Home</Link>
               </div>
               <hr />
-              <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
+              <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.05]">
                 <Link to="/about">About Me</Link>
               </div>
               <hr />
-              <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
-                <Link to="/services">Projects</Link>
+              <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.05]">
+                <Link to="/services">Poems</Link>
               </div>
               <hr />
-              <div className="hover:underline underline-offset-4 hover:scale-[1.05]">
+              <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.05]">
                 <Link to="/contactUs">Contact Us</Link>
               </div>
             </div>
@@ -78,16 +78,16 @@ const NavigationBar = () => {
 
         <div className="vsm:hidden lg:flex flex-row justify-between  w-[50vw] max-w-[384px]">
           {" "}
-          <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
+          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
             <Link to="/">Home</Link>
           </div>
-          <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
+          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
             <Link to="/about">About Me</Link>
           </div>
-          <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
-            <Link to="/Projects">Projects</Link>
+          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
+            <Link to="/Poems">Poems</Link>
           </div>
-          <div className="hover:underline underline-offset-4 hover:scale-[1.1]">
+          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
             <Link to="/contactUs">Contact Us</Link>
           </div>
         </div>
