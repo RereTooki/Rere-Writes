@@ -11,7 +11,7 @@ const NavigationBar = () => {
 
   return (
     <>
-      <div className="h-[25vw] md:h-[70px] w-[100vw] fixed flex flex-row justify-between items-center bg-white z-20 shadow-md md:shadow-lg px-[4vw] nxl:pl-[58px] nxl:pr-[34px]">
+      <div className="h-[25vw] md:h-[70px] w-[100vw] fixed flex flex-row justify-between items-center bg-white/10 backdrop-blur-[4px] z-20 shadow-md md:shadow-lg px-[4vw] nxl:pl-[58px] nxl:pr-[34px]">
         <div className="flex tab:justify-between gap-[20px] w-[62vw] md:w-[52vw] lg:w-auto">
           <div className="w-[39px] h-[39px] sborder-2 border-2 border-clrtransparentgreen rounded-md">
             <NavLink to="/" className="">

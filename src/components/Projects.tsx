@@ -92,22 +92,22 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <div className="mx-[3vw] mb-8 exoFont">
-        <div className="w3-container pb-[48px]" id="projects">
+      <div className=" mb-8 exoFont">
+        <div className="w3-container pb-[48px] mx-[3vw] " id="projects">
           <h3 className="w3-border-bottomS w3-border-light-greyS border-b-2 border-clrtransparentgreen rounded-sm border-dasheds text-2xl">
             Poems
           </h3>
         </div>
-        <div className="w3-row-padding">
+        <div className="w3-row-padding mx-[3vw] ">
           {projects.slice(0, 4).map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
 
-        <div className="">
+        <div className="mx-0">
           <PoemImageSlides />
         </div>
-        <div className="w3-row-padding">
+        <div className="w3-row-padding mx-[3vw] ">
           {projects.slice(4).map((project, index) => (
             <ProjectCard key={index + 4} {...project} />
           ))}

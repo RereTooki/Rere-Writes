@@ -15,8 +15,12 @@
 }
 
 body {
-  background-color: #f6f6f6;
+  background-image: url("./assets/images/grad1.webp");
 }
+/* 
+body {
+  background-color: #f6f6f6;
+} */
 .exoFont {
   font-family: "Exo 2", sans-serif;
 }
