@@ -8,20 +8,20 @@ import Projects from "../components/Projects";
 const Homepage = () => {
   return (
     <>
-      <div className="">
+      <div className="border-4s">
         <NavigationBar />
       </div>{" "}
       <div className="">
+        <Testing />
+      </div>
+      {/* <div className="border-4 border-black">
         <Intro />
-      </div>{" "}
+      </div>{" "} */}
       <div className="">
         <Projects />
       </div>{" "}
       <div className="">
         <ImageSlides />
-      </div>
-      <div className="">
-        <Testing />
       </div>
       <div className="h-[90vh]">Homepage</div>{" "}
       <div className="h-[90vh]">2Homepage</div>{" "}

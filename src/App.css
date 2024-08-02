@@ -14,10 +14,63 @@
   background-color: rgb(246, 246, 246s);
 }
 
+.introGrad {
+  background: radial-gradient(
+    157.2% 114.74% at 54.01% 114.67%,
+    #ffd7e7 5.59%,
+    #e9ebfb 44.79%,
+    #fff
+  );
+}
+@media (min-width: 566px) {
+  /*Tablets and above*/
+  .introGrad {
+    background-image: url("./assets/images/grad1.webp");
+    background-size: cover;
+  }
+}
+
+.projectsGrad {
+  background: radial-gradient(
+    186.08% 130.76% at 92.25% 123.75%,
+    #eeeffb 5.59%,
+    #fff4ee 44.79%,
+    #fff
+  );
+}
+
+@media (min-width: 566px) {
+  /*Tablets and above*/
+  .projectsGrad {
+    background: radial-gradient(
+      186.08% 130.76% at 92.25% 123.75%,
+      #fff4ee 5.59%,
+      #eeeffb 44.79%,
+      #fff
+    );
+  }
+}
+
 body {
+  backgroud-color: #f9f9f9;
+  /* background: radial-gradient(
+    157.2% 114.74% at 54.01% 114.67%,
+    #ffd7e7 5.59%,
+    #e9ebfb 44.79%,
+    #fff
+  ); */
+  /* background: radial-gradient(
+    186.08% 130.76% at 92.25% 123.75%,
+    #eeeffb 5.59%,
+    #fff4ee 44.79%,
+    #fff
+  ); */
+}
+
+/* body {
   background-image: url("./assets/images/grad1.webp");
   background-size: auto 200vh;
-}
+} */
 /* 
 body {
   background-color: #f6f6f6;
@@ -49,7 +102,6 @@ body {
   /*Mid-Mobile screens*/
   .quoteBG {
     background-size: 100vw 100vh;
-    object-fit: s;
   }
 }
 
@@ -148,24 +200,6 @@ body {
     opacity: 1;
   }
 }
-.w3-animate-zoom {
-  animation: animatezoom 4s;
-}
-@keyframes animatezoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.testing {
-  backgrounds-color: rgb(231 129 107);
-  background-image: linear-gradient(
-      90deg,
-      rgba(62, 81, 81, 0.8) 55%,
-      rgba(62, 81, 81, 0.8) 100%
-    ),
-    url(./assets/images/testing/circle2.svg);
+.w3-animate-zoom2 {
+  animation: animatezoom 1.6s;
 }

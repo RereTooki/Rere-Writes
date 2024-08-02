@@ -44,32 +44,32 @@ const NavigationBar = () => {
             {!navIsVisible && (
               <img /* For Mobile screens*/
                 src={navIcon}
-                alt="A law image"
-                className="w-full h-full object-cover h-[12vw] max-h-[39px]"
+                alt="A navigation icon"
+                className="w3-animate-zoom w-full h-full object-cover h-[8vw] md:h-[7vw] max-h-[42px]"
               />
             )}
             {navIsVisible && (
               <IoClose
                 color="#000033"
-                className="w-full h-full object-cover h-[12vw] max-h-[39px]"
+                className="w3-animate-zoom w-full h-full object-cover h-[8vw] md:h-[7vw] max-h-[42px]"
               />
             )}
           </button>
           {navIsVisible && (
-            <div className="lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] bg-whites font-overpass flex flex-col gap-[5px]">
-              <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.05]">
+            <div className="w3-animate-right bg-white lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] max-w-[250px] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] font-overpass flex flex-col gap-[5px]">
+              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05]">
                 <Link to="/">Home</Link>
               </div>
-              <hr />
-              <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.05]">
+              <hr className="border-[1px] border-clrtransparentgreen w3-animate-zoom2" />
+              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05]">
                 <Link to="/about">About Me</Link>
               </div>
-              <hr />
-              <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.05]">
+              <hr className="border-[1px] border-clrtransparentgreen w3-animate-zoom2" />
+              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05]">
                 <Link to="/services">Poems</Link>
               </div>
-              <hr />
-              <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.05]">
+              <hr className="border-[1px] border-clrtransparentgreen w3-animate-zoom2" />
+              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05]">
                 <Link to="/contactUs">Contact Us</Link>
               </div>
             </div>

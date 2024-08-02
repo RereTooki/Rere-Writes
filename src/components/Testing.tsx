@@ -4,7 +4,7 @@ import "../App.css";
 const Testing = () => {
   return (
     <>
-      <div className="border-4 mb-10 h-[50vh] testing">Testing</div>
+      <div className="border-4s mb-10 h-[100vh] introGrad">Testing</div>
     </>
   );
 };
