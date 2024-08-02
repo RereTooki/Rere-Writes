@@ -104,7 +104,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="mx-0">
+        <div className="mx-0 tabImg:hidden">
           <PoemImageSlides />
         </div>
         <div className="w3-row-padding mx-[3vw] ">

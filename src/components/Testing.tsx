@@ -1,10 +1,28 @@
 import React from "react";
 import "../App.css";
+import logo from "../assets/images/logo2.png";
 
 const Testing = () => {
   return (
     <>
-      <div className="border-4s mb-10 h-[100vh] introGrad">Testing</div>
+      <div className="border-4s mb-10 h-[100vh] introGrad exoFont">
+        {" "}
+        <div className="flex flex-col items-center justify-center h-full gap-[10px] ">
+          <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] ">
+            <picture className="">
+              <source className="" media="(min-width: 565px)" srcSet={logo} />
+              <img
+                src={logo}
+                alt="A dashboard icon"
+                className="w-full h-full object-cover"
+              />
+            </picture>
+          </div>
+          <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl">
+            RERE WRITES
+          </div>
+        </div>
+      </div>
     </>
   );
 };
