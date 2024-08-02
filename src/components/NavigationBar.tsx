@@ -25,7 +25,7 @@ const NavigationBar = () => {
               </picture>
             </NavLink>
           </div>
-          <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreen decoration-double font-bold text-xl whitespace-nowraps">
+          <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreens decoration-double font-bold text-xl whitespace-nowraps bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] relative underlinegradient">
             RERE WRITES
           </h1>
         </div>
@@ -57,19 +57,16 @@ const NavigationBar = () => {
           </button>
           {navIsVisible && (
             <div className="w3-animate-right bg-white lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] max-w-[250px] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] font-overpass flex flex-col gap-[5px]">
-              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05]">
+              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom ">
                 <Link to="/">Home</Link>
               </div>
-              <hr className="border-[1px] border-clrtransparentgreen w3-animate-zoom2" />
-              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05]">
+              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
                 <Link to="/about">About Me</Link>
               </div>
-              <hr className="border-[1px] border-clrtransparentgreen w3-animate-zoom2" />
-              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05]">
+              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
                 <Link to="/services">Poems</Link>
               </div>
-              <hr className="border-[1px] border-clrtransparentgreen w3-animate-zoom2" />
-              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05]">
+              <div className="w3-animate-zoom2 hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
                 <Link to="/contactUs">Contact Us</Link>
               </div>
             </div>

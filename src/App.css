@@ -63,6 +63,56 @@ body {
 body {
   background-color: #f6f6f6;
 } */
+
+.gradient-border-top {
+  position: relative;
+}
+
+.gradient-border-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px; /* Adjust the height for border thickness */
+  background: linear-gradient(to right, #7f7fd5, #31b7c2);
+  z-index: 1;
+}
+
+.gradient-border-bottom {
+  position: relative;
+  border-radius: 0.125rem; /* Adjust as needed */
+  overflow: hidden; /* Ensures the pseudo-element respects the border-radius */
+}
+
+.gradient-border-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px; /* Adjust the height for border thickness */
+  background: linear-gradient(to right, #7f7fd5, #31b7c2);
+  border-bottom-left-radius: 0.125rem; /* Match the element's border-radius */
+  border-bottom-right-radius: 0.125rem; /* Match the element's border-radius */
+  z-index: 1;
+}
+.underlinegradient {
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+}
+
+.underlinegradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; /* Thickness of the underline */
+  @apply bg-underlinegradient; /* Use the custom gradient */
+  background-size: 100% 100%;
+}
+
 .exoFont {
   font-family: "Exo 2", sans-serif;
 }

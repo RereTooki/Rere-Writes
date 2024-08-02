@@ -93,10 +93,8 @@ const Projects = () => {
   return (
     <>
       <div className=" mb-8 exoFont projectsGrad">
-        <div className="w3-container pb-[48px] mx-[3vw] " id="projects">
-          <h3 className="w3-border-bottomS w3-border-light-greyS border-b-2 border-clrtransparentgreen rounded-sm border-dasheds text-2xl">
-            Poems
-          </h3>
+        <div className="w3-container pb-[48px] mx-[3vw]  " id="projects">
+          <h3 className="text-2xl gradient-border-bottom">Poems</h3>
         </div>
         <div className="w3-row-padding mx-[3vw] ">
           {projects.slice(0, 4).map((project, index) => (

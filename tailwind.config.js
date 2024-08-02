@@ -18,10 +18,17 @@ export default {
         clrgreen: "#4D96A9",
         clrtransparentgreen: "rgb(77 150 168 / 0.8)",
         orange: "rgb(231 129 107)",
+        rels: "linear-gradient(to right, #7F7FD5, #31B7C2)",
       },
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
         overpass: ["Overpass", "sans-serif"],
+      },
+      boxShadow: {
+        gradientborder: "0 0 0 3px #7F7FD5, 0 0 0 3px #31B7C2",
+      },
+      backgroundImage: {
+        underlinegradient: "linear-gradient(to right, #7F7FD5, #31B7C2)",
       },
     },
   },
