@@ -104,9 +104,9 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* <div className="mx-0">
+        <div className="mx-0">
           <PoemImageSlides />
-        </div> */}
+        </div>
         <div className="w3-row-padding mx-[3vw] ">
           {projects.slice(4).map((project, index) => (
             <ProjectCard key={index + 4} {...project} />

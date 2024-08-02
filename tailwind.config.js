@@ -6,6 +6,7 @@ export default {
       vsm: "1px",
       md: "375px",
       tab: "565px",
+      tabImg: "602px",
       lg: "750px",
       nxl: "800px",
       xl: "1110px",
