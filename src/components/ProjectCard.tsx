@@ -18,8 +18,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="w3-col l3 m6 w3-margin-bottom">
       <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding rounded-br-lg">
-          {title}
+        <div className="w3-display-topleft w3-white w3-padding rounded-br-lg border-t-2 border-l-2 border-clrtransparentgreen">
+          <p className="text-clrtransparentgreen">{title}</p>
         </div>
         <NavLink to={route}>
           <img
