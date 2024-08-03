@@ -25,7 +25,7 @@ const NavigationBar = () => {
               </picture>
             </NavLink>
           </div>
-          <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreens decoration-double font-bold text-xl whitespace-nowraps bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] relative underlinegradient">
+          <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreen decoration-double font-bold text-xl whitespace-nowraps bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] relative underlinegradients">
             RERE WRITES
           </h1>
         </div>
