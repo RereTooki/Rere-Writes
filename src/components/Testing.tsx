@@ -25,7 +25,7 @@ const Testing = () => {
             />
           </picture>
         </div>
-        <div className="absolute bordesr-2 border-black w-fit translate-y-[78vh] tab:translate-y-[110px]  nxl:translate-y-[139px] tab:scale-[1.3] nxl:scale-[1.5] right-0 w3-animate-rightVec">
+        <div className="absolute bordesr-2 border-black w-fit translate-y-[78vh] tab:translate-y-[110px]  nxl:translate-y-[139px] tab:scale-[1.3] nxl:scale-[1.5] right-0 w3-animate-rightVec origin-right z-0">
           <picture
             className="nsm:basis-0 nsm:grow nsm:shrink drop-shadow-[0_40px_40px_rgba(0,0,0,0.15)]"
             data-aos="zoom-in-left"
@@ -40,7 +40,7 @@ const Testing = () => {
           </picture>
         </div>
         <div className="flex flex-col items-center justify-center h-full gap-[10px] ">
-          <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntro">
+          <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntro z-10">
             <picture className="">
               <source className="" media="(min-width: 565px)" srcSet={logo} />
               <img
