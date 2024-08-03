@@ -238,6 +238,6 @@ body {
     opacity: 1;
   }
 }
-.w3-animate-zoom2 {
-  animation: animatezoom 1.6s;
+.w3-animate-right2 {
+  animation: animateright 1.6s;
 }
