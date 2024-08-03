@@ -19,8 +19,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="w3-col l3 m6 w3-margin-bottom">
       <div className="w3-display-container hover:scale-[1.03]">
         <NavLink to={route}>
-          <div className="w3-display-topleft bg-white hover:bg-clrtransparentgreen w3-padding rounded-br-lg rounded-tl-lg border-t-2 border-l-2 border-clrtransparentgreen cursor-pointer hover:border-0">
-            <p className="text-clrtransparentgreen hover:text-white">{title}</p>
+          <div className="w3-display-topleft bg-white hover:bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] w3-padding rounded-br-lg rounded-tl-lg border-t-2 border-l-2 border-clrtransparentgreen cursor-pointer hover:border-0">
+            <p className=" hover:text-white bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] font-medium">
+              {title}
+            </p>
           </div>
 
           <img
