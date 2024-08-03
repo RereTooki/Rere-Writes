@@ -56,17 +56,17 @@ const NavigationBar = () => {
             )}
           </button>
           {navIsVisible && (
-            <div className="w3-animate-right2 bg-white lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] max-w-[250px] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] font-overpass flex flex-col gap-[5px]">
-              <div className="w3-animate-right2 hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom ">
+            <div className="w3-animate-rightNav bg-white lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] max-w-[250px] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] font-overpass flex flex-col gap-[5px]">
+              <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom ">
                 <Link to="/">Home</Link>
               </div>
-              <div className="w3-animate-right2 hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
+              <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
                 <Link to="/about">About Me</Link>
               </div>
-              <div className="w3-animate-right2 hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
+              <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
                 <Link to="/services">Poems</Link>
               </div>
-              <div className="w3-animate-right2 hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
+              <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
                 <Link to="/contactUs">Contact Us</Link>
               </div>
             </div>
