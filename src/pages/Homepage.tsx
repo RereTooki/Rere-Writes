@@ -12,11 +12,11 @@ const Homepage = () => {
         <NavigationBar />
       </div>{" "}
       <div className="">
-        <Testing />
-      </div>
-      {/* <div className="border-4 border-black">
         <Intro />
-      </div>{" "} */}
+      </div>{" "}
+      {/* <div className="">
+        <Testing />
+      </div> */}
       <div className="">
         <Projects />
       </div>{" "}

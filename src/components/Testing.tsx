@@ -51,7 +51,7 @@ const Testing = () => {
             </picture>
           </div>
           <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] w3-animate-zoom w3-animate-opacityIntro">
-            RERE WRITESs
+            RERE WRITES
           </div>
         </div>
       </div>
