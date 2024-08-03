@@ -25,7 +25,7 @@ const Testing = () => {
             />
           </picture>
         </div>
-        <div className="absolute bordesr-2 border-black w-fit translate-y-[78vh] tab:translate-y-[110px]  nxl:translate-y-[110px] tab:scale-[1.3] nxl:scale-[1.5] right-0 w3-animate-rightVec origin-right z-0">
+        <div className="absolute bordesr-2 border-black w-fit translate-y-[78vh] tab:translate-y-[80px]  nxl:translate-y-[100px] tab:scale-[1.3] nxl:scale-[1.5] right-0 w3-animate-rightVec origin-right z-0">
           <picture
             className="nsm:basis-0 nsm:grow nsm:shrink drop-shadow-[0_40px_40px_rgba(0,0,0,0.15)]"
             data-aos="zoom-in-left"
@@ -51,7 +51,7 @@ const Testing = () => {
             </picture>
           </div>
           <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] w3-animate-zoom w3-animate-opacityIntro">
-            RERE WRITESs
+            RERE WRITES
           </div>
         </div>
       </div>
