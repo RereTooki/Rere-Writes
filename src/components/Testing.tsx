@@ -13,7 +13,7 @@ const Testing = () => {
               <source className="" media="(min-width: 565px)" srcSet={logo} />
               <img
                 src={logo}
-                alt="A dashboard icon"
+                alt="Rere Writes Logo"
                 className="w-full h-full object-cover"
               />
             </picture>
