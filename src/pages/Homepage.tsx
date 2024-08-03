@@ -14,9 +14,9 @@ const Homepage = () => {
       <div className="">
         <Testing />
       </div>
-      {/* <div className="border-4 border-black">
+      <div className="border-4 border-black">
         <Intro />
-      </div>{" "} */}
+      </div>{" "}
       <div className="">
         <Projects />
       </div>{" "}
