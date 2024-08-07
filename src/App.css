@@ -176,8 +176,9 @@ body {
       rgba(83, 83, 69, 0.16) 35%,
       rgba(83, 83, 69, 0.1608368347338936) 100%
     ),
-    url(./assets/imageS/poemBgs/poem1Bg.png);
+    url(./assets/images/poemBgs/poem1Bg.png);
   background-size: 100vw 50vh;
+  background-attachment: fixed;
 }
 @media (min-width: 375px) {
   /*Tablets and above*/
