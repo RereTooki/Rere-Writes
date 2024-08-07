@@ -1,14 +1,27 @@
 import React from "react";
 import Testing from "../components/Testing";
+import SBMBG from "../assets/images/poemBgs/poem1Bg.png";
 
 const Poem1 = () => {
   return (
     <>
-      <div className="poemGrad h-[s100vh] flex flex-col tab:flex-row xmd:px-[5vw] tab:px-0 tab:items-center tab:justify-center">
-        <div className="quoteBG quoteBGP1 h-[50vh] lg:h-[50vh] flex flex-col  text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] px-[10vw] srounded-tr-[20px] rounded-b-[40px] w3-animate-opacitys drop-shadow-2xl border-2 w-auto tab:w-[40vw]">
-          {/* <p className="exoFont relastive top-[45%]">“Quote 1” - Speaker 1</p> */}
+      <div className="poemGrad tab:h-[100vh] flex flex-col tab:flex-row xmd:px-[5vw] tab:px-0 tab:items-center tab:justify-center">
+        <div className="tab:bg-white  tab:rounded-tl-[20px]  tab:rounded-bl-[20px] ">
+          <div className="quoteBG quoteBGP1 h-[50vh] tab:h-[85vh] flex flex-col  text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] px-[10vw] tab:px-0 tab:rounded-[20px] rounded-b-[20px] w3-animate-opacitys drop-shadow-2xl bsorder-2 w-auto tab:w-[40vw] bsorder-4 border-black overflow-hidden">
+            {" "}
+            <picture className="hidden tab:block  w-full h-full">
+              <source className="" media="(min-width: 565px)" srcSet={SBMBG} />
+              <img
+                src={SBMBG}
+                alt="Rere Writes Logo"
+                className="w-full h-full object-cover"
+              />
+            </picture>
+          </div>
         </div>
-        <div className="border-2 h-[80vh] tab:w-[40vw]">reres</div>
+        <div className="sborder-4 h-[80vh] tab:h-[85vh] tab:w-[40vw] tab:bg-white  tab:rounded-tr-[20px]  tab:rounded-br-[20px] ">
+          rere
+        </div>
       </div>{" "}
     </>
   );
