@@ -19,7 +19,7 @@ const Poem1 = () => {
           </div>
         </div>
         <div className="sborder-4 h-[80vh] tab:h-[85vh] tab:w-[40vw] tab:bg-white  tab:rounded-tr-[20px]  tab:rounded-br-[20px] px-[10vw] tab:px-[10px]">
-          rere 2
+          rere
         </div>
       </div>{" "}
     </>

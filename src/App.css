@@ -181,10 +181,10 @@ body {
   background-attachment: fixed;
 }
 @media (min-width: 375px) {
-  /*Tablets and above*/
+  /*mobiles and above*/
 
   .quoteBGP1 {
-    background-size: contain;
+    background-size: 375px 50vh;
     background-repeat: repeat;
   }
 }
