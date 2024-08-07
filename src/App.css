@@ -53,7 +53,7 @@
   }
   .poemGrad {
     background-image: url("./assets/images/poemBgs/airport.jfif");
-    background-size: cover;
+    background-size: 100vw auto;
   }
 }
 
