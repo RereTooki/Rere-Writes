@@ -176,7 +176,7 @@ body {
       rgba(83, 83, 69, 0.26) 35%,
       rgba(83, 83, 69, 0.2608368347338936) 100%
     ),
-    url(./assets/imageS/poemBgs/poem1Bg.png);
+    url(./assets/imageS/poemBgs/poem2Bg.png);
   background-size: 100vw 50vh;
 }
 @media (min-width: 565px) {
