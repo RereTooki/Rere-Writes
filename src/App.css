@@ -179,6 +179,14 @@ body {
     url(./assets/imageS/poemBgs/poem1Bg.png);
   background-size: 100vw 50vh;
 }
+@media (min-width: 565px) {
+  /*Tablets and above*/
+
+  .quoteBGP1 {
+    border: 5px solid red;
+    background-image: none;
+  }
+}
 
 .quoteBG1 {
   background-image: linear-gradient(
