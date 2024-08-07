@@ -5,6 +5,7 @@ export default {
     screens: {
       vsm: "1px",
       md: "375px",
+      xmd: "455px",
       tab: "565px",
       tabImg: "601px",
       lg: "750px",
@@ -19,6 +20,19 @@ export default {
         clrtransparentgreen: "rgb(77 150 168 / 0.8)",
         orange: "rgb(231 129 107)",
         rels: "linear-gradient(to right, #7F7FD5, #31B7C2)",
+        //Colours from my Results Component Project
+        colorRed: "hsl(0, 100%, 67%)",
+        colorOrange: "hsl(39, 100%, 56%)",
+        colorGreen: "hsl(166, 100%, 37%)",
+        colorCblue: "hsl(234, 85%, 45%)",
+        gradSlateBlue: "hsl(252, 100%, 67%)",
+        gradRoyalBlue: "hsl(241, 81%, 54%)",
+        gradVioletBlue: "hsla(256, 72%, 46%, 1)",
+        gradPersianBlue: "hsla(241, 72%, 46%, 0)",
+        colorWhite: "hsl(0, 0%, 100%)",
+        colorPaleBlue: "hsl(221, 100%, 96%)",
+        colorLavender: "hsl(241, 100%, 89%)",
+        colorDGrayBlue: "hsl(224, 30%, 27%)",
       },
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
