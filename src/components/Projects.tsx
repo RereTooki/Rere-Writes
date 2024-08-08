@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import img from "../assets/images/1.jpg";
+import WFBG from "../assets/images/poemBgs/WFBG.png";
 import SBM from "../assets/images/poemBgs/poem1Bg.png";
 import img3 from "../assets/images/3.jpg";
 import imgA from "../assets/images/A.jpg";
@@ -17,15 +17,15 @@ import PoemImageSlides from "./PoemImageSlides";
 const projects = [
   {
     title: "we forgot",
-    imgSrc: img,
+    imgSrc: WFBG,
     imgAlt: "we forgot",
-    route: "/poem-1",
+    route: "/we-forgot",
   },
   {
     title: "Life's Kitchen",
     imgSrc: SBM,
     imgAlt: "Life's Kitchen",
-    route: "/Stand-By-Me",
+    route: "/stand-by-me",
   },
   {
     title: "The Hate U Give",
@@ -37,11 +37,11 @@ const projects = [
     title: "Stand By Me",
     imgSrc: SBM,
     imgAlt: "Stand By Me",
-    route: "/Stand-By-Me",
+    route: "/stand-by-me",
   },
   {
     title: "we forgot",
-    imgSrc: img,
+    imgSrc: WFBG,
     imgAlt: "we forgot",
     route: "/poem-1",
   },
@@ -49,7 +49,7 @@ const projects = [
     title: "The Mandem",
     imgSrc: SBM,
     imgAlt: "The Mandem",
-    route: "/Stand-By-Me",
+    route: "/stand-by-me",
   },
   {
     title: "New Semester, New Me",

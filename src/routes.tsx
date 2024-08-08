@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Poem1 from "./pages/Poem1";
 import PoemSBM from "./pages/PoemSBM";
+import PoemWeForgot from "./pages/PoemWeForgot";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,12 @@ const router = createBrowserRouter([
     element: <Poem1 />, // Public Route
   },
   {
-    path: "/Stand-By-Me", // Poem 1 Route
+    path: "/stand-by-me", // Poem 1 Route
     element: <PoemSBM />, // Public Route
+  },
+  {
+    path: "/we-forgot", // Poem 1 Route
+    element: <PoemWeForgot />, // Public Route
   },
 ]);
 
