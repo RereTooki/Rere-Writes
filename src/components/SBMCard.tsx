@@ -18,14 +18,14 @@ const SBMCard = () => {
   return (
     <>
       <div className="poemBG poemBG-SBM tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center tab:border-4 xl:border-8 border-black border-double ">
-        <div className="z-0 tab:z-0 absoslute fixed right-[1px] xl:right-[8px] sborder-2 border-black w-fit translate-y-[70vh] tab:translate-y-0 tab:top-10 lg:top-[3.1rem] tab:scale-[1.5] lg:scale-[1.9] origin-right w3-animate-rightVec">
+        <div className="z-0 tab:z-0 fixed right-[1px] xl:right-[8px] sborder-2 border-black w-fit translate-y-[70vh] tab:translate-y-0 tab:top-10 lg:top-[3.1rem] tab:scale-[1.5] lg:scale-[1.9] origin-right w3-animate-rightVec">
           <picture
             className="nsm:basis-0 nsm:grow nsm:shrink drop-shadow-[0_40px_40px_rgba(0,0,0,0.15)]"
             data-aos="zoom-in-left"
             data-aos-duration="700"
           >
             <source className="" media="(min-width: 565px)" srcSet={heart} />
-            <img src={heart} alt="" className="h-[50vh] tab:h-[30vh]" />
+            <img src={heart} alt="" className="h-[272px] tab:h-[164px]" />
           </picture>
         </div>
         <div className="tab:bg-white tab:rounded-tl-[20px] tab:rounded-bl-[20px] w3-animate-left  ">
