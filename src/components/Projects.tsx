@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import img from "../assets/images/1.jpg";
-import img2 from "../assets/images/2.jpg";
+import SBM from "../assets/images/poemBgs/poem1Bg.png";
 import img3 from "../assets/images/3.jpg";
 import imgA from "../assets/images/A.jpg";
 import imgB from "../assets/images/B.jpg";
@@ -23,9 +23,9 @@ const projects = [
   },
   {
     title: "Life's Kitchen",
-    imgSrc: img2,
+    imgSrc: SBM,
     imgAlt: "Life's Kitchen",
-    route: "/poem-1",
+    route: "/Stand-By-Me",
   },
   {
     title: "The Hate U Give",
@@ -35,9 +35,9 @@ const projects = [
   },
   {
     title: "Stand By Me",
-    imgSrc: img2,
+    imgSrc: SBM,
     imgAlt: "Stand By Me",
-    route: "/poem-1",
+    route: "/Stand-By-Me",
   },
   {
     title: "we forgot",
@@ -47,9 +47,9 @@ const projects = [
   },
   {
     title: "The Mandem",
-    imgSrc: img2,
+    imgSrc: SBM,
     imgAlt: "The Mandem",
-    route: "/poem-1",
+    route: "/Stand-By-Me",
   },
   {
     title: "New Semester, New Me",
