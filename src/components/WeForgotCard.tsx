@@ -2,6 +2,8 @@ import React from "react";
 import WFBG from "../assets/images/poemBgs/WFBG.png";
 import PoemCard from "./PoemCard";
 import heart from "../assets/images/heart.png";
+import v2RMob from "../assets/icons/bg-pattern-how-we-work-mobile.svg";
+import v2Desk from "../assets/icons/bg-pattern-how-we-work-desktop.svg";
 
 const WeForgotCard = () => {
   const title = "“we forgot”";
@@ -19,12 +21,12 @@ const WeForgotCard = () => {
   const bodyFont = "exoFont text-whitess";
   return (
     <>
-      <div className="poemBG poemBG-WF tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double ">
-        <div className="z-0 tab:z-0 fixed right-[1px] xl:right-[8px] sborder-2 border-black w-fit translate-y-[70vh] tab:translate-y-0 tab:top-10 lg:top-[3.1rem] tab:scale-[1.5] lg:scale-[1.9] origin-right w3-animate-rightVec">
+      <div className="poemBG poemBG-WF tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">
+        <div className="z-0 tab:z-0 fixed right-[1px] xl:right-[8px] sborder-2 border-black w-fit translsate-y-[70vh] tab:translate-y-0 tab:top-10 lg:top-[3.1rem] tab:scale-[1.5] lg:scale-[2.5] origin-right w3-animate-rightVec">
           <picture className="" data-aos="zoom-in-left" data-aos-duration="700">
-            <source className="" media="(min-width: 565px)" srcSet={heart} />
+            <source className="" media="(min-width: 565px)" srcSet={v2Desk} />
             <img
-              src={heart}
+              src={v2RMob}
               alt="A heart svg"
               className="h-[272px] tab:h-[164px]"
             />
