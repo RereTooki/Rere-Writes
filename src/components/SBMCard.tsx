@@ -41,7 +41,7 @@ const SBMCard = () => {
             </picture>
           </div>
         </div>
-        <div className="sborder-4 h-auto tab:h-[85vh] tab:w-[45vw] lg:w-[40vw] tab:bg-white  tab:rounded-tr-[20px]  tab:rounded-br-[20px] px-[10vw] tab:px-[10px] w3-animate-right overflow-y-scroll">
+        <div className="sborder-4 h-auto tab:h-[85vh] tab:w-[45vw] lg:w-[40vw] tab:bg-white  tab:rounded-tr-[10px]  tab:rounded-br-[10px] px-[10vw] tab:px-[10px] w3-animate-right tab:overflow-y-scroll tab:scroll">
           <PoemCard
             title={title}
             verses={verses}

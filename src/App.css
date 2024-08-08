@@ -48,6 +48,44 @@
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
+
+  .scroll::-webkit-scrollbar {
+    width: 2.5vw; /* width of the entire scrollbar */
+    marsgin-left: 200px;
+  }
+
+  .scroll::-webkit-scrollbar-track {
+    background: rgb(234, 223, 232);
+    border-radius: 20px; /* color of the tracking area */
+  }
+
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(38, 49, 57); /* color of the scroll thumb  */
+    border: 0.6vw solid rgb(234, 223, 232);
+    border-radius: 20px; /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
+  }
+
+  @media (min-width: 565px) {
+    /*Tablets and above*/
+    .scroll::-webkit-scrollbar {
+      width: 1.8vw;
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+      border: 0.5vw solid rgb(234, 223, 232);
+    }
+  }
+
+  @media (min-width: 900px) {
+    /*PCs and above*/
+    .scroll::-webkit-scrollbar {
+      width: 1.2vw;
+    }
+    .scroll::-webkit-scrollbar-thumb {
+      border: 0.35vw solid rgb(234, 223, 232);
+    }
+  }
 }
 
 *,
