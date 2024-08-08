@@ -7,14 +7,19 @@ interface PoemCardProps {
 
 const PoemCard: React.FC<PoemCardProps> = ({ title, verses }) => {
   return (
-    <div className=" sborder-4 tab:container mx-auto p-4">
-      <h1 className="text-3xl font-bold text-center mb-6">{title}</h1>
-      <div className="space-y-8">
+    <div className=" sborder-4 tab:container mx-auto py-4 tab:p-4">
+      <h1 className="text-3xl font-bold text-center mb-6 shantellFont">
+        {title}
+      </h1>
+      <div className="space-y-8 shantellFont">
         {verses.map((verse, index) => (
-          <p key={index} className="text-lg text-center">
+          <p
+            key={index}
+            className="text-lg tab:text-lg text-center tab:text-left tracking-wide leading-nones whitespace-nowraps"
+          >
             {verse.split("\n").map((line, lineIndex) => (
               <React.Fragment key={lineIndex}>
-                {line}
+                <span className="leading-loose">{line}</span>
                 <br />
               </React.Fragment>
             ))}
