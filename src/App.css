@@ -44,7 +44,7 @@
   background-attachment: fixed;
 }
 .poemBG-SBM {
-  background-image: url(./assets/images/poemBgs/SBM-S.jpg);
+  background-image: url(./assets/images/poemBgs/SBM-S2.jpg);
 }
 @media (min-width: 565px) {
   /*Tablets and above*/
@@ -56,7 +56,7 @@
     background-size: auto;
   }
   .poemBG-SBM {
-    background-image: url(./assets/images/poemBgs/SBM-L.jpg);
+    background-image: url(./assets/images/poemBgs/SBM-L2.jpg);
   }
 }
 
