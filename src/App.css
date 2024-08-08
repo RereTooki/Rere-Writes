@@ -7,6 +7,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .gradient-border {
+    @apply relative;
+  }
+  .gradient-border::before,
+  .gradient-border::after,
+  .gradient-border-top::before,
+  .gradient-border-bottom::after {
+    content: "";
+    @apply absolute;
+    z-index: 1;
+  }
+  .gradient-border::before {
+    @apply inset-0;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(to right, #7f7fd5, #31b7c2);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}
+
 *,
 *::before,
 *::after {
