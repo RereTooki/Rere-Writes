@@ -53,7 +53,7 @@
     background-size: cover;
   }
   .poemBG {
-    background-size: auto;
+    background-size: 100vw 100vh;
   }
   .poemBG-SBM {
     background-image: url(./assets/images/poemBgs/SBM-L2.jpg);
