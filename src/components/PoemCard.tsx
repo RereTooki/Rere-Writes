@@ -7,7 +7,7 @@ interface PoemCardProps {
 
 const PoemCard: React.FC<PoemCardProps> = ({ title, verses }) => {
   return (
-    <div className=" border-4 tab:container mx-auto p-4">
+    <div className=" sborder-4 tab:container mx-auto p-4">
       <h1 className="text-3xl font-bold text-center mb-6">{title}</h1>
       <div className="space-y-8">
         {verses.map((verse, index) => (
