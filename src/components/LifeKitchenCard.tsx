@@ -6,13 +6,14 @@ import heart from "../assets/images/heart.png";
 const LifeKitchenCard = () => {
   const title = "Life's Kitchen";
   const verses = [
-    `I could probably give a thousand reasons\nYet, the words wouldn't express my feelings\nI want to be a part of your story\nAs long as you stand by me`,
-    `Minute after minute,\nI'll love you infinitely\nHour after hour,\nYou'll remain my only desire`,
-    `Day after day,\nIt'll be a never-ending holiday\nWeek after week,\nA lot will change but you'll remain unique`,
-    `Month after month,\nTears, laughter and whatnot\nYear after year,\nAs long as you are, I'll be here`,
-    `Cause you are proof\nThat where there's love, there's life\nNo matter what endures,\nI want to call you mine and me, yours`,
-    `Darling,\nWill you marry me?`,
+    `Life often mirrors the humble egg,\nCracked open, it faces the pan's request\nIt could be fried or scrambled,\nOr even poached, but never again boiled`,
+    `Life unfolds like grains of rice,\nAn assortment of flavors, herbs or spice,\nSometimes plain, or vividly dyed,\nSometimes jollof, sometimes fried`,
+    `Life resembles the sturdy yam,\nIts taste varied, bittersweet as ham,\nCould be soft, hard or just there\nCould be rough and patchy, or plain and fair`,
+    `Life is like the golden honey,\nEver wondered how it is gotten?\nWhy it never gets spoiled or rotten?\nI bet you don't know, isn't it funny?`,
+    `Life is like the versatile garri grain,\nWith water, it swells without restrain,\nIt leaves its humble state and starts to rise\nTransforms and hardens, a path to its demise`,
+    `In essence, life's a beautiful feast,\nA farmer's market, to say the least,\nThrough all the twists, have no regret,\nFor in the end, we're all sunset.`,
   ];
+
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";
