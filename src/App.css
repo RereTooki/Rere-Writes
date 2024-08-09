@@ -49,30 +49,47 @@
     mask-composite: exclude;
   }
 
+  /* DefaultScrollbars */
   .scroll::-webkit-scrollbar {
     width: 1.8vw; /* width of the entire scrollbar */
   }
-
   .scroll::-webkit-scrollbar-track {
-    background: rgb(234, 223, 232);
     border-radius: 20px; /* color of the tracking area */
   }
 
   .scroll::-webkit-scrollbar-thumb {
-    background-color: rgb(38, 49, 57); /* color of the scroll thumb  */
-    border: 0.5vw solid rgb(234, 223, 232);
+    border-width: 0.5vw;
+    border-style: solid;
+
     border-radius: 20px; /* roundness of the scroll thumb */
     /* creates padding around scroll thumb */
   }
-
   @media (min-width: 900px) {
     /*PCs and above*/
     .scroll::-webkit-scrollbar {
       width: 1.2vw;
     }
     .scroll::-webkit-scrollbar-thumb {
-      border: 0.35vw solid rgb(234, 223, 232);
+      border-width: 0.35vw;
     }
+  }
+
+  /*Scroll We Forgot*/
+  .scrollWF::-webkit-scrollbar-track {
+    background: rgb(234, 223, 232);
+  }
+  .scrollWF::-webkit-scrollbar-thumb {
+    background-color: rgb(38, 49, 57); /* color of the scroll thumb  */
+    border-color: rgb(234, 223, 232);
+  }
+
+  /*Scroll Stand By Me*/
+  .scrollSBM::-webkit-scrollbar-track {
+    background: rgb(197, 194, 192);
+  }
+  .scrollSBM::-webkit-scrollbar-thumb {
+    background-color: rgb(38, 49, 57); /* color of the scroll thumb  */
+    border-color: rgb(197, 194, 192);
   }
 }
 
