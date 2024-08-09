@@ -6,13 +6,10 @@ import heart from "../assets/images/heart.png";
 const TheySaidCard = () => {
   const title = "...they said";
   const verses = [
-    `I could probably give a thousand reasons\nYet, the words wouldn't express my feelings\nI want to be a part of your story\nAs long as you stand by me`,
-    `Minute after minute,\nI'll love you infinitely\nHour after hour,\nYou'll remain my only desire`,
-    `Day after day,\nIt'll be a never-ending holiday\nWeek after week,\nA lot will change but you'll remain unique`,
-    `Month after month,\nTears, laughter and whatnot\nYear after year,\nAs long as you are, I'll be here`,
-    `Cause you are proof\nThat where there's love, there's life\nNo matter what endures,\nI want to call you mine and me, yours`,
-    `Darling,\nWill you marry me?`,
+    `we fight back pain\nwe hold back tears\nall to what gain?\nno one ever cares`,
+    `"face your fears" they said\n"be strong, you're a man"\nall these voices in my head\nmaybe, just maybe I'm only human?`,
   ];
+
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";

@@ -6,13 +6,17 @@ import heart from "../assets/images/heart.png";
 const BetterMeCard = () => {
   const title = "Better Me, Better Us, Better Working World";
   const verses = [
-    `I could probably give a thousand reasons\nYet, the words wouldn't express my feelings\nI want to be a part of your story\nAs long as you stand by me`,
-    `Minute after minute,\nI'll love you infinitely\nHour after hour,\nYou'll remain my only desire`,
-    `Day after day,\nIt'll be a never-ending holiday\nWeek after week,\nA lot will change but you'll remain unique`,
-    `Month after month,\nTears, laughter and whatnot\nYear after year,\nAs long as you are, I'll be here`,
-    `Cause you are proof\nThat where there's love, there's life\nNo matter what endures,\nI want to call you mine and me, yours`,
-    `Darling,\nWill you marry me?`,
+    `Man, know thyself\nA Greek philosopher once said\nFor it's only when you know yourself\nYour life can then move ahead`,
+    `What are your values?\nWhat are you known to stand for?\nYour ideals you cannot lose\nYour principles you can't ignore`,
+    `What is your goal, your purpose?\nStarted thinking about them yet?\nBy now, you should know those\nAnd on those, reflect`,
+    `What is your ambition?\nWhat do you want to achieve?\nYou have to live life with a vision\nA vision of what you want to contribute to society`,
+    `You can't give what you don't have\nAnd what you give, really matters\nFor example, if you don't respect yourself,\nYou can't respect others`,
+    `Whatever choices you make,\nWherever you find yourself\nWhether you give or take\nShapes life itself`,
+    `Life often involves continuous learning\nLearning yesterday, today and tomorrow\nLearning that might involve unlearning\nFor learning is the only way we grow`,
+    `Unlearn that which you know\nOpen up your mind to a new reality\nIt's a seed you'll have to sow\nIf you want to build capacity`,
+    `Risk is at the very heart of success\nIt is giving uncertainty a chance\nIt is making decisions that could be precarious\nThough dangerous, your life, it should enhance`,
   ];
+
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";

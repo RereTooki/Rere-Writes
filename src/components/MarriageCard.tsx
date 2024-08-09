@@ -6,13 +6,17 @@ import heart from "../assets/images/heart.png";
 const MarriageCard = () => {
   const title = "Marriage";
   const verses = [
-    `I could probably give a thousand reasons\nYet, the words wouldn't express my feelings\nI want to be a part of your story\nAs long as you stand by me`,
-    `Minute after minute,\nI'll love you infinitely\nHour after hour,\nYou'll remain my only desire`,
-    `Day after day,\nIt'll be a never-ending holiday\nWeek after week,\nA lot will change but you'll remain unique`,
-    `Month after month,\nTears, laughter and whatnot\nYear after year,\nAs long as you are, I'll be here`,
-    `Cause you are proof\nThat where there's love, there's life\nNo matter what endures,\nI want to call you mine and me, yours`,
-    `Darling,\nWill you marry me?`,
+    `marriage\nthe ancient test of time\nthe classic mystery of age\nlove pursued over a lifetime`,
+    `for better, for worse\nfor rich or for poor\na commitment between us\nthat we'll never leave the door`,
+    `times of high highs and low lows\ntimes of being over the moon\ndoesn’t matter what life throws\nit’ll be a never-ending honeymoon`,
+    `we could run away together\nwe could tour the world\nwhichever you feel is better\nyou just say the word`,
+    `do you want to have children?\ndo you want a son or daughter?\nif you do, when?\nif you don't, will you still be my forever?`,
+    `what will happen when we fight?\nwhen I hurt you and you cry?\nwill we make everything alright?\nor will you say goodbye?`,
+    `will I make you jealous?\nwell, yh, I will\nwill you make me envious?\nyh, if you feel`,
+    `seriously though, I’ll always love you\ncause, I mean, you chose me\nhope you’ll love me too\nyou’ll forever be my one & only`,
+    `I love you`,
   ];
+
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";

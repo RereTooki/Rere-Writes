@@ -6,13 +6,13 @@ import heart from "../assets/images/heart.png";
 const TheMandemCard = () => {
   const title = "The Mandem";
   const verses = [
-    `I could probably give a thousand reasons\nYet, the words wouldn't express my feelings\nI want to be a part of your story\nAs long as you stand by me`,
-    `Minute after minute,\nI'll love you infinitely\nHour after hour,\nYou'll remain my only desire`,
-    `Day after day,\nIt'll be a never-ending holiday\nWeek after week,\nA lot will change but you'll remain unique`,
-    `Month after month,\nTears, laughter and whatnot\nYear after year,\nAs long as you are, I'll be here`,
-    `Cause you are proof\nThat where there's love, there's life\nNo matter what endures,\nI want to call you mine and me, yours`,
-    `Darling,\nWill you marry me?`,
+    `My guys, my brothers\nAt times, I call them my lovers\nYh, we come from different mothers\nStill, their love transcends borders`,
+    `We insult one another, we fight\nFor nothing more than a show of might\nIt doesnt matter who is wrong or right\nWe live our lives without spite`,
+    `I could probably name names\nSome genuinely wide, some tame\nSome actually funny, most horrifyingly lame\nAlways striving to be better, not remaining\nthe same`,
+    `I'm proud of the men they've become\nCause I know how far they've come\nAt this point, I'd rather prefer to call them\nThe Mandem`,
+    `Love y’all`,
   ];
+
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";

@@ -6,13 +6,10 @@ import heart from "../assets/images/heart.png";
 const LoveIsWarCard = () => {
   const title = "Love Is War";
   const verses = [
-    `I could probably give a thousand reasons\nYet, the words wouldn't express my feelings\nI want to be a part of your story\nAs long as you stand by me`,
-    `Minute after minute,\nI'll love you infinitely\nHour after hour,\nYou'll remain my only desire`,
-    `Day after day,\nIt'll be a never-ending holiday\nWeek after week,\nA lot will change but you'll remain unique`,
-    `Month after month,\nTears, laughter and whatnot\nYear after year,\nAs long as you are, I'll be here`,
-    `Cause you are proof\nThat where there's love, there's life\nNo matter what endures,\nI want to call you mine and me, yours`,
-    `Darling,\nWill you marry me?`,
+    `her eyes, I couldn’t ignore\na motionless gaze at the floor\na deafening silence,\na blinding darkness`,
+    `together we were alone\nalone we were together\nall the while I should have known\nlove is war`,
   ];
+
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";
