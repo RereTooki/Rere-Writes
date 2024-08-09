@@ -18,7 +18,7 @@ const WeForgotCard = () => {
   ];
   const titleFont =
     "meriendaFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "exoFont text-whitess";
+  const bodyFont = "redressedFont exoFonts text-whitess";
   return (
     <>
       <div className="poemBG poemBG-WF tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">

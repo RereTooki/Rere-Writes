@@ -28,7 +28,9 @@ const PoemCard: React.FC<PoemCardProps> = ({
           >
             {verse.split("\n").map((line, lineIndex) => (
               <React.Fragment key={lineIndex}>
-                <span className="leading-loose">{line}</span>
+                <span className="leading-relaxed border-b-2 stext-xl">
+                  {line}
+                </span>
                 <br />
               </React.Fragment>
             ))}

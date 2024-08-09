@@ -3,18 +3,38 @@ import ProjectCard from "./ProjectCard";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import WFBG from "../assets/images/poemBgs/WFBG.png";
-import SBM from "../assets/images/poemBgs/poem1Bg.png";
-import img3 from "../assets/images/3.jpg";
-import imgA from "../assets/images/A.jpg";
-import imgB from "../assets/images/B.jpg";
-import imgC from "../assets/images/C.jpg";
-import imgD from "../assets/images/D.jpg";
-import imgE from "../assets/images/E.jpg";
-import imgF from "../assets/images/F.jpg";
-import imgG from "../assets/images/G.jpg";
+import LKBG from "../assets/images/poemBgs/LKBG.jpg";
+import SBMBG from "../assets/images/poemBgs/SBMBG.png";
+import NSNMBG from "../assets/images/poemBgs/NSNMBG.png";
+import TMBG from "../assets/images/poemBgs/TMBG.png";
+import TSBG from "../assets/images/poemBgs/TSBG.png";
+import SNEBG from "../assets/images/poemBgs/SNEBG.png";
+import MRBG from "../assets/images/poemBgs/MRBG.png";
+import BMBG from "../assets/images/poemBgs/BMBG.png";
+import JNBG from "../assets/images/poemBgs/JNBG.png";
+import LIWBG from "../assets/images/poemBgs/LIWBG.png";
+import THUGBG from "../assets/images/poemBgs/THUGBG.jpg";
 import PoemImageSlides from "./PoemImageSlides";
 
 const projects = [
+  {
+    title: "Stand By Me",
+    imgSrc: SBMBG,
+    imgAlt: "Stand By Me",
+    route: "/stand-by-me",
+  },
+  {
+    title: "Life's Kitchen",
+    imgSrc: LKBG,
+    imgAlt: "Life's Kitchen",
+    route: "/life-kitchen",
+  },
+  {
+    title: "The Hate U Give",
+    imgSrc: THUGBG,
+    imgAlt: "The Hate U Give",
+    route: "/the-hate-u-give",
+  },
   {
     title: "we forgot",
     imgSrc: WFBG,
@@ -22,70 +42,52 @@ const projects = [
     route: "/we-forgot",
   },
   {
-    title: "Life's Kitchen",
-    imgSrc: SBM,
-    imgAlt: "Life's Kitchen",
-    route: "/stand-by-me",
-  },
-  {
-    title: "The Hate U Give",
-    imgSrc: imgG,
-    imgAlt: "The Hate U Give",
-    route: "/the-hate-u-give",
-  },
-  {
-    title: "Stand By Me",
-    imgSrc: SBM,
-    imgAlt: "Stand By Me",
-    route: "/stand-by-me",
-  },
-  {
-    title: "we forgot",
-    imgSrc: WFBG,
-    imgAlt: "we forgot",
-    route: "/poem-1",
-  },
-  {
     title: "The Mandem",
-    imgSrc: SBM,
+    imgSrc: TMBG,
     imgAlt: "The Mandem",
-    route: "/stand-by-me",
+    route: "/the-mandem",
   },
   {
     title: "New Semester, New Me",
-    imgSrc: img3,
+    imgSrc: NSNMBG,
     imgAlt: "New Semester New Me",
-    route: "/poem-1",
+    route: "/new-semester-new-me",
   },
   {
     title: "...they said",
-    imgSrc: imgA,
+    imgSrc: TSBG,
     imgAlt: "...they said",
-    route: "/poem-1",
+    route: "/they-said",
   },
   {
     title: "mizaru, kikazaru, iwazaru",
-    imgSrc: imgB,
+    imgSrc: SNEBG,
     imgAlt: "mizaru, kikazaru, iwazaru",
-    route: "/poem-1",
+    route: "/mizaru-kikazaru-iwazaru",
   },
   {
     title: "Marriage",
-    imgSrc: imgC,
+    imgSrc: MRBG,
     imgAlt: "Marriage",
-    route: "/poem-1",
+    route: "/marriage",
   },
   {
     title: "Better Me, Better Us, Better Working World",
-    imgSrc: imgD,
+    imgSrc: BMBG,
     imgAlt: "Better Me, Better Us, Better Working World",
-    route: "/poem-1",
+    route: "/better-me",
+  },
+  {
+    title: "Love Is War",
+    imgSrc: LIWBG,
+    imgAlt: "Love Is War",
+    route: "/love-is-war",
   },
   {
     title: "Joyeux Noël",
-    imgSrc: imgE,
+    imgSrc: JNBG,
     imgAlt: "Joyeux Noël",
-    route: "/poem-1",
+    route: "/joyeux-noel",
   },
 ];
 
