@@ -56,6 +56,7 @@
   /* DefaultScrollbars */
   .scroll::-webkit-scrollbar {
     width: 1.8vw; /* width of the entire scrollbar */
+    min-width: 12px;
   }
   .scroll::-webkit-scrollbar-track {
     border-radius: 0px 20px 20px 0px; /* color of the tracking area */
@@ -71,10 +72,10 @@
   @media (min-width: 900px) {
     /*PCs and above*/
     .scroll::-webkit-scrollbar {
-      width: 1.2vw;
+      width: 15px;
     }
     .scroll::-webkit-scrollbar-thumb {
-      border-width: 0.35vw;
+      border-width: 4.5px;
     }
   }
 
@@ -94,6 +95,29 @@
   .scrollSBM::-webkit-scrollbar-thumb {
     background-color: rgb(38, 49, 57); /* color of the scroll thumb  */
     border-color: rgb(197, 194, 192);
+  }
+  /*Scroll Modal*/
+  .scrollModal::-webkit-scrollbar {
+    width: 2vw;
+    min-width: 10px;
+  }
+  .scrollModal::-webkit-scrollbar-track {
+    background: rgb(197, 194, 192);
+    border-radius: 20px;
+  }
+  .scrollModal::-webkit-scrollbar-thumb {
+    background-color: rgb(38, 49, 57); /* color of the scroll thumb  */
+    border-color: rgb(197, 194, 192);
+    border-radius: 20px;
+  }
+  @media (min-width: 700px) {
+    /*PCs and above*/
+    .scrollModal::-webkit-scrollbar {
+      width: 13px;
+    }
+    .scrollModal::-webkit-scrollbar-thumb {
+      border-width: 3.2px;
+    }
   }
 }
 

@@ -16,7 +16,7 @@ import LIWBG from "../assets/images/poemBgs/LIWBG.png";
 import THUGBG from "../assets/images/poemBgs/THUGBG.jpg";
 import PoemImageSlides from "./PoemImageSlides";
 
-const projects = [
+export const projects = [
   {
     title: "Stand By Me",
     imgSrc: SBMBG,
