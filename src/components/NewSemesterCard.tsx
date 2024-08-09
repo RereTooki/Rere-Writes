@@ -6,13 +6,13 @@ import heart from "../assets/images/heart.png";
 const NewSemesterCard = () => {
   const title = "New Semester, New Me";
   const verses = [
-    `I could probably give a thousand reasons\nYet, the words wouldn't express my feelings\nI want to be a part of your story\nAs long as you stand by me`,
-    `Minute after minute,\nI'll love you infinitely\nHour after hour,\nYou'll remain my only desire`,
-    `Day after day,\nIt'll be a never-ending holiday\nWeek after week,\nA lot will change but you'll remain unique`,
-    `Month after month,\nTears, laughter and whatnot\nYear after year,\nAs long as you are, I'll be here`,
-    `Cause you are proof\nThat where there's love, there's life\nNo matter what endures,\nI want to call you mine and me, yours`,
-    `Darling,\nWill you marry me?`,
+    `"new semester, new me"\nahh your results shocked you\nall those late nights out with your boo\nno As, Bs or Cs, just you and your D`,
+    `you and your eternal drip\nyou step out, shutdown cafe 1\nyou step back in, FIFA 21\nyou watch that series, eat, then sleep`,
+    `maths? physics? "easier than EDS"\nonly went to class when it's time for test\nyou never read, what'd you expect?\nfirst class?`,
+    `this time around, put in the effort,\nwork hard, don't be lazy\nfor nothing good comes easy\nthis semester? no more hurt`,
+    `GST, CST, CIT or ACC\nwhatever it is, always do your best\nand to God, leave the rest\nremember, first class starts from the first class`,
   ];
+
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";
