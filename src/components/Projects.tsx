@@ -31,7 +31,7 @@ const projects = [
     title: "The Hate U Give",
     imgSrc: imgG,
     imgAlt: "The Hate U Give",
-    route: "/poem-1",
+    route: "/the-hate-u-give",
   },
   {
     title: "Stand By Me",

@@ -3,6 +3,7 @@ import Homepage from "./pages/Homepage";
 import Poem1 from "./pages/Poem1";
 import PoemSBM from "./pages/PoemSBM";
 import PoemWeForgot from "./pages/PoemWeForgot";
+import PoemTHUG from "./pages/PoemTHUG";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/we-forgot", // Poem 1 Route
     element: <PoemWeForgot />, // Public Route
+  },
+  {
+    path: "/the-hate-u-give", // Poem 1 Route
+    element: <PoemTHUG />, // Public Route
   },
 ]);
 
