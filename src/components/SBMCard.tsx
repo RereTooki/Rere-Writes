@@ -1,9 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import SBMBG from "../assets/images/poemBgs/poem1Bg.png";
 import PoemCard from "./PoemCard";
 import heart from "../assets/images/heart.png";
 import PoemsModal from "./PoemsModal";
+import { useState, useEffect } from "react";
 
 const SBMCard = () => {
   const title = "Stand By Me";

@@ -2,6 +2,8 @@ import React from "react";
 import SNEBG from "../assets/images/poemBgs/SNEBG.png";
 import PoemCard from "./PoemCard";
 import heart from "../assets/images/heart.png";
+import PoemsModal from "./PoemsModal";
+import { useState, useEffect } from "react";
 
 const SeeNoEvilCard = () => {
   const title = "Mizaru, Kikazaru, Iwazaru";
@@ -15,6 +17,15 @@ const SeeNoEvilCard = () => {
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";
+
+  // State to control the modal visibility
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Function to open the modal and display task details
+  const openDetails = () => {
+    setIsOpen(true);
+  };
+
   return (
     <>
       <div className="poemBG poemBG-SBM tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">
@@ -40,7 +51,7 @@ const SeeNoEvilCard = () => {
             </picture>
           </div>
         </div>
-        <div className="sborder-4 h-auto tab:h-[85vh] tab:w-[45vw] lg:w-[40vw] tab:bg-white  tab:rounded-tr-[15px]  tab:rounded-br-[15px] xl:rounded-tr-[20px]  xl:rounded-br-[20px] px-[10vw] tab:px-[10px] w3-animate-right tab:overflow-y-scroll tab:scroll tab:scrollSBM">
+        <div className="h-auto tab:h-[85vh] tab:w-[45vw] lg:w-[40vw] tab:bg-white  tab:rounded-tr-[15px]  tab:rounded-br-[15px] xl:rounded-tr-[20px]  xl:rounded-br-[20px] px-[10vw] tab:px-[10px] w3-animate-right tab:overflow-y-scroll tab:scroll tab:scrollSBM sborder-4">
           <PoemCard
             title={title}
             verses={verses}
@@ -48,6 +59,16 @@ const SeeNoEvilCard = () => {
             bodyFont={bodyFont}
           />
         </div>
+        <div className="flex flex-row justify-end z-20 tab:fixed tab:block bottom-2 right-2 sborder-2 border-black mb-4 tab:mb-0">
+          <button
+            className="py-1 px-3 rounded-md sborder-2  underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02]"
+            onClick={() => openDetails()}
+          >
+            Want To Read More?
+          </button>
+        </div>
+        {/* PoemsModal */}
+        <PoemsModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>{" "}
     </>
   );
