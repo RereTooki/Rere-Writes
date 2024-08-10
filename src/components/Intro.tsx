@@ -5,6 +5,7 @@ import v1LMob from "../assets/icons/bg-pattern-intro-left-mobile.svg";
 import v1LDesk from "../assets/icons/bg-pattern-intro-left-desktop.svg";
 import v1RMob from "../assets/icons/bg-pattern-intro-right-mobile.svg";
 import v1RDesk from "../assets/icons/bg-pattern-intro-right-desktop.svg";
+import WritingAnimation from "./WritingAnimation";
 const Intro = () => {
   return (
     <>
@@ -50,7 +51,7 @@ const Intro = () => {
             </picture>
           </div>
           <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] w3-animate-zoom w3-animate-opacityIntro">
-            RERE WRITES
+            <WritingAnimation text="RERE WRITES" />
           </div>
         </div>
       </div>

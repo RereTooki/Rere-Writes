@@ -5,6 +5,7 @@ import Intro from "../components/Intro";
 import Testing from "../components/Testing";
 import NavigationBar from "../components/NavigationBar";
 import Projects from "../components/Projects";
+
 const Homepage = () => {
   return (
     <>
@@ -14,9 +15,9 @@ const Homepage = () => {
       <div className="">
         <Intro />
       </div>{" "}
-      {/* <div className="">
+      <div className="">
         <Testing />
-      </div> */}
+      </div>
       <div className="">
         <Projects />
       </div>{" "}
