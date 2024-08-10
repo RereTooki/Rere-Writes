@@ -1,4 +1,6 @@
 import React from "react";
+import WritingAnimation from "../animations/WritingAnimation";
+import PoemTextAnimation from "../animations/PoemTextAnimation";
 
 interface PoemCardProps {
   title: string;
@@ -18,7 +20,7 @@ const PoemCard: React.FC<PoemCardProps> = ({
       <h1
         className={`text-3xl font-bold text-center mb-6 border-2s w-fit z-20 ${titleFont}`}
       >
-        {title}
+        <WritingAnimation text={title} />
       </h1>
       <div className="space-y-8">
         {verses.map((verse, index) => (
@@ -30,6 +32,8 @@ const PoemCard: React.FC<PoemCardProps> = ({
               <React.Fragment key={lineIndex}>
                 <span className="leading-relaxed border-b-2 stext-xl">
                   {line}
+                  {/* <PoemTextAnimation>{line}</PoemTextAnimation> just
+                  keeping it here for refernece purposes */}
                 </span>
                 <br />
               </React.Fragment>

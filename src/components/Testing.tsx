@@ -5,7 +5,7 @@ import v1LMob from "../assets/icons/bg-pattern-intro-left-mobile.svg";
 import v1LDesk from "../assets/icons/bg-pattern-intro-left-desktop.svg";
 import v1RMob from "../assets/icons/bg-pattern-intro-right-mobile.svg";
 import v1RDesk from "../assets/icons/bg-pattern-intro-right-desktop.svg";
-import WritingAnimation from "./WritingAnimation";
+import WritingAnimation from "../animations/WritingAnimation";
 
 const Testing = () => {
   return (
