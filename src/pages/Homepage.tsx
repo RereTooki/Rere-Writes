@@ -15,10 +15,10 @@ const Homepage = () => {
       <div className="">
         <Intro />
       </div>{" "}
-      <div className="">
+      {/* <div className="">
         <Testing />
-      </div>
-      <div className="">
+      </div> */}
+      <div className="scroll scrollModal">
         <Projects />
       </div>{" "}
       <div className="">

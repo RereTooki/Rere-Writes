@@ -30,10 +30,8 @@ const PoemCard: React.FC<PoemCardProps> = ({
           >
             {verse.split("\n").map((line, lineIndex) => (
               <React.Fragment key={lineIndex}>
-                <span className="leading-relaxed border-b-2 stext-xl">
+                <span className="leading-relaxed sborder-2 stext-xl w3-animate-right ">
                   {line}
-                  {/* <PoemTextAnimation>{line}</PoemTextAnimation> just
-                  keeping it here for refernece purposes */}
                 </span>
                 <br />
               </React.Fragment>

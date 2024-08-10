@@ -5,6 +5,7 @@ import logo from "../assets/images/logo2.png";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import WritingAnimation from "../animations/WritingAnimation";
 
 const NavigationBar = () => {
   const [navIsVisible, setNavIsVisible] = useState(false);
@@ -26,7 +27,7 @@ const NavigationBar = () => {
             </NavLink>
           </div>
           <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreen decoration-double font-bold text-xl whitespace-nowraps bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] relative underlinegradients">
-            RERE WRITES
+            <WritingAnimation text="RERE WRITES" />
           </h1>
         </div>
 
@@ -76,16 +77,24 @@ const NavigationBar = () => {
         <div className="vsm:hidden lg:flex flex-row justify-between  w-[50vw] max-w-[384px]">
           {" "}
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <WritingAnimation text="Home" />
+            </Link>
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
-            <Link to="/about">About Me</Link>
+            <Link to="/about">
+              <WritingAnimation text="About Me" />
+            </Link>
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
-            <Link to="/Poems">Poems</Link>
+            <Link to="/Poems">
+              <WritingAnimation text="Poems" />
+            </Link>
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
-            <Link to="/contactUs">Contact Us</Link>
+            <Link to="/contactUs">
+              <WritingAnimation text="Contact Us" />
+            </Link>
           </div>
         </div>
       </div>

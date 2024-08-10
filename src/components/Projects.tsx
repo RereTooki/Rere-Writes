@@ -96,9 +96,15 @@ const Projects = () => {
     <>
       <div className=" mb-8 exoFont projectsGrad">
         <div className="w3-container pb-[48px] mx-[3vw]  " id="projects">
-          <h3 className="text-2xl gradient-border-bottom">Poems</h3>
+          <h3
+            className="text-2xl gradient-border-bottom"
+            data-aos="zoom-out"
+            data-aos-duration="700"
+          >
+            Poems
+          </h3>
         </div>
-        <div className="w3-row-padding mx-[3vw] ">
+        <div className="w3-row-padding mx-[3vw]">
           {projects.slice(0, 4).map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
