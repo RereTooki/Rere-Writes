@@ -6,6 +6,7 @@ import v1LDesk from "../assets/icons/bg-pattern-intro-left-desktop.svg";
 import v1RMob from "../assets/icons/bg-pattern-intro-right-mobile.svg";
 import v1RDesk from "../assets/icons/bg-pattern-intro-right-desktop.svg";
 import WritingAnimation from "../animations/WritingAnimation";
+import WritingAnimationDelay from "../animations/WritingAnimationDelay";
 import LogoAnimation from "../animations/LogoAnimation";
 
 const Intro = () => {
@@ -41,19 +42,40 @@ const Intro = () => {
             />
           </picture>
         </div>
-        <div className="flex flex-col items-center justify-center h-full gap-[10px] ">
-          <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
-            <picture className="">
-              <source className="" media="(min-width: 565px)" srcSet={logo} />
-              <img
-                src={logo}
-                alt="Rere Writes Logo"
-                className="w-full h-full object-cover"
-              />
-            </picture>
+        <div className="flex flex-col tab:flex-row items-center tab:justify-around justify-center h-full sborder-4 border-black">
+          <div className="flex flex-col items-center justify-center gap-[10px] border-4 border-[#7f7fd5] z-10">
+            <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
+              <picture className="">
+                <source className="" media="(min-width: 565px)" srcSet={logo} />
+                <img
+                  src={logo}
+                  alt="Rere Writes Logo"
+                  className="w-full h-full object-cover"
+                />
+              </picture>
+            </div>
+            <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
+              <WritingAnimation text="RERE WRITES" />
+              <div className="text-lg tab:text-xl tracking-widest nxl:text-2xl text-center mt-[8px]">
+                <WritingAnimationDelay text="stories untold ✍" />
+              </div>
+            </div>
           </div>
-          <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros">
-            <WritingAnimation text="RERE WRITES" />
+          <div className="hidden tab:block border-4 border-black z-10 masx-w-[30vw] tab:h-[270px]s  nxl:h-[321px]s tab:w-[270px]  nxl:w-[321px] tab:text-lg tracking-wide nxl:text-xl whitespace-nowrap ">
+            {" "}
+            <div className="">
+              The words of{" "}
+              <a
+                href="https://www.linkedin.com/in/rerel-oluwa-tooki-b53396253/"
+                className="underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] meriendaFont bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] hover:bg-gradient-to-l font-bold"
+                target="_blank"
+              >
+                Rerel'Oluwa Tooki
+              </a>
+            </div>
+            <div>Cracked open, it faces the </div>
+            <div>It could be fried or</div>
+            <div>Or even poached, but never</div>
           </div>
         </div>
       </div>

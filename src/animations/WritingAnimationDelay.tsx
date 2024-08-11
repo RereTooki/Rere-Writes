@@ -1,17 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-interface WritingAnimationProps {
+interface WritingAnimationDelayProps {
   text: string;
 }
-const var2 = 5;
-const WritingAnimation: React.FC<WritingAnimationProps> = ({ text }) => {
+
+const WritingAnimationDelay: React.FC<WritingAnimationDelayProps> = ({
+  text,
+}) => {
   const container = {
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.25,
+        delayChildren: 2.75, // This will delay the animation of children by 5 seconds
+        staggerChildren: 0.15,
       },
     },
   };
@@ -35,4 +38,4 @@ const WritingAnimation: React.FC<WritingAnimationProps> = ({ text }) => {
   );
 };
 
-export default WritingAnimation;
+export default WritingAnimationDelay;
