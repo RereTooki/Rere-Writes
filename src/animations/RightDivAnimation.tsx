@@ -30,7 +30,7 @@ const RightDivAnimation: React.FC<RightDivAnimationProps> = ({ children }) => {
       y: "0",
       translateX: "0%",
       transition: {
-        delay: 3,
+        delay: 7,
         duration: 3,
         type: "spring",
       },

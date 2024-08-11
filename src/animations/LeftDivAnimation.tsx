@@ -8,13 +8,13 @@ interface LeftDivAnimationProps {
 }
 const LeftDivAnimation: React.FC<LeftDivAnimationProps> = ({ children }) => {
   const container = {
-    initial: { x: "40vw", y: "5vh", translateX: "-50%" },
+    initial: { x: "35vw", y: "5vh", translateX: "-50%" },
     animate: {
       x: "0",
       y: "0",
       translateX: "0%",
       transition: {
-        delay: 2,
+        delay: 6,
         duration: 3,
         type: "spring",
       },
