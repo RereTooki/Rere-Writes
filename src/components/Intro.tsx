@@ -47,9 +47,27 @@ const Intro = () => {
           </picture>
         </div>
         <div className="flex flex-col tab:flex-row items-center tab:justify-around justify-center h-full sborder-4 border-black">
+          <div className="flex flex-col items-center justify-center gap-[10px] sborder-4 border-[#7f7fd5] z-10 tab:hidden">
+            <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
+              <picture className="">
+                <source className="" media="(min-width: 565px)" srcSet={logo} />
+                <img
+                  src={logo}
+                  alt="Rere Writes Logo"
+                  className="w-full h-full object-cover"
+                />
+              </picture>
+            </div>
+            <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
+              <WritingAnimation text="RERE WRITES" />
+              <div className="text-lg tab:text-xl tracking-widest nxl:text-2xl text-center mt-[8px]">
+                <WritingAnimationDelay text="stories untold ✍" />
+              </div>
+            </div>
+          </div>
           {/* Wrap the left div with LeftDivAnimation */}
           <LeftDivAnimation>
-            <div className="flex flex-col items-center justify-center gap-[10px] sborder-4 border-[#7f7fd5] z-10">
+            <div className="hidden tab:flex flex-col items-center justify-center gap-[10px] sborder-4 border-[#7f7fd5] z-10">
               <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
                 <picture className="">
                   <source
