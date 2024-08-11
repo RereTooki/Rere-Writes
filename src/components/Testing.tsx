@@ -36,13 +36,13 @@ const Testing = () => {
               Rerel'Oluwa Tooki
             </a>
           </h2>
-          <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
+          <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10 rounded-lg">
             <picture className="">
               <source className="" media="(min-width: 565px)" srcSet={mp3} />
               <img
                 src={mp3}
                 alt="Rere Writes Logo"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-[40px]"
               />
             </picture>
           </div>
