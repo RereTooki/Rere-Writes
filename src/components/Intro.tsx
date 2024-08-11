@@ -49,7 +49,7 @@ const Intro = () => {
         <div className="flex flex-col tab:flex-row items-center tab:justify-around justify-center h-full sborder-4 border-black">
           {/* Wrap the left div with LeftDivAnimation */}
           <LeftDivAnimation>
-            <div className="flex flex-col items-center justify-center gap-[10px] border-4 border-[#7f7fd5] z-10">
+            <div className="flex flex-col items-center justify-center gap-[10px] sborder-4 border-[#7f7fd5] z-10">
               <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
                 <picture className="">
                   <source
@@ -77,7 +77,7 @@ const Intro = () => {
           <RightDivAnimation>
             {" "}
             {/* Add an extra second for a smooth transition */}
-            <div className="hidden tab:block border-4 border-black z-10 masx-w-[30vw] tab:h-[270px]s  nxl:h-[321px]s tab:w-[270px]  nxl:w-[321px] tab:text-lg tracking-wide nxl:text-xl whitespace-nowrap ">
+            <div className="hidden tab:block sborder-4 border-black z-10 masx-w-[30vw] tab:h-[270px]s  nxl:h-[321px]s tab:w-[270px]  nxl:w-[321px] tab:text-lg tracking-wide nxl:text-xl whitespace-nowrap ">
               {" "}
               <div className="">
                 The words of{" "}

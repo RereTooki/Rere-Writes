@@ -8,23 +8,42 @@ interface RightDivAnimationProps {
 }
 
 const RightDivAnimation: React.FC<RightDivAnimationProps> = ({ children }) => {
+  // const container = {
+  //   initial: { opacity: 0, x: "50vw", y: "0", translateX: "-50%" },
+  //   animate: {
+  //     opacity: 1,
+  //     x: "100vw",
+  //     y: "0",
+  //     translateX: "-100%",
+  //     transition: {
+  //       delay: 3,
+  //       duration: 1,
+  //       type: "spring",
+  //     },
+  //   },
+  // };
   const container = {
-    initial: { opacity: 0, x: "20vw", y: "0", translateX: "-50%" },
+    initial: { opacity: 0, x: "0", y: "-10vh", translateX: "-50%" },
     animate: {
       opacity: 1,
-      x: "40vw",
+      x: "0",
       y: "0",
-      translateX: "-100%",
+      translateX: "0%",
       transition: {
-        delay: 4, // Delay for the left div to finish moving
-        duration: 4, // Duration of the shift to the right
+        delay: 3,
+        duration: 3,
         type: "spring",
       },
     },
   };
 
   return (
-    <motion.div initial="initial" animate="animate" variants={container}>
+    <motion.div
+      initial="initial"
+      animate="animate"
+      variants={container}
+      className="right-div-animation" // Add a class for static positioning
+    >
       {children}
     </motion.div>
   );

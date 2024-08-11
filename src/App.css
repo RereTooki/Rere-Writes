@@ -491,3 +491,9 @@ body {
   background-color: rgb(38, 49, 57); /* color of the scroll thumb  */
   border-color: rgb(234, 223, 232);
 }
+
+/* Add this to your CSS file */
+.left-div-animation,
+.right-div-animation {
+  position: static;
+}
