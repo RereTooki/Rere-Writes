@@ -15,14 +15,14 @@ const Homepage = () => {
       <div className="">
         <Intro />
       </div>{" "}
-      {/* <div className="">
-        <Testing />
-      </div> */}
       <div className="scroll scrollModal">
         <Projects />
       </div>{" "}
       <div className="">
         <ImageSlides />
+      </div>
+      <div className="">
+        <Testing />
       </div>
       <div className="h-[90vh]">Homepage</div>{" "}
       <div className="h-[90vh]">2Homepage</div>{" "}

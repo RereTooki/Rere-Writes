@@ -62,10 +62,10 @@ const NavigationBar = () => {
                 <Link to="/">Home</Link>
               </div>
               <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
-                <Link to="/about">About Me</Link>
+                <Link to="/about">Poems</Link>
               </div>
               <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
-                <Link to="/services">Poems</Link>
+                <Link to="/services">About Me</Link>
               </div>
               <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
                 <Link to="/contactUs">Contact Us</Link>
@@ -83,12 +83,12 @@ const NavigationBar = () => {
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
             <Link to="/about">
-              <WritingAnimation text="About Me" />
+              <WritingAnimation text="Poems" />
             </Link>
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
             <Link to="/Poems">
-              <WritingAnimation text="Poems" />
+              <WritingAnimation text="About Me" />
             </Link>
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">

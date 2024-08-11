@@ -10,27 +10,25 @@ import LeftDivAnimation from "../animations/LeftDivAnimation";
 import RightDivAnimation from "../animations/RightDivAnimation";
 
 const Testing = () => {
-  // Calculate the total delay for the left div based on the WritingAnimationDelay
-  const leftDivDelay = 2; // Total delay for 'stories untold' to finish
-
   return (
     <>
-      <div className="border-4s mb-10 h-[100vh] introGrad exoFont select-none w3-animate-opacityIntro pt-[15vh] border-4 border-black p-2 flex justify-evenly items-center">
-        {/* Wrap the left div with LeftDivAnimation */}
-        <LeftDivAnimation>
-          <div className="border-2 border-black h-[20vh] p-10">
-            rere div 1
-            <WritingAnimation text="Hello, world!" />
-          </div>{" "}
-        </LeftDivAnimation>
-        {/* Wrap the right div with RightDivAnimation */}
-        {/* We'll initially hide the right div using opacity and then show it after the left div has moved */}
-        <RightDivAnimation>
-          <div className="border-2 border-black h-[20vh] p-10">
-            rere div 2
-            <WritingAnimation text="Wagwan!" />
-          </div>
-        </RightDivAnimation>
+      <div className="border-4 mb-10 h-[100vh] introGrads aboutMeGrad exoFont select-none w3-animate-opacityIntro pt-10 border-black flex flex-col justify-between items-centers px-[3vw]">
+        <div
+          className="w3-container pb-[48px] border-black border-4"
+          id="projects"
+        >
+          <h3
+            className="text-2xl gradient-border-bottom exoFont"
+            data-aos="zoom-out"
+            data-aos-duration="700"
+          >
+            <WritingAnimation text="About Me!" />
+          </h3>
+        </div>
+        <div className="border-2 border-black h-full sgradient-border px-[3vw]">
+          rere div 1
+          <WritingAnimation text="Hello, world!" />
+        </div>{" "}
       </div>
     </>
   );

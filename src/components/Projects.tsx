@@ -94,10 +94,10 @@ export const projects = [
 const Projects = () => {
   return (
     <>
-      <div className=" mb-8 exoFont projectsGrad">
+      <div className=" pb-8 exoFont projectsGrad">
         <div className="w3-container pb-[48px] mx-[3vw]  " id="projects">
           <h3
-            className="text-2xl gradient-border-bottom"
+            className="text-2xl gradient-border-bottom exoFont"
             data-aos="zoom-out"
             data-aos-duration="700"
           >
