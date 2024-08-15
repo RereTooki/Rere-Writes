@@ -10,7 +10,7 @@ export default {
       tabImg: "601px",
       lg: "750px",
       nxl: "800px",
-      xl: "1110px",
+      xl: "1100px",
     },
 
     extend: {

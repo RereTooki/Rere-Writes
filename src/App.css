@@ -207,6 +207,7 @@
     rgba(49, 183, 194, 0.1) 74.79%,
     #fff
   );
+  backdrop-filter: blur(140px);
 }
 /**/
 @media (min-width: 566px) {
