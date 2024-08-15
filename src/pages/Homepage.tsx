@@ -5,6 +5,7 @@ import Intro from "../components/Intro";
 import Testing from "../components/Testing";
 import NavigationBar from "../components/NavigationBar";
 import Projects from "../components/Projects";
+import AboutMe from "../components/AboutMe";
 
 const Homepage = () => {
   return (
@@ -20,6 +21,9 @@ const Homepage = () => {
       </div>{" "}
       <div className="">
         <ImageSlides />
+      </div>
+      <div className="">
+        <AboutMe />
       </div>
       <div className="">
         <Testing />

@@ -68,7 +68,7 @@ const NavigationBar = () => {
                 <Link to="/services">About Me</Link>
               </div>
               <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
-                <Link to="/contactUs">Contact Us</Link>
+                <Link to="/contactUs">Contact Me</Link>
               </div>
             </div>
           )}{" "}
@@ -93,7 +93,7 @@ const NavigationBar = () => {
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
             <Link to="/contactUs">
-              <WritingAnimation text="Contact Us" />
+              <WritingAnimation text="Contact Me" />
             </Link>
           </div>
         </div>
