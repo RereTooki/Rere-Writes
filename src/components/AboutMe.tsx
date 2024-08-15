@@ -58,7 +58,11 @@ const AboutMe = () => {
               </picture>
             </div>
           </div>
-          <div className="gradient-border border-black flex flex-col items-center justify-center p-4">
+          <div
+            className="gradient-border border-black flex flex-col items-center justify-center p-4"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <p className="text-center">
               CompTIA Certified Cybersecurity Engineer || Frontend Engineer (Web
               Development) || Certified Ethical Hacker || Certified Microsoft
