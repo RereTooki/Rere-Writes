@@ -6,14 +6,14 @@ import mp3 from "../assets/images/MyPortrait.png";
 const AboutMe = () => {
   return (
     <>
-      <div className="sborder-4 pb-10 introGrads aboutMeGrad exoFont select-none w3-animate-opacityIntro pt-10 border-black flex flex-col justify-between items-centers px-[3vw] overflow-x-hidden ">
+      <div className="sborder-4 py-10 aboutMeGrad exoFont select-none w3-animate-opacityIntro border-black flex flex-col justify-between items-centers px-[3vw] overflow-x-hidden skewedR">
         <div
           className="w3-containers pb-[48px] border-black sborder-4 "
           id="projects"
         >
           <h3
-            className="text-2xl gradient-border-bottom exoFont"
-            data-aos="zoom-out"
+            className="text-2xl gradient-border-bottom exoFont pb-[4px]"
+            data-aos="zoom-in"
             data-aos-duration="700"
           >
             <WritingAnimation text="About Me!" />

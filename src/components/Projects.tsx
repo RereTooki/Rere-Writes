@@ -97,8 +97,8 @@ const Projects = () => {
       <div className=" pb-8 exoFont projectsGrad">
         <div className="w3-container pb-[48px] mx-[3vw]  " id="projects">
           <h3
-            className="text-2xl gradient-border-bottom exoFont"
-            data-aos="zoom-out"
+            className="text-2xl gradient-border-bottom exoFont pb-[4px]"
+            data-aos="zoom-in"
             data-aos-duration="700"
           >
             Poems

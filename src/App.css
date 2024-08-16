@@ -147,11 +147,12 @@
 
 .introGrad {
   background: radial-gradient(
-    157.2% 114.74% at 54.01% 114.67%,
-    #ffd7e7 5.59%,
-    #e9ebfb 44.79%,
-    #fff
-  );
+      157.2% 114.74% at 54.01% 114.67%,
+      rgba(255, 215, 231, 0.5) 5.59%,
+      rgba(233, 235, 251, 0.5) 44.79%,
+      #fff
+    ),
+    url(./assets/icons/bgDot.svg);
 }
 /*Poem BGs*/
 .poemBG {
@@ -202,11 +203,12 @@
 }
 .aboutMeGrad {
   background: radial-gradient(
-    186.08% 130.76% at 92.25% 123.75%,
-    #eeeffb 20.59%,
-    rgba(49, 183, 194, 0.1) 74.79%,
-    #fff
-  );
+      186.08% 130.76% at 92.25% 123.75%,
+      #eeeffb 20.59%,
+      rgba(49, 183, 194, 0.1) 74.79%,
+      #fff
+    ),
+    url(./assets/icons/bgDot.svg);
   backdrop-filter: blur(140px);
 }
 /**/
@@ -214,11 +216,30 @@
   /*Tablets and above*/
   .aboutMeGrad {
     background: radial-gradient(
-      186.08% 130.76% at 92.25% 123.75%,
-      rgba(49, 183, 194, 0.1) 20.59%,
-      rgba(127, 127, 213, 0.2) 74.79%,
-      #fff
-    );
+        186.08% 130.76% at 92.25% 123.75%,
+        rgba(49, 183, 194, 0.1) 20.59%,
+        rgba(127, 127, 213, 0.2) 74.79%,
+        #fff
+      ),
+      url(./assets/icons/bgDot.svg);
+  }
+}
+
+.contactMeGrad {
+  background-image: url("./assets/icons/bgGrad.svg");
+  background-size: 100vw 100vh;
+}
+/**/
+@media (min-width: 566px) {
+  /*Tablets and above*/
+  .contactMeGrad {
+    background: radial-gradient(
+        186.08% 130.76% at 92.25% 123.75%,
+        rgba(49, 183, 194, 0.1) 20.59%,
+        rgba(127, 127, 213, 0.2) 74.79%,
+        #fff
+      ),
+      url(./assets/icons/bgDot.svg);
   }
 }
 
@@ -517,4 +538,12 @@ body {
 .left-div-animation,
 .right-div-animation {
   position: static;
+}
+
+.skewedR {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+}
+
+.skewedL {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
