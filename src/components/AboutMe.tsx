@@ -6,7 +6,7 @@ import mp3 from "../assets/images/MyPortrait.png";
 const AboutMe = () => {
   return (
     <>
-      <div className="sborder-4 py-10 aboutMeGrad exoFont select-none w3-animate-opacityIntro border-black flex flex-col justify-between items-centers px-[3vw] overflow-x-hidden skewedR">
+      <div className="sborder-4 py-10 aboutMeGrad exoFont select-none w3-animate-opacityIntro border-black flex flex-col justify-between items-centers px-[3vw] overflow-x-hidden skewedLR">
         <div
           className="w3-containers pb-[48px] border-black sborder-4 "
           id="projects"

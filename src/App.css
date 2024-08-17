@@ -547,3 +547,24 @@ body {
 .skewedL {
   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
+
+.skewedRN {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+}
+
+@media (min-width: 565px) {
+  .skewedRN {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+    clip-path: none;
+  }
+}
+
+.skewedLR {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+@media (min-width: 565px) {
+  .skewedLR {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+  }
+}
