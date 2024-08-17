@@ -23,7 +23,7 @@ const Footer = () => {
   };
   return (
     <>
-      <div className=" bg-very-dark-black-blues items-center flex flex-col ">
+      <div className=" bg-very-dark-black-blues items-center flex flex-col w-[100vw] overflow-hidden">
         <div className=" flex flex-col tab:flex-row justify-around tab:justify-evenly items-center tab:items-start py-[80px] tab:py-[70px] gap-[40px] tab:gap-[1em]  px-[20vw] text-center tab:px-0 flex-wrap content-center tab:w-[100vw]">
           <div
             className="tab:self-center w-auto h-auto max-w-[300px] tab:max-w-[200px]"
