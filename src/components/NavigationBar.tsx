@@ -12,7 +12,7 @@ const NavigationBar = () => {
 
   return (
     <>
-      <div className="h-[25vw] md:h-[70px] w-[100vw] fixed flex flex-row justify-between items-center bg-white/10 backdrop-blur-[4px] z-20 shadow-md md:shadow-lg px-[4vw] nxl:pl-[58px] nxl:pr-[34px] w3-animate-opacityIntro z-30">
+      <div className="h-[25vw] md:h-[70px] w-[100vw] fixed flex flex-row justify-between items-center bg-white/10 backdrop-blur-[4px] z-20 shadow-md md:shadow-lg px-[4vw] nxl:pl-[58px] nxl:pr-[34px] w3-animate-opacityIntro z-50">
         <div className="flex tab:justify-between gap-[20px] w-[62vw] md:w-[52vw] lg:w-auto">
           <div className="w-[49px] h-[49px] sborder-2 borsder-2 border-clrtransparentgreen rounded-md flex flex-col items-center justify-center">
             <NavLink to="/" className="">
@@ -62,13 +62,13 @@ const NavigationBar = () => {
                 <Link to="/">Home</Link>
               </div>
               <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
-                <Link to="/about">Poems</Link>
+                <Link to="/poems">Poems</Link>
               </div>
               <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
-                <Link to="/services">About Me</Link>
+                <Link to="/aboutMe">About Me</Link>
               </div>
               <div className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom">
-                <Link to="/contactUs">Contact Me</Link>
+                <Link to="/contactMe">Contact Me</Link>
               </div>
             </div>
           )}{" "}
@@ -82,17 +82,17 @@ const NavigationBar = () => {
             </Link>
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
-            <Link to="/about">
+            <Link to="/poems">
               <WritingAnimation text="Poems" />
             </Link>
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
-            <Link to="/Poems">
+            <Link to="/aboutMe">
               <WritingAnimation text="About Me" />
             </Link>
           </div>
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
-            <Link to="/contactUs">
+            <Link to="/contactMe">
               <WritingAnimation text="Contact Me" />
             </Link>
           </div>
