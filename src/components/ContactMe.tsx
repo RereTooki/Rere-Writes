@@ -6,6 +6,8 @@ import v1LMob from "../assets/icons/bg-pattern-intro-left-mobile.svg";
 import v1LDesk from "../assets/icons/bg-pattern-intro-left-desktop.svg";
 import v1RMob from "../assets/icons/bg-pattern-intro-right-mobile.svg";
 import v1RDesk from "../assets/icons/bg-pattern-intro-right-desktop.svg";
+import undTop from "../assets/icons/angry-underline.svg";
+import undBot from "../assets/icons/double-underline.svg";
 
 const ContactMe = () => {
   // State variables to store user input
@@ -118,8 +120,8 @@ const ContactMe = () => {
           <div
             className="w3-containers pb-[48px] border-black sborder-4 "
             id="projects"
-            data-aoss="zoom-in"
-            data-aoss-duration="1500"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
           >
             <h3 className="text-2xl gradient-border-bottom exoFont pb-[4px]">
               Contact Me!
@@ -128,22 +130,33 @@ const ContactMe = () => {
           <div className="sborder-4">
             <div className="bg-clrtransparentgreen/60s sbg-gradient-to-r from-clrtransparentgreen/50 via-clrtransparentgreen/60  to-clrtransparentgreen/70 flex flex-col justify-center items-center px-10 rounded-lg w-full gap-10 xl:gap-8 sborder-4 border-black">
               <h4
-                className="text-clrgreen font-semibold text-4xl tab:text-6xl xl:text-[60px] exoFont sunderline underline-offset-4 sdecoration-wavy decoration-[2spx] sborder-4 text-center leading-[1.3]  z-40"
+                className="text-[#52647C] tab:text-[#626F89] font-semibold text-4xl tab:text-6xl xl:text-[60px] exoFont sunderline underline-offset-4 sdecoration-wavy decoration-[2spx] sborder-4 text-center leading-[1.3]  z-40"
                 data-aos="zoom-in"
                 data-aos-duration="2000"
               >
-                Ready To{" "}
+                Looking To{" "}
                 <span className="whitespace-nowrap underline-offset-[10px] ">
-                  <span className="italic underline  decoration-wavy tracking-widest decoration-[#96A9C6]">
-                    Collaborate
+                  <span className="italic sunderline decoration-dashed tracking-widest decoration-[#96A9C6]">
+                    Collaborate ?
                   </span>{" "}
-                  <span className="italics underline decoration-wavy tracking-wider decoration-[#96A9C6]">
-                    ?
-                  </span>{" "}
+                  <div className="border- relativse">
+                    <picture
+                      className=""
+                      data-aos="zoom-in-"
+                      data-aos-duration="2500"
+                    >
+                      <source
+                        className=""
+                        media="(min-width: 565px)"
+                        srcSet={undBot}
+                      />
+                      <img src={undTop} alt="" className="" />
+                    </picture>
+                  </div>
                 </span>
               </h4>
               <div
-                className="w-[80vw] tab:w-[500px] h-[s400px] shadow-xl rounded-lg px-[4%] py-[4%] xl:p-[3%] border-[1px] border-[#4D4D4] tab:mt-[40px] xl:mt-[30px] bg-white z-20"
+                className="w-[80vw] tab:w-[500px] h-[s400px] shadow-xl rounded-lg px-[4%] py-[4%] xl:p-[3%] border-[1px] border-[#4D4D4] tab:mt-[10px] xl:mt-0 bg-white z-20"
                 data-aos="zoom-in"
                 data-aos-duration="2000"
               >
@@ -210,7 +223,7 @@ const ContactMe = () => {
                     <div className="sborder-2">
                       <button
                         type="submit"
-                        className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md bg-clrtransparentgreen/70 hover:bg-clrtransparentgreen/80 hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 shadow-xl text-[14px] tab:text-lg text-white"
+                        className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md bg-generalClr/90 hover:bg-generalClr hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 shadow-xl text-[14px] tab:text-lg text-white"
                       >
                         Send Message
                       </button>

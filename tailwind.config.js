@@ -17,6 +17,7 @@ export default {
       colors: {
         whites: "hsl(0, 0%, 100%)", //Added s at the end of every name to avoid clashes
         clrgreen: "#4D96A8",
+        generalClr: "#96A9C6",
         clrtransparentgreen: "rgb(77 150 168 / 0.8)",
         orange: "rgb(231 129 107)",
         rels: "linear-gradient(to right, #7F7FD5, #31B7C2)",
