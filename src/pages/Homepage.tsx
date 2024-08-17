@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useEffect } from "react";
 import "../App.css";
 import ImageSlides from "../components/ImageSlides";
 import Intro from "../components/Intro";
@@ -13,6 +14,9 @@ const Homepage = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
   const aboutMeRef = useRef<HTMLDivElement>(null);
   const contactMeRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
