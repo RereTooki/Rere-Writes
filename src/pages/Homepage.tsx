@@ -29,9 +29,9 @@ const Homepage = () => {
       <div className="">
         <ContactMe />
       </div>
-      <div className="">
+      {/* <div className="">
         <Testing />
-      </div>
+      </div> */}
       <div className="h-[90vh]">Homepage</div>{" "}
       <div className="h-[90vh]">2Homepage</div>{" "}
     </>
