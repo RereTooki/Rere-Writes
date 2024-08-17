@@ -1,39 +1,44 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../App.css";
 import ImageSlides from "../components/ImageSlides";
 import Intro from "../components/Intro";
-import Testing from "../components/Testing";
-import NavigationBar from "../components/NavigationBar";
 import Projects from "../components/Projects";
+import NavigationBar from "../components/NavigationBar";
 import AboutMe from "../components/AboutMe";
 import ContactMe from "../components/ContactMe";
 
 const Homepage = () => {
+  // Create refs for each section
+  const introRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const aboutMeRef = useRef<HTMLDivElement>(null);
+  const contactMeRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
       <div className="border-4s">
-        <NavigationBar />
+        <NavigationBar
+          introRef={introRef}
+          projectsRef={projectsRef}
+          aboutMeRef={aboutMeRef}
+          contactMeRef={contactMeRef}
+        />
       </div>{" "}
-      <div className="">
+      <div ref={introRef} className="">
         <Intro />
       </div>{" "}
-      <div className="scroll scrollModal">
+      <div ref={projectsRef} className="scroll scrollModal">
         <Projects />
       </div>{" "}
       <div className="">
         <ImageSlides />
       </div>
-      <div className="">
+      <div ref={aboutMeRef} className="">
         <AboutMe />
       </div>
-      <div className="">
+      <div ref={contactMeRef} className="">
         <ContactMe />
       </div>
-      {/* <div className="">
-        <Testing />
-      </div> */}
-      <div className="h-[90vh]">Homepage</div>{" "}
-      <div className="h-[90vh]">2Homepage</div>{" "}
     </>
   );
 };
