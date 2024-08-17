@@ -6,6 +6,7 @@ import Testing from "../components/Testing";
 import NavigationBar from "../components/NavigationBar";
 import Projects from "../components/Projects";
 import AboutMe from "../components/AboutMe";
+import ContactMe from "../components/ContactMe";
 
 const Homepage = () => {
   return (
@@ -24,6 +25,9 @@ const Homepage = () => {
       </div>
       <div className="">
         <AboutMe />
+      </div>
+      <div className="">
+        <ContactMe />
       </div>
       <div className="">
         <Testing />

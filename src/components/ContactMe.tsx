@@ -3,7 +3,7 @@ import "../App.css";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
-const Testing = () => {
+const ContactMe = () => {
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   // Use useEffect to focus on the input field when it becomes visible
@@ -104,17 +104,19 @@ const Testing = () => {
         <div className="sborder-4">
           <div className="bg-clrtransparentgreen/60s bg-gradient-to-r from-clrtransparentgreen/50 via-clrtransparentgreen/60  to-clrtransparentgreen/70 flex flex-col justify-center items-center p-10 rounded-lg w-full gap-6 xl:gap-0 sborder-4 border-black">
             <h4
-              className="text-white font-semibold text-4xl xl:text-6xl exoFont sunderline underline-offset-4 sdecoration-wavy decoration-[2spx] sborder-4 text-center xmd:whitespace-nowrap"
-              data-aos="fade-up"
+              className="text-white font-semibold text-4xl xl:text-6xl exoFont sunderline underline-offset-4 sdecoration-wavy decoration-[2spx] sborder-4 text-center leading-[1.3] "
+              data-aoss="fade-up"
               data-aos-duration="1500"
             >
               Ready To{" "}
-              <span className="italisc underline underline-offset-4 decoration-wavy tracking-wider">
-                Collaborate
-              </span>{" "}
-              <span className="italisc underline underline-offset-4 decoration-wavy tracking-wider">
-                ?
-              </span>{" "}
+              <span className="whitespace-nowrap">
+                <span className="italisc underline underline-offset-4 decoration-wavy tracking-wider">
+                  Collaborate
+                </span>{" "}
+                <span className="italisc underline underline-offset-4 decoration-wavy tracking-wider">
+                  ?
+                </span>{" "}
+              </span>
             </h4>
             <div
               className="w-[80vw] tab:w-[500px] h-[s400px] shadow-xl rounded-lg px-[4%] py-[4%] xl:p-[3%] border-[1px] border-[#4D4D4] tab:mt-[40px] xl:mt-[30px] bg-white"
@@ -201,4 +203,4 @@ const Testing = () => {
   );
 };
 
-export default Testing;
+export default ContactMe;
