@@ -314,6 +314,17 @@ body {
 .PISlides {
   display: none;
 }
+.hero {
+  background-image: linear-gradient(
+      90deg,
+      rgba(83, 83, 69, 0.26) 35%,
+      rgba(83, 83, 69, 0.2608368347338936) 100%
+    ),
+    url(./assets/images/shake.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
 
 /* Quote BGs*/
 
@@ -342,7 +353,7 @@ body {
       rgba(83, 83, 69, 0.0608368347338936) 100%
     ),
     url(./assets/images/poemBgs/poem1Bg.png);
-  background-size: 100vw 50vh;
+  background-size: 100vw 100vh;
   background-attachment: fixed;
 }
 @media (min-width: 375px) {

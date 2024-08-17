@@ -9,6 +9,7 @@ import AboutMe from "../components/AboutMe";
 import ContactMe from "../components/ContactMe";
 import Testing from "../components/Testing";
 import Footer from "../components/Footer";
+import Hero from "../components/Hero";
 
 const Homepage = () => {
   // Create refs for each section
@@ -42,7 +43,7 @@ const Homepage = () => {
         <ContactMe />
       </div>
       <div className="">
-        <Testing />
+        <Hero />
       </div>
       <div className="">
         <Footer />
