@@ -8,15 +8,6 @@ import v1RMob from "../assets/icons/bg-pattern-intro-right-mobile.svg";
 import v1RDesk from "../assets/icons/bg-pattern-intro-right-desktop.svg";
 
 const ContactMe = () => {
-  const inputRef = useRef<HTMLInputElement | null>(null);
-
-  // Use useEffect to focus on the input field when it becomes visible
-  useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, []);
-
   // State variables to store user input
   const [message, setMessage] = useState<string>("");
   const [name, setName] = useState<string>("");
@@ -143,7 +134,7 @@ const ContactMe = () => {
               >
                 Ready To{" "}
                 <span className="whitespace-nowrap underline-offset-[10px] ">
-                  <span className="italic underline  decoration-wavy tracking-wider decoration-[#96A9C6]">
+                  <span className="italic underline  decoration-wavy tracking-widest decoration-[#96A9C6]">
                     Collaborate
                   </span>{" "}
                   <span className="italics underline decoration-wavy tracking-wider decoration-[#96A9C6]">
@@ -170,7 +161,6 @@ const ContactMe = () => {
                       type="text"
                       autoComplete="name"
                       required
-                      ref={inputRef}
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-clrtransparentgreen focus:border-clrtransparentgreen focus:z-10 text-[14px]"

@@ -21,6 +21,7 @@ export default {
         orange: "rgb(231 129 107)",
         rels: "linear-gradient(to right, #7F7FD5, #31B7C2)",
         lightCyans: "hsl(193, 18%, 86%)",
+        "very-dark-black-blues": "hsl(240, 10%, 16%)",
         //Colours from my Results Component Project
         colorRed: "hsl(0, 100%, 67%)",
         colorOrange: "hsl(39, 100%, 56%)",

@@ -7,6 +7,8 @@ import Projects from "../components/Projects";
 import NavigationBar from "../components/NavigationBar";
 import AboutMe from "../components/AboutMe";
 import ContactMe from "../components/ContactMe";
+import Testing from "../components/Testing";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   // Create refs for each section
@@ -14,10 +16,6 @@ const Homepage = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
   const aboutMeRef = useRef<HTMLDivElement>(null);
   const contactMeRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <>
       <div className="border-4s">
@@ -42,6 +40,12 @@ const Homepage = () => {
       </div>
       <div ref={contactMeRef} className="">
         <ContactMe />
+      </div>
+      <div className="">
+        <Testing />
+      </div>
+      <div className="">
+        <Footer />
       </div>
     </>
   );
