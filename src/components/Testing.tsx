@@ -1,74 +1,97 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const Testing = () => {
+  const inputRef = useRef<HTMLInputElement | null>(null);
+
+  // Use useEffect to focus on the input field when it becomes visible
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
   // State variables to store user input
-  const [feedbackMessage, setFeedbackMessage] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState("");
 
   // State variable to handle error messages
   const [error, setError] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("Enter a valid email address");
+  const [nameError, setNameError] = useState("Insufficient name length");
+  const [messageError, setMessageError] = useState(
+    "Insufficient message length"
+  );
 
-  // Function to validate name and email
+  // Function to validate name, email and feedback messaf
   const validate = () => {
     let isValid = true;
 
     // Name validation
-    if (name.length < 2) {
-      setNameError("Name must be at least 2 characters long");
+    if (name.length < 3) {
+      setNameError("Insufficient name length");
       isValid = false;
     } else {
       setNameError("");
     }
 
     // Email validation
-    if (email.length < 3) {
-      setEmailError("Email Address must be at least 3 characters long");
+    if (email.length < 6) {
+      setEmailError("Enter a valid email address");
       isValid = false;
     } else {
       setEmailError("");
+    }
+
+    // Message validation
+    if (message.length < 6) {
+      setMessageError("Insufficient message length");
+      isValid = false;
+    } else {
+      setMessageError("");
     }
 
     return isValid;
   };
 
   // // Function to send feedback email
-  const sendFeedbackMessage = (e: any) => {
-    //   e.preventDefault();
-    //   if (feedbackMessage.trim() !== "") {
-    //     emailjs
-    //       .send(
-    //         "service_u4hp1mr",
-    //         "template_8hjpcrt",
-    //         {
-    //           from_name: "User",
-    //           to_name: "Your Name",
-    //           message: feedbackMessage,
-    //         },
-    //         "x5ittGCaJN71qzFuY"
-    //       )
-    //       .then(
-    //         (result) => {
-    //           console.log(result.text);
-    //           // Show alert that feedback has been sent
-    //           alert("Request sent!");
-    //           // Reset feedback message
-    //           setFeedbackMessage("");
-    //         },
-    //         (error) => {
-    //           console.log(error.text);
-    //           // Show alert for error
-    //           alert("Error sending feedback. Please try again later.");
-    //         }
-    //       );
-    //   } else {
-    //     // Show alert if feedback message is blank
-    //     alert("No message sent!");
-    //   }
+  const sendMessage = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (validate()) {
+      emailjs
+        .send(
+          "service_j8gc0xm",
+          "template_la9ky9b",
+          {
+            from_name: "User",
+            to_name: "Your Name",
+            user_name: name,
+            user_email: email,
+            message: message,
+          },
+          "x5ittGCaJN71qzFuY"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            // Show alert that feedback has been sent
+            alert("Message sent! You'll be contacted shortly!");
+            // Reset feedback message
+            setName("");
+            setEmail("");
+            setMessage("");
+          },
+          (error) => {
+            console.log(error.text);
+            // Show alert for error
+            alert("Error sending feedback. Please try again later.");
+          }
+        );
+    }
   };
 
   return (
@@ -87,17 +110,17 @@ const Testing = () => {
           </h3>
         </div>
         <div className="sborder-4">
-          <div className="bg-clrtransparentgreen/60 flex flex-col justify-center items-center p-10 rounded-lg w-full gap-6 sborder-4 border-black  ">
-            <h4 className="text-white font-semibold text-4xl exoFont underline underline-offset-4 sdecoration-wavy decoration-[2spx] border-4 text-center">
+          <div className="bg-clrtransparentgreen/60s bg-gradient-to-r from-clrtransparentgreen/50 via-clrtransparentgreen/60  to-clrtransparentgreen/70 flex flex-col justify-center items-center p-10 rounded-lg w-full gap-6 xl:gap-0 sborder-4 border-black">
+            <h4 className="text-white font-semibold text-4xl xl:text-6xl exoFont underline underline-offset-4 sdecoration-wavy decoration-[2spx] border-4 text-center">
               Ready To Collaborate?
             </h4>
             <div
-              className="w-[80vw] tab:w-[500px] h-[s400px] shadow-xl rounded-lg px-[4%] py-[4%] border-[1px] border-[#4D4D4] mt-[40px] bg-white"
+              className="w-[80vw] tab:w-[500px] h-[s400px] shadow-xl rounded-lg px-[4%] py-[4%] xl:p-[3%] border-[1px] border-[#4D4D4] tab:mt-[40px] xl:mt-[30px] bg-white"
               data-aoss="zoom-in-up"
               data-aoss-duration="1300"
             >
               <form
-                onSubmit={sendFeedbackMessage}
+                onSubmit={sendMessage}
                 className="flex flex-col sborder-2 border-black gap-[20px]"
               >
                 <div className="flex flex-col gap-2 sborder-2">
@@ -106,16 +129,17 @@ const Testing = () => {
                   </label>
                   <input
                     id="name"
-                    name="name"
+                    name="user_name"
                     type="text"
                     autoComplete="name"
                     required
+                    ref={inputRef}
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 text-[14px]"
-                    placeholder="Enter your full name"
+                    className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-clrtransparentgreen focus:border-clrtransparentgreen focus:z-10 text-[14px]"
+                    placeholder="Full Name"
                   />
-                  {nameError && (
+                  {name.length >= 1 && name.length < 3 && (
                     <p className="text-red-500 text-sm">{nameError}</p>
                   )}
                 </div>
@@ -125,34 +149,34 @@ const Testing = () => {
                   </label>
                   <input
                     id="email"
-                    name="email"
+                    name="user_email"
                     type="email"
                     autoComplete="email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 text-[14px]"
-                    placeholder="Enter your email address"
+                    className="w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-clrtransparentgreen focus:border-clrtransparentgreen focus:z-10 text-[14px]"
+                    placeholder="Email Address"
                   />
-                  {emailError && (
+                  {email.length >= 1 && email.length < 6 && (
                     <p className="text-red-500 text-sm">{emailError}</p>
                   )}
                 </div>
                 <div className="flex flex-col gap-2 sborder-2">
-                  <label htmlFor="feedbackMessage" className="text-[16px]">
+                  <label htmlFor="message" className="text-[16px]">
                     Got A Message?
                   </label>
                   <textarea
-                    id="feedbackMessage"
-                    name="feedbackMessage"
+                    id="message"
+                    name="user_message"
                     required
-                    value={feedbackMessage}
-                    onChange={(e) => setFeedbackMessage(e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 text-[14px]"
-                    placeholder="Enter your email address"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-clrtransparentgreen focus:border-clrtransparentgreen focus:z-10 text-[14px] h-[100px]"
+                    placeholder="Messsage"
                   />
-                  {emailError && (
-                    <p className="text-red-500 text-sm">{emailError}</p>
+                  {message.length >= 1 && message.length < 6 && (
+                    <p className="text-red-500 text-sm">{messageError}</p>
                   )}
                 </div>
 
@@ -160,7 +184,7 @@ const Testing = () => {
                   <div className="sborder-2">
                     <button
                       type="submit"
-                      className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md bg-clrtransparentgreen/50 hover:bg-clrtransparentgreen/60 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 shadow-xl text-[14px] tab:text-lg text-white"
+                      className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md bg-clrtransparentgreen/70 hover:bg-clrtransparentgreen/80 hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 shadow-xl text-[14px] tab:text-lg text-white"
                     >
                       Send Message
                     </button>
@@ -168,22 +192,6 @@ const Testing = () => {
                 </div>
               </form>
             </div>
-            {/* <div className=" text-light-cyans md:underline-offset-2 nxl:underline-offset-4 md:pb-[1.2vw] text-[2vw] nsm:text-[1.2vw] xl:text-[1vw] select-none">
-              <div className="flex flex-col md:flex-row gap-[10px] md:gap-auto">
-                <textarea
-                  placeholder="Feedback? Suggestions?"
-                  className="overflow-y-auto border border-gray-400 px-2 pt-[4px] w-[40vw] max-w-[330px] h-auto max-h-[25px] rounded-md text-black text-[10px]"
-                  value={feedbackMessage}
-                  name="message"
-                  onChange={(e) => setFeedbackMessage(e.target.value)}
-                />
-                <div className="self-end md:self-auto">
-                  <button className="ml-2 px-4 py-[2px] bg-black text-lightCyans h-full max-h-[25px] text-white rounded-sm md:rounded-md">
-                    Send
-                  </button>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
