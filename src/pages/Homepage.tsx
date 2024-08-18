@@ -19,34 +19,36 @@ const Homepage = () => {
   const contactMeRef = useRef<HTMLDivElement>(null);
   return (
     <>
-      <div className="border-4s">
-        <NavigationBar
-          introRef={introRef}
-          projectsRef={projectsRef}
-          aboutMeRef={aboutMeRef}
-          contactMeRef={contactMeRef}
-        />
-      </div>{" "}
-      <div ref={introRef} className="">
-        <Intro />
-      </div>{" "}
-      <div ref={projectsRef} className="scroll scrollModal">
-        <Projects />
-      </div>{" "}
-      <div className="">
-        <ImageSlides />
-      </div>
-      <div ref={aboutMeRef} className="">
-        <AboutMe />
-      </div>
-      <div ref={contactMeRef} className="">
-        <ContactMe />
-      </div>
-      <div className="">
-        <Hero />
-      </div>
-      <div className="">
-        <Footer />
+      <div className="overflow-x-hidden">
+        <div className="border-4s">
+          <NavigationBar
+            introRef={introRef}
+            projectsRef={projectsRef}
+            aboutMeRef={aboutMeRef}
+            contactMeRef={contactMeRef}
+          />
+        </div>{" "}
+        <div ref={introRef} className="">
+          <Intro />
+        </div>{" "}
+        <div ref={projectsRef} className="scroll scrollModal">
+          <Projects />
+        </div>{" "}
+        <div className="">
+          <ImageSlides />
+        </div>
+        <div ref={aboutMeRef} className="">
+          <AboutMe />
+        </div>
+        <div ref={contactMeRef} className="">
+          <ContactMe />
+        </div>
+        <div className="">
+          <Hero />
+        </div>
+        <div className="">
+          <Footer />
+        </div>
       </div>
     </>
   );
