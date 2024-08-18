@@ -6,7 +6,7 @@ interface CarouselProps {
   interval?: number;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ className, interval = 5000 }) => {
+const Carousel: React.FC<CarouselProps> = ({ className, interval = 2000 }) => {
   useEffect(() => {
     const getRandomIndex = (max: number) => {
       return Math.floor(Math.random() * max);

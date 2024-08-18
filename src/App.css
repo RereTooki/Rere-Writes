@@ -329,7 +329,7 @@ body {
   background-attachment: fixed;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 565px) {
   /*Mid-Mobile screens*/
   .hero {
     background-size: 200vw 100vh;
@@ -346,15 +346,15 @@ body {
     rgba(83, 83, 69, 0.2608368347338936) 100%
   );
   background-repeat: no-repeat;
-  background-size: auto 100vh;
+  background-size: 100vw 100vh;
   background-attachment: fixed;
 }
 
 @media (min-width: 640px) {
   /*Mid-Mobile screens*/
-  .quoteBG {
+  /* .quoteBG {
     background-size: 100vw 100vh;
-  }
+  } */
 }
 
 .quoteBGP1 {
@@ -409,9 +409,65 @@ body {
     ),
     url(./assets/images/3.jpg);
 }
+.quoteBG4 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(83, 83, 69, 0.56) 35%,
+      rgba(83, 83, 69, 0.5608368347338936) 100%
+    ),
+    url(./assets/images/4.jpg);
+}
+.quoteBG5 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(83, 83, 69, 0.56) 35%,
+      rgba(83, 83, 69, 0.5608368347338936) 100%
+    ),
+    url(./assets/images/5.jpg);
+}
+.quoteBG6 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(83, 83, 69, 0.56) 35%,
+      rgba(83, 83, 69, 0.5608368347338936) 100%
+    ),
+    url(./assets/images/6.jpg);
+}
+.quoteBG7 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(83, 83, 69, 0.56) 35%,
+      rgba(83, 83, 69, 0.5608368347338936) 100%
+    ),
+    url(./assets/images/7.jpg);
+}
+.quoteBG8 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(83, 83, 69, 0.56) 35%,
+      rgba(83, 83, 69, 0.5608368347338936) 100%
+    ),
+    url(./assets/images/8.jpg);
+}
+.quoteBG9 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(83, 83, 69, 0.56) 35%,
+      rgba(83, 83, 69, 0.5608368347338936) 100%
+    ),
+    url(./assets/images/9.jpg);
+}
+.quoteBG10 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(83, 83, 69, 0.56) 35%,
+      rgba(83, 83, 69, 0.5608368347338936) 100%
+    ),
+    url(./assets/images/10.jpg);
+}
 
 /* Intro */
-.quoteBGA {
+.UquoteBGA {
   background-image: linear-gradient(
       90deg,
       rgba(83, 83, 69, 0.56) 35%,
@@ -443,7 +499,7 @@ body {
     ),
     url(./assets/images/D.jpg);
 }
-.quoteBGE {
+.UquoteBGE {
   background-image: linear-gradient(
       90deg,
       rgba(83, 83, 69, 0.56) 35%,
