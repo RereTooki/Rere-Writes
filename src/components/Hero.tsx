@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div
         className="contactMeGrads sh-[100vh] sborder-2 border-black spy-10 exoFont select-none w3-animate-opacityIntro tab:px-[3vw] overflow-x-hiddens relative top-[50px] border-2s"
-        data-aos="fade-up"
+        data-aoss="fade-up"
         data-aos-duration="2000"
       >
         <div className="sborder-4">
