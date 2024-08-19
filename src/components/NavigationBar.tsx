@@ -39,15 +39,28 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
           <div className="w-[49px] h-[49px] sborder-2 borsder-2 border-clrtransparentgreen rounded-md flex flex-col items-center justify-center">
             <NavLink to="/" className="">
               <picture className="">
-                <source className="" media="(min-width: 565px)" srcSet={logo} />
+                <source
+                  className="dark:hidden"
+                  media="(min-width: 565px)"
+                  srcSet={logo}
+                />
+
                 <img
                   src={logo}
-                  alt="A dashboard icon"
+                  alt="Rere Writes Logo"
                   className="w-fit h-fit object-cover psl-[1px] pst-[1.5px] dark:hidden"
                 />
+              </picture>
+              <picture className="">
+                <source
+                  className="hidden dark:block"
+                  media="(min-width: 565px)"
+                  srcSet={logoDarkMode}
+                />
+
                 <img
                   src={logoDarkMode}
-                  alt="A dashboard icon"
+                  alt="Rere Writes Logo"
                   className="w-fit h-fit object-cover psl-[1px] pst-[1.5px] hidden dark:block"
                 />
               </picture>

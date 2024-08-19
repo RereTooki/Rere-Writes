@@ -97,7 +97,7 @@ const PoemImageSlides = () => {
 
   const renderSlide = (id: number, quote: string, speaker: string) => (
     <div
-      className={`quoteBG quoteBG${id} PISlides h-[35vh] text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] px-[10vw] rounded-tr-[0px] srounded-bl-[40px] tab:rounded-bl-[60px] nxl:rounded-bl-[100px] w3-animate-opacitys drop-shadow-xl mb-6 mt-2`}
+      className={`quoteBG quoteBG${id} PISlides h-[35vh] text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] px-[10vw] rounded-tr-[0px] srounded-bl-[40px] tab:rounded-bl-[60px] nxl:rounded-bl-[100px] w3-animate-opacitys drop-shadow-xl mb-6 mt-2 dark:rounded-none`}
       key={id}
     >
       <div className="h-full flex flex-col items-center justify-center">
