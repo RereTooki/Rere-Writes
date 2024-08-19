@@ -78,18 +78,32 @@ const Intro = () => {
               <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
                 <picture className="">
                   <source
-                    className=""
+                    className="dark:hidden"
                     media="(min-width: 565px)"
                     srcSet={logo}
                   />
+
                   <img
                     src={logo}
                     alt="Rere Writes Logo"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover dark:hidden"
+                  />
+                </picture>
+                <picture className="">
+                  <source
+                    className="hidden dark:block"
+                    media="(min-width: 565px)"
+                    srcSet={logoDarkMode}
+                  />
+
+                  <img
+                    src={logoDarkMode}
+                    alt="Rere Writes Logo"
+                    className="w-full h-full object-cover hidden dark:block"
                   />
                 </picture>
               </div>
-              <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
+              <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent dark:text-white bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
                 <WritingAnimation text="RERE WRITES" />
                 <div className="text-lg tab:text-xl tracking-widest nxl:text-2xl text-center mt-[8px]">
                   <WritingAnimationDelay text="stories untold ✍" />
@@ -102,13 +116,13 @@ const Intro = () => {
           <RightDivAnimation>
             {" "}
             {/* Add an extra second for a smooth transition */}
-            <div className="hidden tab:block sborder-4 border-black z-10 masx-w-[30vw] tab:h-[270px]s  nxl:h-[321px]s tab:w-[270px]  nxl:w-[321px] tab:text-lg tracking-wide nxl:text-xl whitespace-nowrap ">
+            <div className="hidden tab:block sborder-4 border-black z-10 masx-w-[30vw] tab:h-[270px]s  nxl:h-[321px]s tab:w-[270px]  nxl:w-[321px] tab:text-lg tracking-wide nxl:text-xl whitespace-nowrap dark:text-white">
               {" "}
               <div className="">
                 The words of{" "}
                 <a
                   href="https://www.linkedin.com/in/rerel-oluwa-tooki-b53396253/"
-                  className="underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] meriendaFont bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] hover:bg-gradient-to-l font-bold"
+                  className="underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] meriendaFont bg-clip-text text-transparent dark:text-white bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] hover:bg-gradient-to-l font-bold"
                   target="_blank"
                 >
                   Rerel'Oluwa Tooki

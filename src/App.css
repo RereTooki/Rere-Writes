@@ -160,11 +160,18 @@
   .introGrad {
     background: radial-gradient(
         157.2% 114.74% at 54.01% 114.67%,
-        #ffc4dc 5.59%,
-        #c0c6f4 44.79%,
-        #666666
+        #dcc9bb 5.59%,
+        #d6bfaf 44.79%,
+        #666
       ),
       url(./assets/icons/bgDot.svg);
+  }
+}
+
+@media (prefers-color-scheme: dark) and (min-width: 565px) {
+  .introGrad {
+    background-image: url("./assets/images/grad1Dark.webp");
+    background-size: cover;
   }
 }
 /*Poem BGs*/
@@ -191,6 +198,12 @@
   }
   .poemBG-SBM {
     background-image: url(./assets/images/poemBgs/SBM-L2.jpg);
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 565px) {
+  .introGrad {
+    background-image: url("./assets/images/grad1Dark.webp");
+    background-size: cover;
   }
 }
 
