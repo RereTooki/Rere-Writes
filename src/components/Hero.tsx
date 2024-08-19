@@ -5,12 +5,12 @@ const Hero = () => {
   return (
     <>
       <div
-        className="contactMeGrads sh-[100vh] sborder-2 border-black spy-10 exoFont select-none w3-animate-opacityIntro tab:px-[3vw] overflow-x-hiddens relative top-[50px] border-2s"
+        className="contactMeGrads sh-[100vh] sborder-2 border-black spy-10 exoFont select-none w3-animate-opacityIntro tab:px-[3vw] overflow-x-hiddens relative top-[50px] border-2s dark:static dark:px-0  "
         data-aoss="fade-up"
         data-aos-duration="2000"
       >
         <div className="sborder-4">
-          <div className="bg-generalClrs flex flex-col tab:flex-row justify-center tab:justify-between items-center p-10 rounded-lg w-full gap-6 xl:gap-0 tab:border-4 border-very-dark-black-blues text-white hero ">
+          <div className="bg-generalClrs flex flex-col tab:flex-row justify-center tab:justify-between items-center p-10 rounded-lg w-full gap-6 xl:gap-0 tab:border-4 border-very-dark-black-blues text-white hero dark:rounded-none dark:border-0">
             <div className="flex flex-col gap-8 sborder-2">
               <h4
                 className="text-white font-semibold text-4xl xl:text-6xl exoFont sunderline underline-offset-4 sdecoration-wavy decoration-[2spx] sborder-4 tesxt-center xmd:whitespace-nowrap"

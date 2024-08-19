@@ -79,27 +79,27 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
             )}
           </button>
           {navIsVisible && (
-            <div className="w3-animate-rightNav bg-white lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] max-w-[250px] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] font-overpass flex flex-col gap-[5px]">
+            <div className="w3-animate-rightNav bg-white dark:bg-[#888] lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] max-w-[250px] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] font-overpass flex flex-col gap-[5px]">
               <div
-                className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
+                className="w3-animate-rightNav dark:text-white hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
                 onClick={() => scrollToSection(introRef)}
               >
                 Home
               </div>
               <div
-                className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
+                className="w3-animate-rightNav dark:text-white hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
                 onClick={() => scrollToSection(projectsRef)}
               >
                 Poems
               </div>
               <div
-                className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
+                className="w3-animate-rightNav dark:text-white hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
                 onClick={() => scrollToSection(aboutMeRef)}
               >
                 About Me
               </div>
               <div
-                className="w3-animate-rightNav hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
+                className="w3-animate-rightNav dark:text-white hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
                 onClick={() => scrollToSection(contactMeRef)}
               >
                 Contact Me
@@ -109,22 +109,22 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
         </div>
 
         <div className="vsm:hidden lg:flex flex-row justify-between  w-[50vw] max-w-[384px]">
-          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
+          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1] dark:text-white">
             <span onClick={() => scrollToSection(introRef)}>
               <WritingAnimation text="Home" />
             </span>
           </div>
-          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
+          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1] dark:text-white">
             <span onClick={() => scrollToSection(projectsRef)}>
               <WritingAnimation text="Poems" />
             </span>
           </div>
-          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
+          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1] dark:text-white">
             <span onClick={() => scrollToSection(aboutMeRef)}>
               <WritingAnimation text="About Me" />
             </span>
           </div>
-          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1]">
+          <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1] dark:text-white">
             <span onClick={() => scrollToSection(contactMeRef)}>
               <WritingAnimation text="Contact Me" />
             </span>

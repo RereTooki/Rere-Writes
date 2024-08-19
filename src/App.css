@@ -158,22 +158,11 @@
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
   .introGrad {
-    background: radial-gradient(
-        157.2% 114.74% at 54.01% 114.67%,
-        #dcc9bb 5.59%,
-        #d6bfaf 44.79%,
-        #666
-      ),
-      url(./assets/icons/bgDot.svg);
-  }
-}
-
-@media (prefers-color-scheme: dark) and (min-width: 565px) {
-  .introGrad {
-    background-image: url("./assets/images/grad1Dark.webp");
+    background-image: url("./assets/images/introDark.jpg");
     background-size: cover;
   }
 }
+
 /*Poem BGs*/
 .poemBG {
   background-repeat: no-repeat;
@@ -215,6 +204,13 @@
     #fff
   );
 }
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .projectsGrad {
+    background-image: url("./assets/images/projectsDark.jpg");
+    background-size: cover;
+  }
+}
 
 @media (min-width: 566px) {
   /*Tablets and above*/
@@ -227,6 +223,13 @@
     );
   }
 }
+@media (prefers-color-scheme: dark) and (min-width: 565px) {
+  .projectsGrad {
+    background-image: url("./assets/images/projectsDarkL.jpg");
+    background-size: cover;
+  }
+}
+
 .aboutMeGrad {
   background: radial-gradient(
       186.08% 130.76% at 92.25% 123.75%,
@@ -237,6 +240,13 @@
     url(./assets/icons/bgDot.svg);
   backdrop-filter: blur(140px);
 }
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .aboutMeGrad {
+    background-image: url("./assets/images/aboutMeDark.jpg");
+    background-size: cover;
+  }
+}
 /**/
 @media (min-width: 566px) {
   /*Tablets and above*/
@@ -246,6 +256,16 @@
         rgba(49, 183, 194, 0.1) 20.59%,
         rgba(127, 127, 213, 0.2) 74.79%,
         #fff
+      ),
+      url(./assets/icons/bgDot.svg);
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 565px) {
+  .aboutMeGrad {
+    background: linear-gradient(
+        135deg,
+        rgba(164, 177, 178, 0.6) 50%,
+        rgba(113, 112, 210, 0.6) 100%
       ),
       url(./assets/icons/bgDot.svg);
   }
@@ -656,6 +676,12 @@ body {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 
+@media (prefers-color-scheme: dark) {
+  .skewedRN {
+    clip-path: none;
+  }
+}
+
 @media (min-width: 565px) {
   .skewedRN {
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
@@ -666,9 +692,20 @@ body {
 .skewedLR {
   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
+@media (prefers-color-scheme: dark) {
+  .skewedLR {
+    clip-path: none;
+  }
+}
 
 @media (min-width: 565px) {
   .skewedLR {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+  }
+}
+
+@media (prefers-color-scheme: dark) and (min-width: 565px) {
+  .skewedLR {
+    clip-path: none;
   }
 }
