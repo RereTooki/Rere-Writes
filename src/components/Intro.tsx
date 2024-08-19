@@ -16,7 +16,7 @@ const Intro = () => {
   const leftDivDelay = 12; // Total delay for 'stories untold' to finish
   return (
     <>
-      <div className="border-4s mb-10 h-[100vh] introGrad exoFont select-none w3-animate-opacityIntro">
+      <div className="border-4 border-black dar:border-white mb-10 h-[100vh] introGrad exoFont select-none w3-animate-opacityIntro">
         {" "}
         <div className="absolute borders-2 border-black w-fit translate-y-[25vw] md:translate-y-[70px] tab:translate-y-[78vh] tab:scale-[1.5] w3-animate-leftVec">
           <picture

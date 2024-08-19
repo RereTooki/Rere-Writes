@@ -26,14 +26,14 @@ const PoemCard: React.FC<PoemCardProps> = ({
         {verses.map((verse, index) => (
           <p
             key={index}
-            className={`text-lg tab:text-lg text-center tab:text-left tracking-wide leading-nones whitespace-nowraps ${bodyFont}`}
+            className={`text-lg tab:text-lg text-center tab:text-left tracking-wide leading-10 whitespace-nowraps sborder-2 ${bodyFont}`}
           >
             {verse.split("\n").map((line, lineIndex) => (
               <React.Fragment key={lineIndex}>
-                <span className="leading-relaxed sborder-2 stext-xl w3-animate-right ">
+                <span className="leading-relaxed sborder-2 sunderline stext-xl w3-animate-right ">
                   {line}
                 </span>
-                <br />
+                <hr className="h-[1px] decoration-wavy  smy-8 sbg-gray-200 border-0 dark:bg-gray-700" />
               </React.Fragment>
             ))}
           </p>
