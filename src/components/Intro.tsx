@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import logo from "../assets/images/logo2.png";
+import logoDarkMode from "../assets/images/image.png";
 import v1LMob from "../assets/icons/bg-pattern-intro-left-mobile.svg";
 import v1LDesk from "../assets/icons/bg-pattern-intro-left-desktop.svg";
 import v1RMob from "../assets/icons/bg-pattern-intro-right-mobile.svg";
@@ -16,7 +17,7 @@ const Intro = () => {
   const leftDivDelay = 12; // Total delay for 'stories untold' to finish
   return (
     <>
-      <div className="border-8 border-black dark:border-white mb-10 h-[100vh] introGrad exoFont select-none w3-animate-opacityIntro">
+      <div className="sborder-8 border-black dark:border-white mb-10 h-[100vh] introGrad exoFont select-none w3-animate-opacityIntro">
         {" "}
         <div className="absolute borders-2 border-black w-fit translate-y-[25vw] md:translate-y-[70px] tab:translate-y-[78vh] tab:scale-[1.5] w3-animate-leftVec">
           <picture
@@ -48,7 +49,7 @@ const Intro = () => {
         </div>
         <div className="flex flex-col tab:flex-row items-center tab:justify-around justify-center h-full sborder-4 border-black">
           <div className="flex flex-col items-center justify-center gap-[10px] sborder-4 border-[#7f7fd5] z-10 tab:hidden">
-            <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
+            {/* <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
               <picture className="">
                 <source className="" media="(min-width: 565px)" srcSet={logo} />
                 <img
@@ -57,8 +58,24 @@ const Intro = () => {
                   className="w-full h-full object-cover"
                 />
               </picture>
+            </div> */}
+            <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px] nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
+              <picture className="">
+                <source className="" media="(min-width: 565px)" srcSet={logo} />
+                <img
+                  src={logo} // Fallback for light mode
+                  alt="Rere Writes Logo"
+                  className="w-full h-full object-cover dark:hidden"
+                />
+                <img
+                  src={logoDarkMode} // Image for dark mode
+                  alt="Rere Writes Logo in Dark Mode"
+                  className="w-full h-full object-cover hidden dark:block"
+                />
+              </picture>
             </div>
-            <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
+
+            <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent dark:text-white bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
               <WritingAnimation text="RERE WRITES" />
               <div className="text-lg tab:text-xl tracking-widest nxl:text-2xl text-center mt-[8px]">
                 <WritingAnimationDelay text="stories untold ✍" />

@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import navIcon from "../assets/icons/navIcon2.svg";
 import logo from "../assets/images/logo2.png";
+import logoDarkMode from "../assets/images/image.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
@@ -42,12 +43,17 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
                 <img
                   src={logo}
                   alt="A dashboard icon"
-                  className="w-fit h-fit object-cover psl-[1px] pst-[1.5px]"
+                  className="w-fit h-fit object-cover psl-[1px] pst-[1.5px] dark:hidden"
+                />
+                <img
+                  src={logoDarkMode}
+                  alt="A dashboard icon"
+                  className="w-fit h-fit object-cover psl-[1px] pst-[1.5px] hidden dark:block"
                 />
               </picture>
             </NavLink>
           </div>
-          <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreen decoration-double font-bold text-xl whitespace-nowraps bg-clip-text text-transparent bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] relative underlinegradients cursor-text">
+          <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreen decoration-double font-bold text-xl whitespace-nowraps bg-clip-text text-transparent dark:text-white bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] relative underlinegradients cursor-text">
             <WritingAnimation text="RERE WRITES" />
           </h1>
         </div>
