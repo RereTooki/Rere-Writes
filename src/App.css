@@ -154,6 +154,19 @@
     ),
     url(./assets/icons/bgDot.svg);
 }
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .introGrad {
+    background: radial-gradient(
+        157.2% 114.74% at 54.01% 114.67%,
+        #ffc4dc 5.59%,
+        #c0c6f4 44.79%,
+        #666666
+      ),
+      url(./assets/icons/bgDot.svg);
+  }
+}
 /*Poem BGs*/
 .poemBG {
   background-repeat: no-repeat;

@@ -17,7 +17,7 @@ const Intro = () => {
   const leftDivDelay = 12; // Total delay for 'stories untold' to finish
   return (
     <>
-      <div className="sborder-8 border-black dark:border-white mb-10 h-[100vh] introGrad exoFont select-none w3-animate-opacityIntro">
+      <div className="sborder-8 border-black dark:border-white mb-10 h-[100vh] introGrad saboutMeGrad exoFont select-none w3-animate-opacityIntro">
         {" "}
         <div className="absolute borders-2 border-black w-fit translate-y-[25vw] md:translate-y-[70px] tab:translate-y-[78vh] tab:scale-[1.5] w3-animate-leftVec">
           <picture
@@ -49,16 +49,6 @@ const Intro = () => {
         </div>
         <div className="flex flex-col tab:flex-row items-center tab:justify-around justify-center h-full sborder-4 border-black">
           <div className="flex flex-col items-center justify-center gap-[10px] sborder-4 border-[#7f7fd5] z-10 tab:hidden">
-            {/* <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
-              <picture className="">
-                <source className="" media="(min-width: 565px)" srcSet={logo} />
-                <img
-                  src={logo}
-                  alt="Rere Writes Logo"
-                  className="w-full h-full object-cover"
-                />
-              </picture>
-            </div> */}
             <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px] nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
               <picture className="">
                 <source className="" media="(min-width: 565px)" srcSet={logo} />
