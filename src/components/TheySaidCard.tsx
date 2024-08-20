@@ -13,12 +13,12 @@ const TheySaidCard = () => {
   ];
 
   const titleFont =
-    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl";
-  const bodyFont = "shantellFont";
+    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl text-gray-100 tab:text-black";
+  const bodyFont = "shantellFont text-gray-200 tab:text-black";
 
   return (
     <>
-      <div className="poemBG poemBG-SBM min-h-[100vh] tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">
+      <div className="poemBG poemBG-TS min-h-[100vh] tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">
         <div className="hidden z-0 tab:z-0 fixed right-[1px] xl:right-[8px] sborder-2 border-black w-fit translate-y-[70vh] tab:translate-y-0 tab:top-10 lg:top-[3.1rem] tab:scale-[1.5] lg:scale-[1.9] origin-right w3-animate-rightVec">
           <picture className="" data-aos="zoom-in-left" data-aos-duration="700">
             <source className="" media="(min-width: 565px)" srcSet={heart} />

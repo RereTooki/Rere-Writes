@@ -6,7 +6,7 @@ import heart from "../assets/images/heart.png";
 import { useState, useEffect } from "react";
 
 const LoveIsWarCard = () => {
-  const title = "Love Is War";
+  const title = "love is war";
   const verses = [
     `her eyes, I couldn’t ignore\na motionless gaze at the floor\na deafening silence,\na blinding darkness`,
     `together we were alone\nalone we were together\nall the while I should have known\nlove is war`,
@@ -14,11 +14,11 @@ const LoveIsWarCard = () => {
 
   const titleFont =
     "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-wide text-[30px]";
-  const bodyFont = "redressedFont text-[20px] lg:text-[20px] nxl:text-[25px]";
+  const bodyFont = "shantellFont text-[20px] lg:text-[20px] nxl:text-[25px]";
 
   return (
     <>
-      <div className="poemBG poemBG-SBM min-h-[100vh] tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">
+      <div className="poemBG poemBG-LK min-h-[100vh] tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">
         <div className="hidden z-0 tab:z-0 fixed right-[1px] xl:right-[8px] sborder-2 border-black w-fit translate-y-[70vh] tab:translate-y-0 tab:top-10 lg:top-[3.1rem] tab:scale-[1.5] lg:scale-[1.9] origin-right w3-animate-rightVec">
           <picture className="" data-aos="zoom-in-left" data-aos-duration="700">
             <source className="" media="(min-width: 565px)" srcSet={heart} />

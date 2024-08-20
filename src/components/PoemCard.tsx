@@ -50,7 +50,7 @@ const PoemCard: React.FC<PoemCardProps> = ({
             ))}
           </p>
         ))}
-        <div className="flex flex-row justify-end z-20 tab:fixed tab:block bottom-2 right-2 border-black ">
+        <div className="flex flex-row justify-end z-20 tab:fixed tab:block bottom-2 right-2 border-black exoFont text-lg">
           <button
             className="py-1 tab:px-3 rounded-md sborder-2  underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] mb-4 tab:mb-2 "
             onClick={() => openDetails()}

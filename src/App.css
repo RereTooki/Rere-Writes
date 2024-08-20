@@ -185,17 +185,45 @@
   background-image: url(./assets/images/poemBgs/SBM-S2.jpg);
 }
 .poemBG-LK {
-  background-image: url(./assets/images/12.jpg);
+  background-image: url(./assets/images/8.jpg);
   background-size: 100vw 100vh;
 }
 .poemBG-WF {
-  background-image: url(./assets/images/13.jpg);
-  background-size: auto 100vh;
+  background-image: url(./assets/images/15.jpg);
+  background-size: auto 240vh;
 }
 .poemBG-THUG {
   background-image: url(./assets/images/D.jpg);
   background-size: 100vw 380vh;
   background-position: bottom;
+}
+.poemBG-TMandem {
+  background-image: url(./assets/images/9.jpg);
+  background-size: 100vw 100vh;
+}
+.poemBG-NSNM {
+  background-image: url(./assets/images/10.jpg);
+  background-size: 100vw 100vh;
+}
+.poemBG-TS {
+  background-image: url(./assets/images/14.jpg);
+  background-size: 100vw 100vh;
+}
+.poemBG-SNE {
+  background-image: url(./assets/images/3.jpg);
+  background-size: 100vw 100vh;
+}
+.poemBG-Marriage {
+  background-image: url(./assets/images/5.jpg);
+  background-size: 100vw 100vh;
+}
+.poemBG-BM {
+  background-image: url(./assets/images/7.jpg);
+  background-size: 100vw 100vh;
+}
+.poemBG-JN {
+  background-image: url(./assets/images/15.jpg);
+  background-size: 100vw 240vh;
 }
 /* .poemBG-WF {
   background-image: url(./assets/images/D.jpg);
@@ -209,6 +237,9 @@
   }
   .poemBG {
     background-size: 100vw 100vh;
+  }
+  .poemBG-WF {
+    background-size: 100vw 250vh;
   }
   .poemBG-SBM {
     background-image: url(./assets/images/poemBgs/SBM-L2.jpg);
