@@ -13,7 +13,7 @@ const TheySaidCard = () => {
   ];
 
   const titleFont =
-    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
+    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl";
   const bodyFont = "shantellFont";
 
   return (

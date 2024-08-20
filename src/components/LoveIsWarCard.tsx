@@ -13,8 +13,8 @@ const LoveIsWarCard = () => {
   ];
 
   const titleFont =
-    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "shantellFont";
+    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-wide text-[30px]";
+  const bodyFont = "redressedFont text-[20px] lg:text-[20px] nxl:text-[25px]";
 
   return (
     <>

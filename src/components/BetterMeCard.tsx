@@ -20,8 +20,8 @@ const BetterMeCard = () => {
   ];
 
   const titleFont =
-    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "shantellFont";
+    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted leading-[1.4] tracking-relaxed tab:tracking-widez xl:tracking-widest";
+  const bodyFont = "playfairFont";
 
   return (
     <>

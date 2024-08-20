@@ -6,7 +6,7 @@ import heart from "../assets/images/heart.png";
 import { useState, useEffect } from "react";
 
 const NewSemesterCard = () => {
-  const title = "New Semester, New Me";
+  const title = "“New Semester, New Me”";
   const verses = [
     `"new semester, new me"\nahh your results shocked you\nall those late nights out with your boo\nno As, Bs or Cs, just you and your D`,
     `you and your eternal drip\nyou step out, shutdown cafe 1\nyou step back in, FIFA 21\nyou watch that series, eat, then sleep`,
@@ -16,8 +16,8 @@ const NewSemesterCard = () => {
   ];
 
   const titleFont =
-    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "shantellFont";
+    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted leading-[1.5] tab:leading-[1.3] text-[20px] tab:text-3xl";
+  const bodyFont = "exoFont";
 
   return (
     <>

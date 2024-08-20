@@ -6,7 +6,7 @@ import heart from "../assets/images/heart.png";
 import { useState, useEffect } from "react";
 
 const SeeNoEvilCard = () => {
-  const title = "Mizaru, Kikazaru, Iwazaru";
+  const title = "mizaru, kikazaru, iwazaru";
   const verses = [
     `See No Evil\nHear No Evil\nSpeak No Evil`,
     `See no evil\nBe blinded to trouble\nAlways look towards a positive example\nAnd remain humble`,
@@ -15,7 +15,7 @@ const SeeNoEvilCard = () => {
   ];
 
   const titleFont =
-    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
+    "redressedFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";
 
   return (

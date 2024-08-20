@@ -20,8 +20,8 @@ const MarriageCard = () => {
   ];
 
   const titleFont =
-    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "shantellFont";
+    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted text-[35px] tab:text-[45px]";
+  const bodyFont = "caveatFont text-[23px] tab:text-[24px]";
 
   return (
     <>
