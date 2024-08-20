@@ -67,7 +67,7 @@ const Intro = () => {
 
             <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent dark:text-white bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
               <WritingAnimation text="RERE WRITES" />
-              <div className="text-lg tab:text-xl tracking-widest nxl:text-2xl text-center mt-[8px]">
+              <div className="text-xl tab:text-3xl nxl:text-4xl tracking-widest text-center mt-[8px] sacramentoFont">
                 <WritingAnimationDelay text="stories untold ✍" />
               </div>
             </div>
@@ -105,7 +105,7 @@ const Intro = () => {
               </div>
               <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent dark:text-white bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
                 <WritingAnimation text="RERE WRITES" />
-                <div className="text-lg tab:text-xl tracking-widest nxl:text-2xl text-center mt-[8px]">
+                <div className="text-xl tab:text-3xl nxl:text-4xl tracking-widest text-center mt-[8px] sacramentoFont">
                   <WritingAnimationDelay text="stories untold ✍" />
                 </div>
               </div>
