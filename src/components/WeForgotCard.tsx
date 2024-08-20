@@ -2,7 +2,7 @@ import React from "react";
 import WFBG from "../assets/images/poemBgs/WFBG.png";
 import PoemCard from "./PoemCard";
 import heart from "../assets/images/heart.png";
-import PoemsModal from "./PoemsModal";
+
 import { useState, useEffect } from "react";
 import v2RMob from "../assets/icons/bg-pattern-how-we-work-mobile.svg";
 import v2Desk from "../assets/icons/bg-pattern-how-we-work-desktop.svg";
@@ -21,13 +21,6 @@ const WeForgotCard = () => {
   const titleFont =
     "meriendaFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "redressedFont exoFonts text-whitess";
-  // State to control the modal visibility
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Function to open the modal and display task details
-  const openDetails = () => {
-    setIsOpen(true);
-  };
   return (
     <>
       <div className="poemBG poemBG-WF min-h-[100vh] tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">
@@ -69,8 +62,6 @@ const WeForgotCard = () => {
             Want To Read More?
           </button>
         </div>
-        {/* PoemsModal */}
-        <PoemsModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>{" "}
     </>
   );

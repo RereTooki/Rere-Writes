@@ -2,7 +2,7 @@ import React from "react";
 import SBMBG from "../assets/images/poemBgs/poem1Bg.png";
 import PoemCard from "./PoemCard";
 import heart from "../assets/images/heart.png";
-import PoemsModal from "./PoemsModal";
+
 import { useState, useEffect } from "react";
 
 const SBMCard = () => {
@@ -18,14 +18,6 @@ const SBMCard = () => {
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";
-
-  // State to control the modal visibility
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Function to open the modal and display task details
-  const openDetails = () => {
-    setIsOpen(true);
-  };
 
   return (
     <>
@@ -60,17 +52,6 @@ const SBMCard = () => {
             bodyFont={bodyFont}
           />{" "}
         </div>
-
-        <div className="flex flex-row justify-end z-20 tab:fixed tab:block bottom-2 right-2 sborder-2 border-black mb-4 tab:mb-2">
-          <button
-            className="py-1 px-3 rounded-md sborder-2  underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02]"
-            onClick={() => openDetails()}
-          >
-            Want To Read More?
-          </button>
-        </div>
-        {/* PoemsModal */}
-        <PoemsModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>{" "}
     </>
   );
