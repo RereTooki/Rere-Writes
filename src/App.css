@@ -192,6 +192,11 @@
   background-image: url(./assets/images/13.jpg);
   background-size: auto 100vh;
 }
+.poemBG-THUG {
+  background-image: url(./assets/images/D.jpg);
+  background-size: 100vw 380vh;
+  background-position: bottom;
+}
 /* .poemBG-WF {
   background-image: url(./assets/images/D.jpg);
   background-size: 100vw 200vh;
@@ -207,6 +212,11 @@
   }
   .poemBG-SBM {
     background-image: url(./assets/images/poemBgs/SBM-L2.jpg);
+  }
+  .poemBG-THUG {
+    background-image: url(./assets/images/D.jpg);
+    background-size: 100vw 180vh;
+    background-position: top;
   }
 }
 @media (prefers-color-scheme: dark) and (min-width: 565px) {
