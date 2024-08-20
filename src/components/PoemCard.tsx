@@ -21,7 +21,7 @@ const PoemCard: React.FC<PoemCardProps> = ({
   const [isOpen, setIsOpen] = useState(false);
 
   // Function to open the modal and display task details
-  const openDetailxs = () => {
+  const openDetails = () => {
     setIsOpen(true);
   };
 
@@ -36,22 +36,22 @@ const PoemCard: React.FC<PoemCardProps> = ({
         {verses.map((verse, index) => (
           <p
             key={index}
-            className={`text-lg tab:text-lg text-center tab:text-left tracking-wide leading-10 whitespace-nowraps sborder-2 ${bodyFont}`}
+            className={`text-lg tab:text-lg text-center tab:text-left tracking-wide leadings-10 whitespace-nowraps sborder-2  ${bodyFont}`}
           >
             {verse.split("\n").map((line, lineIndex) => (
               <React.Fragment key={lineIndex}>
-                <span className="leading-relaxed sborder-2 sunderline stext-xl w3-animate-right ">
+                <span className="leading-tight sborder-2 sunderline stext-xl">
                   {line}
                 </span>
-                <hr className="h-[10px] decoration-wavy  smy-8 sbg-gray-200 border-2 dark:bg-gray-700" />
+                <hr className="h-[5px] decoration-wavy  smy-8 border-gray-800 border-t-2 border-double rounded-sm w3-animate-zoomSlow" />
               </React.Fragment>
             ))}
           </p>
         ))}
         <div className="flex flex-row justify-end z-20 tab:fixed tab:block bottom-2 right-2 border-black ">
           <button
-            className="py-1 px-3 rounded-md sborder-2  underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] mb-4 tab:mb-2 "
-            onClick={() => openDetailxs()}
+            className="py-1 tab:px-3 rounded-md sborder-2  underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] mb-4 tab:mb-2 "
+            onClick={() => openDetails()}
           >
             Want To Read More?
           </button>

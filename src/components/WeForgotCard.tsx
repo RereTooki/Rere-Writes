@@ -2,7 +2,7 @@ import React from "react";
 import WFBG from "../assets/images/poemBgs/WFBG.png";
 import PoemCard from "./PoemCard";
 import heart from "../assets/images/heart.png";
-
+import PoemsModal from "./PoemsModal";
 import { useState, useEffect } from "react";
 import v2RMob from "../assets/icons/bg-pattern-how-we-work-mobile.svg";
 import v2Desk from "../assets/icons/bg-pattern-how-we-work-desktop.svg";
@@ -21,10 +21,18 @@ const WeForgotCard = () => {
   const titleFont =
     "meriendaFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "redressedFont exoFonts text-whitess";
+
+  // State to control the modal visibility
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Function to open the modal and display task details
+  const openDetails = () => {
+    setIsOpen(true);
+  };
   return (
     <>
       <div className="poemBG poemBG-WF min-h-[100vh] tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">
-        <div className="z-0 tab:z-0 fixed right-[1px] xl:right-[8px] sborder-2 border-black w-fit translsate-y-[70vh] tab:translate-y-0 tab:top-10 lg:top-[3.1rem] tab:scale-[1.5] lg:scale-[2.5] origin-right w3-animate-rightVec">
+        <div className="hidden z-0 tab:z-0 fixed right-[1px] xl:right-[8px] sborder-2 border-black w-fit translsate-y-[70vh] tab:translate-y-0 tab:top-10 lg:top-[3.1rem] tab:scale-[1.5] lg:scale-[2.5] origin-right w3-animate-rightVec">
           <picture className="" data-aos="zoom-in-left" data-aos-duration="700">
             <source className="" media="(min-width: 565px)" srcSet={v2Desk} />
             <img
@@ -62,6 +70,8 @@ const WeForgotCard = () => {
             Want To Read More?
           </button>
         </div>
+        {/* PoemsModal */}
+        <PoemsModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>{" "}
     </>
   );

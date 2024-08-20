@@ -184,10 +184,18 @@
 .poemBG-SBM {
   background-image: url(./assets/images/poemBgs/SBM-S2.jpg);
 }
+.poemBG-LK {
+  background-image: url(./assets/images/grad1Dark.webp);
+  background-size: auto 100vh;
+}
 .poemBG-WF {
+  background-image: url(./assets/images/13.jpg);
+  background-size: auto 100vh;
+}
+/* .poemBG-WF {
   background-image: url(./assets/images/D.jpg);
   background-size: 100vw 200vh;
-}
+} */
 @media (min-width: 565px) {
   /*Tablets and above*/
   .introGrad {
@@ -640,6 +648,9 @@ body {
 
 .w3-animate-zoom {
   animation: animatezoom 2.6s;
+}
+.w3-animate-zoomSlow {
+  animation: animatezoom 4s;
 }
 .w3-animate-rightNav {
   animation: animateright 1.6s;

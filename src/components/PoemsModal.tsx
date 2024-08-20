@@ -11,6 +11,10 @@ interface PoemsModalProps {
 }
 
 const PoemsModal: React.FC<PoemsModalProps> = ({ isOpen, onClose }) => {
+  // Function to handle the click event and scroll to the top
+  const handleItemClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <Dialog
@@ -36,11 +40,12 @@ const PoemsModal: React.FC<PoemsModalProps> = ({ isOpen, onClose }) => {
                 <div className="containers mx-auto sborder-4 border-black max-h-[40vh] overflow-y-scroll scroll scrollModal">
                   <ol className="list-decimal px-5">
                     {projects.map((project, index) => (
-                      <NavLink to={project.route}>
-                        <li
-                          key={index}
-                          className="flex items-center mb-2 list-decimal border-b-2 border-black py-2 border-double hover:bg-gray-500 hover:rounded-lg hover:text-white"
-                        >
+                      <NavLink
+                        to={project.route}
+                        onClick={handleItemClick}
+                        key={index}
+                      >
+                        <li className="flex items-center mb-2 list-decimal border-b-2 border-black py-2 border-double hover:bg-gray-500 hover:rounded-lg hover:text-white">
                           <img
                             src={project.imgSrc}
                             alt={project.imgAlt}
