@@ -44,7 +44,7 @@ const Homepage = () => {
           <ContactMe />
         </div>
         <div className="">
-          <Hero />
+          <Hero contactMeRef={contactMeRef} />
         </div>
         <div className="">
           <Footer />

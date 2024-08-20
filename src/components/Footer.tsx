@@ -23,7 +23,7 @@ const Footer = () => {
   };
   return (
     <>
-      <div className=" bg-very-dark-black-blues items-center flex flex-col w-[100vw] overflow-hidden">
+      <div className="bg-very-dark-black-blues/70 dark:bg-very-dark-black-blues items-center flex flex-col w-[100vw] overflow-hidden ">
         <div className=" flex flex-col tab:flex-row justify-around tab:justify-evenly items-center tab:items-start py-[80px] tab:py-[70px] gap-[40px] tab:gap-[1em]  px-[20vw] text-center tab:px-0 flex-wrap content-center tab:w-[100vw]">
           <div
             className="tab:self-center w-auto h-auto max-w-[300px] tab:max-w-[200px]"
@@ -42,10 +42,10 @@ const Footer = () => {
             data-aos="zoom-in"
             data-aos-duration="700"
           >
-            <div className="text-white underline underline-offset-4 ">
+            <div className="text-white  underline underline-offset-4 ">
               Contact Me
             </div>
-            <div className="flex flex-col gap-[5px] text-white text-start">
+            <div className="flex flex-col gap-[5px] text-white  text-start">
               <div className="text-grayish-blues">
                 Telephone: +234 812 371 7074
               </div>
@@ -68,7 +68,7 @@ const Footer = () => {
             data-aos="zoom-in"
             data-aos-duration="700"
           >
-            <div className="text-white underline underline-offset-4 ">
+            <div className="text-white  underline underline-offset-4 ">
               Stay Connected
             </div>
             <div className="flex flex-row istems-center justify-around flex-wrap max-w-[130px] gap-2 sborder-2">
@@ -114,7 +114,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="attribution pb-[30px] underline-offset-4 whitespace-nowraps text-[4.5vw] md:text-[16px] text-center text-white px-2">
+        <div className="attribution pb-[30px] underline-offset-4 whitespace-nowraps text-[4.5vw] md:text-[16px] text-center text-white  px-2">
           Designed & Developed by{" "}
           <a
             href="https://rere-writes.vercel.app/"

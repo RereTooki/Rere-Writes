@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import WritingAnimation from "../animations/WritingAnimation";
+import DarkModeToggle from "./DarkModeToggle";
 
 // Define types for props
 type NavigationBarProps = {
@@ -66,7 +67,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
               </picture>
             </NavLink>
           </div>
-          <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreen decoration-double font-bold text-xl whitespace-nowraps bg-clip-text text-transparent dark:text-white bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] relative underlinegradients cursor-text">
+          <h1 className="exoFont self-center underline underline-offset-4 decoration-clrtransparentgreen decoration-double font-bold text-xl whitespace-nowraps bg-clip-text text-transparent dark:text-white bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] relative underlinegradients cursor-text tracking-wider">
             <WritingAnimation text="RERE WRITES" />
           </h1>
         </div>
@@ -92,36 +93,39 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
             )}
           </button>
           {navIsVisible && (
-            <div className="w3-animate-rightNav bg-white dark:bg-[#888] lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] max-w-[250px] px-[8%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] font-overpass flex flex-col gap-[5px]">
+            <div className="w3-animate-rightNav bg-white dark:bg-[#888] lg:hidden absolute top-[23vw] md:top-[80px] right-[4vw] nxl:right-[34px] w-[60vw] md:w-[50vw] max-w-[250px] px-[5%] shadow-[0_0_20px_2px_rgba(0,0,0,0.5)] text-center py-[20px] rounded-[10px] font-overpass flex flex-col gap-[5px]">
               <div
-                className="w3-animate-rightNav dark:text-white hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
+                className="w3-animate-rightNav dark:text-white hover:scale-[1.05] border-b-2 rounded-sm border-black/70 dark:border-white"
                 onClick={() => scrollToSection(introRef)}
               >
                 Home
               </div>
               <div
-                className="w3-animate-rightNav dark:text-white hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
+                className="w3-animate-rightNav dark:text-white hover:scale-[1.05] border-b-2 rounded-sm border-black/70 dark:border-white"
                 onClick={() => scrollToSection(projectsRef)}
               >
                 Poems
               </div>
               <div
-                className="w3-animate-rightNav dark:text-white hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
+                className="w3-animate-rightNav dark:text-white hover:scale-[1.05] border-b-2 rounded-sm border-black/70 dark:border-white"
                 onClick={() => scrollToSection(aboutMeRef)}
               >
                 About Me
               </div>
               <div
-                className="w3-animate-rightNav dark:text-white hover:underline underline-offset-4 hover:scale-[1.05] gradient-border-bottom"
+                className="w3-animate-rightNav dark:text-white hover:scale-[1.05] border-b-2 rounded-sm border-black/70 dark:border-white"
                 onClick={() => scrollToSection(contactMeRef)}
               >
                 Contact Me
               </div>
+              <div className="w3-animate-rightNav w-fit self-center hover:scale-[1.05]">
+                <DarkModeToggle />
+                {/* Your other components */}
+              </div>
             </div>
           )}
         </div>
-
-        <div className="vsm:hidden lg:flex flex-row justify-between  w-[50vw] max-w-[384px]">
+        <div className="vsm:hidden lg:flex flex-row justify-between items-center  w-[50vw] max-w-[384px]">
           <div className="hover:underline underline-offset-4 decoration-clrtransparentgreen hover:scale-[1.1] dark:text-white">
             <span onClick={() => scrollToSection(introRef)}>
               <WritingAnimation text="Home" />
@@ -141,6 +145,10 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
             <span onClick={() => scrollToSection(contactMeRef)}>
               <WritingAnimation text="Contact Me" />
             </span>
+          </div>
+          <div className="hidden tab:block">
+            <DarkModeToggle />
+            {/* Your other components */}
           </div>
         </div>
       </div>

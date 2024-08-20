@@ -123,20 +123,20 @@ const ContactMe = () => {
             data-aos="zoom-in"
             data-aos-duration="1500"
           >
-            <h3 className="text-2xl gradient-border-bottom exoFont pb-[4px]">
-              Contact Me!
+            <h3 className="text-3xl tab:text-4xl gradient-border-bottom playfairFont pb-[4px] dark:text-white]">
+              Contact Me
             </h3>
           </div>
           <div className="sborder-4">
             <div className="bg-clrtransparentgreen/60s sbg-gradient-to-r from-clrtransparentgreen/50 via-clrtransparentgreen/60  to-clrtransparentgreen/70 flex flex-col justify-center items-center px-10 rounded-lg w-full gap-10 xl:gap-8 sborder-4 border-black">
               <h4
-                className="text-[#52647C] tab:text-[#626F89] font-semibold text-4xl tab:text-6xl xl:text-[60px] exoFont sunderline underline-offset-4 sdecoration-wavy decoration-[2spx] sborder-4 text-center leading-[1.3]  z-40"
+                className="text-[#52647C] tab:text-[#626F89] font-semibold text-4xl tab:text-6xl xl:text-[60px] exoFont sunderline underline-offset-4 sdecoration-wavy decoration-[2spx] sborder-4 text-center leading-[1.3]  z-40 tab:leading-[1.25]"
                 data-aos="zoom-in"
                 data-aos-duration="2000"
               >
                 Looking To{" "}
                 <span className="whitespace-nowrap underline-offset-[10px] ">
-                  <span className="italic sunderline decoration-dashed tracking-widest decoration-[#96A9C6]">
+                  <span className="italic sunderline decoration-dashed tracking-widest decoration-[#96A9C6] sacramentoFont text-5xl tab:text-7xl xl:text-[70px]">
                     Collaborate ?
                   </span>{" "}
                   <div className="border- relativse">

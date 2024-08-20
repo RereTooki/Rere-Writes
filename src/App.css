@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Sacramento&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -28,6 +29,12 @@
 }
 .redressedFont {
   font-family: "Redressed", sans-serif;
+}
+.sacramentoFont {
+  font-family: "Sacramento", sans-serif;
+}
+.playfairFont {
+  font-family: "Playfair", sans-serif;
 }
 
 @layer components {
@@ -158,9 +165,14 @@
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
   .introGrad {
-    background-image: url("./assets/images/introDark.jpg");
+    background-image: url("./assets/images/grad1Dark.webp");
     background-size: cover;
   }
+}
+/* Ensure dark mode styles also apply when the dark class is present */
+.dark .introGrad {
+  background-image: url("./assets/images/grad1Dark.webp");
+  background-size: cover;
 }
 
 /*Poem BGs*/
@@ -230,6 +242,20 @@
   }
 }
 
+/* Ensure dark mode styles also apply when the .dark class is present */
+.dark .projectsGrad {
+  background-image: url("./assets/images/projectsDark.jpg");
+  background-size: cover;
+}
+
+@media (min-width: 566px) {
+  /* Ensure dark mode styles also apply when .dark class is present on larger screens */
+  .dark .projectsGrad {
+    background-image: url("./assets/images/projectsDarkL.jpg");
+    background-size: cover;
+  }
+}
+
 .aboutMeGrad {
   background: radial-gradient(
       186.08% 130.76% at 92.25% 123.75%,
@@ -262,6 +288,24 @@
 }
 @media (prefers-color-scheme: dark) and (min-width: 565px) {
   .aboutMeGrad {
+    background: linear-gradient(
+        135deg,
+        rgba(164, 177, 178, 0.6) 50%,
+        rgba(113, 112, 210, 0.6) 100%
+      ),
+      url(./assets/icons/bgDot.svg);
+  }
+}
+
+/* Ensure dark mode styles also apply when the .dark class is present */
+.dark .aboutMeGrad {
+  background-image: url("./assets/images/aboutMeDark.jpg");
+  background-size: cover;
+}
+
+@media (min-width: 566px) {
+  /* Ensure dark mode styles also apply when .dark class is present on larger screens */
+  .dark .aboutMeGrad {
     background: linear-gradient(
         135deg,
         rgba(164, 177, 178, 0.6) 50%,
@@ -706,6 +750,18 @@ body {
 
 @media (prefers-color-scheme: dark) and (min-width: 565px) {
   .skewedLR {
+    clip-path: none;
+  }
+}
+
+/* Ensure dark mode styles also apply when the .dark class is present */
+.dark .skewedLR {
+  clip-path: none;
+}
+
+@media (min-width: 565px) {
+  /* Ensure dark mode styles also apply when .dark class is present on larger screens */
+  .dark .skewedLR {
     clip-path: none;
   }
 }
