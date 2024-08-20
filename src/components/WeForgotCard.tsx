@@ -2,7 +2,7 @@ import React from "react";
 import WFBG from "../assets/images/poemBgs/WFBG.png";
 import PoemCard from "./PoemCard";
 import heart from "../assets/images/heart.png";
-import PoemsModal from "./PoemsModal";
+
 import { useState, useEffect } from "react";
 import v2RMob from "../assets/icons/bg-pattern-how-we-work-mobile.svg";
 import v2Desk from "../assets/icons/bg-pattern-how-we-work-desktop.svg";
@@ -10,7 +10,7 @@ import v2Desk from "../assets/icons/bg-pattern-how-we-work-desktop.svg";
 const WeForgotCard = () => {
   const title = "“we forgot”";
   const verses = [
-    `We forgot,\nDidn't give it a thought\nA tear in my eye as I jot\nDown all the reasons I might have been forgot `,
+    `"We forgot",\n"Didn't give it a thought"\nA tear in my eye as I jot\nDown all the reasons I might have been forgot `,
     `Why treat me like I'm not here?\nWhy act like you don't care?\nIt was an honest mistake, you swear\nBut you'd do it again, yeah? `,
     `We're four, but you see three\nLooks like you forgot somebody\nLet me guess, me?\nAnother mistake again, really? `,
     `Been feeling like this for some months\nBeginning to think it’s my fault\nSilently pray to the gods\nThat one day I don’t fade totally from their thoughts\nOr be left by the side to rot `,
@@ -19,16 +19,9 @@ const WeForgotCard = () => {
     `We're two but you see one\nYou never really care about anyone\nYou only always value your opinion\nOur friendship, nothing more than an illusion `,
   ];
   const titleFont =
-    "meriendaFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "redressedFont exoFonts text-whitess";
+    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl";
+  const bodyFont = "exoFont text-whitess";
 
-  // State to control the modal visibility
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Function to open the modal and display task details
-  const openDetails = () => {
-    setIsOpen(true);
-  };
   return (
     <>
       <div className="poemBG poemBG-WF min-h-[100vh] tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-black border-double select-none">
@@ -42,7 +35,7 @@ const WeForgotCard = () => {
             />
           </picture>
         </div>
-        <div className="tab:bg-white tab:rounded-tl-[20px] tab:rounded-bl-[20px] w3-animate-left  ">
+        <div className="tab:bg-white tab:rounded-tl-[20px] tab:rounded-bl-[20px]">
           <div className="quoteBGs quoteBGP1 h-[0vh] tab:h-[85vh] flex flex-col  text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] tab:rounded-[20px] rounded-b-[40px] w3-animate-opacitys drop-shadow-2xl tab:drop-shadow-none w-auto tab:w-[45vw] lg:w-[40vw] tab:border-4 border-black border-double overflow-hidden">
             <picture className="hidden tab:block  w-full h-full">
               <source className="" media="(min-width: 565px)" srcSet={WFBG} />
@@ -54,7 +47,7 @@ const WeForgotCard = () => {
             </picture>
           </div>
         </div>
-        <div className="sborder-4 h-auto tab:h-[85vh] tab:w-[45vw] lg:w-[40vw] tab:bg-white  tab:rounded-tr-[15px]  tab:rounded-br-[15px] xl:rounded-tr-[20px]  xl:rounded-br-[20px] px-[10vw] tab:px-[10px] w3-animate-right tab:overflow-y-scroll tab:scroll tab:scrollWF">
+        <div className="sborder-4 h-auto tab:h-[85vh] tab:w-[45vw] lg:w-[40vw] tab:bg-white  tab:rounded-tr-[15px]  tab:rounded-br-[15px] xl:rounded-tr-[20px]  xl:rounded-br-[20px] px-[10vw] tab:px-[10px] tab:overflow-y-scroll tab:scroll tab:scrollSBM">
           <PoemCard
             title={title}
             verses={verses}
@@ -62,16 +55,6 @@ const WeForgotCard = () => {
             bodyFont={bodyFont}
           />
         </div>
-        <div className="flex flex-row justify-end z-20 tab:fixed tab:block bottom-2 right-2 sborder-2 border-black mb-4 tab:mb-0">
-          <button
-            className="py-1 px-3 rounded-md sborder-2  underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] text-white"
-            onClick={() => openDetails()}
-          >
-            Want To Read More?
-          </button>
-        </div>
-        {/* PoemsModal */}
-        <PoemsModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>{" "}
     </>
   );

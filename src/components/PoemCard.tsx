@@ -32,11 +32,13 @@ const PoemCard: React.FC<PoemCardProps> = ({
       >
         <WritingAnimation text={title} />
       </h1>
-      <div className="space-y-8">
+      <div className="space-y-8 border-2s">
         {verses.map((verse, index) => (
           <p
             key={index}
-            className={`text-lg tab:text-lg text-center tab:text-left tracking-wide leadings-10 whitespace-nowraps sborder-2  ${bodyFont}`}
+            className={`text-lg tab:text-lg text-left tracking-wide leadings-10 whitespace-nowraps border-rnowraps border-double border-gray-800 rounded-sm  ${
+              index % 2 !== 0 ? "border-r-4 pr-2" : "border-l-4 pl-2"
+            } ${bodyFont}`}
           >
             {verse.split("\n").map((line, lineIndex) => (
               <React.Fragment key={lineIndex}>

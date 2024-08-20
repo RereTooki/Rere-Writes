@@ -45,7 +45,7 @@ const PoemsModal: React.FC<PoemsModalProps> = ({ isOpen, onClose }) => {
                         onClick={handleItemClick}
                         key={index}
                       >
-                        <li className="flex items-center mb-2 list-decimal border-b-2 border-black py-2 border-double hover:bg-gray-500 hover:rounded-lg hover:text-white">
+                        <li className="flex items-center mb-2 list-decimal border-b-2 border-black py-2 border-double hover:bg-gray-500 hover:rounded-lg hover:text-white hover:scale-[1.03]">
                           <img
                             src={project.imgSrc}
                             alt={project.imgAlt}

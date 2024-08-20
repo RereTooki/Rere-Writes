@@ -16,8 +16,8 @@ const SBMCard = () => {
     `Darling,\nWill you marry me?`,
   ];
   const titleFont =
-    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "shantellFont";
+    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tab:text-[30px]";
+  const bodyFont = "exoFont";
 
   return (
     <>

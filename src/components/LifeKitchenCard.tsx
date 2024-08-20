@@ -17,7 +17,7 @@ const LifeKitchenCard = () => {
   ];
 
   const titleFont =
-    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
+    "caveatFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tab:text-[30px]";
   const bodyFont = "shantellFont";
 
   return (
@@ -33,7 +33,7 @@ const LifeKitchenCard = () => {
             />
           </picture>
         </div>
-        <div className="tab:bg-white tab:rounded-tl-[20px] tab:rounded-bl-[20px] w3-animate-left  ">
+        <div className="tab:bg-white tab:rounded-tl-[20px] tab:rounded-bl-[20px] ">
           <div className="quoteBGs quoteBGP1 h-[0vh] tab:h-[85vh] flex flex-col  text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] tab:rounded-[20px] rounded-b-[40px] w3-animate-opacitys drop-shadow-2xl tab:drop-shadow-none w-auto tab:w-[45vw] lg:w-[40vw] tab:border-4 border-black border-double overflow-hidden">
             <picture className="hidden tab:block  w-full h-full">
               <source className="" media="(min-width: 565px)" srcSet={LKBG} />
