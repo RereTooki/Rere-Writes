@@ -8,13 +8,20 @@ import { useState, useEffect } from "react";
 const TCOBCard = () => {
   const title = "The Chaos of Beauty";
   const verses = [
-    `her eyes, I couldn’t ignore\na motionless gaze at the floor\na deafening silence,\na blinding darkness`,
-    `together we were alone\nalone we were together\nall the while I should have known\nlove is war`,
+    `Beauty\nWhat is this I'm talking about?\nIt is more than an art\nAn art from within and without\nAn art that brings apart`,
+
+    `Beauty\nOne word, different meanings\nOne tree, different seedlings\nOne perception, different feelings\nOne word, the same meaning`,
+
+    `Beauty\nIt brings apart in its perception;\nin our understanding of its definition.\nYou could see it in the constellations\nand I, in simple things like conversations.`,
+
+    `Beauty\nWhat then is true beauty\nand where does it lie?\nIn whose perception do we find it?\nAnd in which beholder's eye?`,
+
+    `Beauty\nAn unusual throng of emotions\nAn unrelenting wind of passions\nA hypothetical gush of infatuations\nA varied myriad of perceptions`,
   ];
 
   const titleFont =
-    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-wide text-[30px]";
-  const bodyFont = "shantellFont text-[20px] lg:text-[20px] nxl:text-[25px]";
+    "caveatFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-wide text-[30px]";
+  const bodyFont = "caveatFont text-[20px] lg:text-[20px] nxl:text-[25px]";
 
   return (
     <>
