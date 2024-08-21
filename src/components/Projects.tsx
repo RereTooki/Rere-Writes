@@ -2,18 +2,18 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import WFBG from "../assets/images/poemBgs/WFBG.png";
-import LKBG from "../assets/images/poemBgs/LKBG.jpg";
-import SBMBG from "../assets/images/poemBgs/SBMBG.png";
-import NSNMBG from "../assets/images/poemBgs/NSNMBG.png";
-import TMBG from "../assets/images/poemBgs/TMBG.png";
-import TSBG from "../assets/images/poemBgs/TSBG.png";
-import SNEBG from "../assets/images/poemBgs/SNEBG.png";
-import MRBG from "../assets/images/poemBgs/MRBG.png";
-import BMBG from "../assets/images/poemBgs/BMBG.png";
-import JNBG from "../assets/images/poemBgs/JNBG.png";
-import LIWBG from "../assets/images/poemBgs/LIWBG.png";
-import THUGBG from "../assets/images/poemBgs/THUGBG.jpg";
+import WFBG from "../assets/images/poemBgs/WFBG.webp";
+import LKBG from "../assets/images/poemBgs/LKBG.webp";
+import SBMBG from "../assets/images/poemBgs/SBMBG.webp";
+import NSNMBG from "../assets/images/poemBgs/NSNMBG.webp";
+import TMBG from "../assets/images/poemBgs/TMBG.webp";
+import TSBG from "../assets/images/poemBgs/TSBG.webp";
+import SNEBG from "../assets/images/poemBgs/SNEBG.webp";
+import MRBG from "../assets/images/poemBgs/MRBG.webp";
+import BMBG from "../assets/images/poemBgs/BMBG.webp";
+import JNBG from "../assets/images/poemBgs/JNBG.webp";
+import LIWBG from "../assets/images/poemBgs/LIWBG.webp";
+import THUGBG from "../assets/images/poemBgs/THUGBG.webp";
 import PoemImageSlides from "./PoemImageSlides";
 
 export const projects = [

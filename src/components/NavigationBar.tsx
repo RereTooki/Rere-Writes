@@ -1,8 +1,8 @@
 import React from "react";
 import "../App.css";
 import navIcon from "../assets/icons/navIcon2.svg";
-import logo from "../assets/images/logo2.png";
-import logoDarkMode from "../assets/images/image.png";
+import logo from "../assets/images/logo2.webp";
+import logoDarkMode from "../assets/images/image.webp";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";

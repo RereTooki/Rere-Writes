@@ -1,7 +1,7 @@
 import React from "react";
-import WFBG from "../assets/images/poemBgs/WFBG.png";
+import WFBG from "../assets/images/poemBgs/WFBG.webp";
 import PoemCard from "./PoemCard";
-import heart from "../assets/images/heart.png";
+import heart from "../assets/images/heart.webp";
 
 import { useState, useEffect } from "react";
 import v2RMob from "../assets/icons/bg-pattern-how-we-work-mobile.svg";

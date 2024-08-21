@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import logo from "../assets/images/image.png";
+import logo from "../assets/images/image.webp";
 import { SiGmail } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
 import { SiTelegram } from "react-icons/si";

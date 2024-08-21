@@ -143,7 +143,7 @@
       rgba(83, 83, 69, 0.7868872549019608) 35%,
       rgba(83, 83, 69, 0.5636379551820728) 100%
     ),
-    url(./assets/images/poemBgs/poem1Bg.png);
+    url(./assets/images/poemBgs/poem1Bg.webp);
   background-repeat: no-repeat;
   background-size: 100vw 140vw;
   /* background-size: 100vw 260px; */
@@ -182,51 +182,51 @@
   background-attachment: fixed;
 }
 .poemBG-SBM {
-  background-image: url(./assets/images/poemBgs/SBM-S2.jpg);
+  background-image: url(./assets/images/poemBgs/SBM-S2.webp);
 }
 .poemBG-LK {
-  background-image: url(./assets/images/8.jpg);
+  background-image: url(./assets/images/8.webp);
   background-size: 100vw 100vh;
 }
 .poemBG-WF {
-  background-image: url(./assets/images/15.jpg);
+  background-image: url(./assets/images/15.webp);
   background-size: auto 240vh;
 }
 .poemBG-THUG {
-  background-image: url(./assets/images/D.jpg);
+  background-image: url(./assets/images/D.webp);
   background-size: 100vw 380vh;
   background-position: bottom;
 }
 .poemBG-TMandem {
-  background-image: url(./assets/images/9.jpg);
+  background-image: url(./assets/images/9.webp);
   background-size: 100vw 100vh;
 }
 .poemBG-NSNM {
-  background-image: url(./assets/images/10.jpg);
+  background-image: url(./assets/images/10.webp);
   background-size: 100vw 100vh;
 }
 .poemBG-TS {
-  background-image: url(./assets/images/14.jpg);
+  background-image: url(./assets/images/14.webp);
   background-size: 100vw 100vh;
 }
 .poemBG-SNE {
-  background-image: url(./assets/images/3.jpg);
+  background-image: url(./assets/images/3.webp);
   background-size: 100vw 100vh;
 }
 .poemBG-Marriage {
-  background-image: url(./assets/images/5.jpg);
+  background-image: url(./assets/images/5.webp);
   background-size: 100vw 100vh;
 }
 .poemBG-BM {
-  background-image: url(./assets/images/7.jpg);
+  background-image: url(./assets/images/7.webp);
   background-size: 100vw 100vh;
 }
 .poemBG-JN {
-  background-image: url(./assets/images/15.jpg);
+  background-image: url(./assets/images/15.webp);
   background-size: 100vw 240vh;
 }
 /* .poemBG-WF {
-  background-image: url(./assets/images/D.jpg);
+  background-image: url(./assets/images/D.webp);
   background-size: 100vw 200vh;
 } */
 @media (min-width: 565px) {
@@ -242,10 +242,10 @@
     background-size: 100vw 250vh;
   }
   .poemBG-SBM {
-    background-image: url(./assets/images/poemBgs/SBM-L2.jpg);
+    background-image: url(./assets/images/poemBgs/SBM-L2.webp);
   }
   .poemBG-THUG {
-    background-image: url(./assets/images/D.jpg);
+    background-image: url(./assets/images/D.webp);
     background-size: 100vw 180vh;
     background-position: top;
   }
@@ -268,7 +268,7 @@
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
   .projectsGrad {
-    background-image: url("./assets/images/projectsDark.jpg");
+    background-image: url("./assets/images/projectsDark.webp");
     background-size: cover;
   }
 }
@@ -286,21 +286,21 @@
 }
 @media (prefers-color-scheme: dark) and (min-width: 565px) {
   .projectsGrad {
-    background-image: url("./assets/images/projectsDarkL.jpg");
+    background-image: url("./assets/images/projectsDarkL.webp");
     background-size: cover;
   }
 }
 
 /* Ensure dark mode styles also apply when the .dark class is present */
 .dark .projectsGrad {
-  background-image: url("./assets/images/projectsDark.jpg");
+  background-image: url("./assets/images/projectsDark.webp");
   background-size: cover;
 }
 
 @media (min-width: 566px) {
   /* Ensure dark mode styles also apply when .dark class is present on larger screens */
   .dark .projectsGrad {
-    background-image: url("./assets/images/projectsDarkL.jpg");
+    background-image: url("./assets/images/projectsDarkL.webp");
     background-size: cover;
   }
 }
@@ -318,7 +318,7 @@
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
   .aboutMeGrad {
-    background-image: url("./assets/images/aboutMeDark.jpg");
+    background-image: url("./assets/images/aboutMeDark.webp");
     background-size: cover;
   }
 }
@@ -348,7 +348,7 @@
 
 /* Ensure dark mode styles also apply when the .dark class is present */
 .dark .aboutMeGrad {
-  background-image: url("./assets/images/aboutMeDark.jpg");
+  background-image: url("./assets/images/aboutMeDark.webp");
   background-size: cover;
 }
 
@@ -462,7 +462,7 @@ body {
       rgba(83, 83, 69, 0.26) 35%,
       rgba(83, 83, 69, 0.2608368347338936) 100%
     ),
-    url(./assets/images/shake.jpg);
+    url(./assets/images/shake.webp);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   background-attachment: fixed;
@@ -502,7 +502,7 @@ body {
       rgba(83, 83, 69, 0.06) 35%,
       rgba(83, 83, 69, 0.0608368347338936) 100%
     ),
-    url(./assets/images/poemBgs/poem1Bg.png);
+    url(./assets/images/poemBgs/poem1Bg.webp);
   background-size: 100vw 100vh;
   background-attachment: fixed;
 }
@@ -529,7 +529,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/1.jpg);
+    url(./assets/images/1.webp);
 }
 .quoteBG2 {
   background-image: linear-gradient(
@@ -537,7 +537,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/2.jpg);
+    url(./assets/images/2.webp);
 }
 
 .quoteBG3 {
@@ -546,7 +546,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/3.jpg);
+    url(./assets/images/3.webp);
 }
 .quoteBG4 {
   background-image: linear-gradient(
@@ -554,7 +554,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/4.jpg);
+    url(./assets/images/4.webp);
 }
 .quoteBG5 {
   background-image: linear-gradient(
@@ -562,7 +562,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/5.jpg);
+    url(./assets/images/5.webp);
 }
 .quoteBG6 {
   background-image: linear-gradient(
@@ -570,7 +570,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/6.jpg);
+    url(./assets/images/6.webp);
 }
 .quoteBG7 {
   background-image: linear-gradient(
@@ -578,7 +578,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/7.jpg);
+    url(./assets/images/7.webp);
 }
 .quoteBG8 {
   background-image: linear-gradient(
@@ -586,7 +586,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/8.jpg);
+    url(./assets/images/8.webp);
 }
 .quoteBG9 {
   background-image: linear-gradient(
@@ -594,7 +594,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/9.jpg);
+    url(./assets/images/9.webp);
 }
 .quoteBG10 {
   background-image: linear-gradient(
@@ -602,7 +602,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/10.jpg);
+    url(./assets/images/10.webp);
 }
 
 /* Intro */
@@ -612,7 +612,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/A.jpg);
+    url(./assets/images/A.webp);
 }
 .quoteBGB {
   background-image: linear-gradient(
@@ -620,7 +620,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/B.jpg);
+    url(./assets/images/B.webp);
 }
 .quoteBGC {
   background-image: linear-gradient(
@@ -628,7 +628,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/C.jpg);
+    url(./assets/images/C.webp);
 }
 .quoteBGD {
   background-image: linear-gradient(
@@ -636,7 +636,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/D.jpg);
+    url(./assets/images/D.webp);
 }
 .UquoteBGE {
   background-image: linear-gradient(
@@ -644,7 +644,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/E.jpg);
+    url(./assets/images/E.webp);
 }
 .quoteBGF {
   background-image: linear-gradient(
@@ -652,7 +652,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/F.jpg);
+    url(./assets/images/F.webp);
 }
 .quoteBGG {
   background-image: linear-gradient(
@@ -660,7 +660,7 @@ body {
       rgba(83, 83, 69, 0.56) 35%,
       rgba(83, 83, 69, 0.5608368347338936) 100%
     ),
-    url(./assets/images/G.jpg);
+    url(./assets/images/G.webp);
 }
 
 .w3-animate-opacity {

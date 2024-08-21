@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
-import logo from "../assets/images/logo2.png";
-import logoDarkMode from "../assets/images/image.png";
+import logo from "../assets/images/logo2.webp";
+import logoDarkMode from "../assets/images/image.webp";
 import v1LMob from "../assets/icons/bg-pattern-intro-left-mobile.svg";
 import v1LDesk from "../assets/icons/bg-pattern-intro-left-desktop.svg";
 import v1RMob from "../assets/icons/bg-pattern-intro-right-mobile.svg";

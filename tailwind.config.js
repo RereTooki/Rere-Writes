@@ -47,7 +47,7 @@ export default {
       },
       backgroundImage: {
         underlinegradient: "linear-gradient(to right, #7F7FD5, #31B7C2)",
-        poem1BG: "url('./src/assets/images/poem1Bg.jpg')",
+        poem1BG: "url('./src/assets/images/poem1Bg.webp')",
       },
     },
   },

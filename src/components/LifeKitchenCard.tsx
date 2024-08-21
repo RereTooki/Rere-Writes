@@ -1,7 +1,7 @@
 import React from "react";
-import LKBG from "../assets/images/poemBgs/LKBG.jpg";
+import LKBG from "../assets/images/poemBgs/LKBG.webp";
 import PoemCard from "./PoemCard";
-import heart from "../assets/images/heart.png";
+import heart from "../assets/images/heart.webp";
 
 import { useState, useEffect } from "react";
 

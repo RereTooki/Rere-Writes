@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import WritingAnimation from "../animations/WritingAnimation";
-import mp3 from "../assets/images/MyPortrait.png";
+import mp3 from "../assets/images/MyPortrait.webp";
 
 const AboutMe = () => {
   return (

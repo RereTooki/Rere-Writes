@@ -1,7 +1,7 @@
 import React from "react";
-import MRBG from "../assets/images/poemBgs/MRBG.png";
+import MRBG from "../assets/images/poemBgs/MRBG.webp";
 import PoemCard from "./PoemCard";
-import heart from "../assets/images/heart.png";
+import heart from "../assets/images/heart.webp";
 
 import { useState, useEffect } from "react";
 
