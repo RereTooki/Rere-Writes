@@ -122,7 +122,7 @@ const Intro = () => {
                 The words of{" "}
                 <a
                   href="https://www.linkedin.com/in/rerel-oluwa-tooki-b53396253/"
-                  className="underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] meriendaFont bg-clip-text text-transparent dark:text-white bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] hover:bg-gradient-to-l font-bold"
+                  className="underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] meriendaFont bg-clip-text text-transparent dark:text-white bg-gradient-to-r from-[#7F7FD5] to-[#31B7C2] hover:bg-gradient-to-l font-bold sborder-2 z-40 w-full"
                   target="_blank"
                 >
                   Rerel'Oluwa Tooki
