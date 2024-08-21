@@ -17,7 +17,7 @@ const Intro = () => {
   const leftDivDelay = 12; // Total delay for 'stories untold' to finish
   return (
     <>
-      <div className="sborder-8 border-black dark:border-white mb-10 dark:mb-0 h-[100vh] introGrad saboutMeGrad exoFont select-none w3-animate-opacityIntro">
+      <div className="sborder-8 border-black dark:border-white mb-0 dark:mb-0 h-[100vh] introGrad saboutMeGrad exoFont select-none w3-animate-opacityIntro">
         {" "}
         <div className="absolute borders-2 border-black w-fit translate-y-[25vw] md:translate-y-[70px] tab:translate-y-[78vh] tab:scale-[1.5] w3-animate-leftVec">
           <picture
@@ -128,9 +128,9 @@ const Intro = () => {
                   Rerel'Oluwa Tooki
                 </a>
               </div>
-              <div>Cracked open, it faces the </div>
-              <div>It could be fried or</div>
-              <div>Or even poached, but never</div>
+              <div>Words are beautiful </div>
+              <div>But even more powerful</div>
+              <div>Welcome to my world of words</div>
             </div>
           </RightDivAnimation>
         </div>

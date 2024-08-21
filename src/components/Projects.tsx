@@ -94,7 +94,7 @@ export const projects = [
 const Projects = () => {
   return (
     <>
-      <div className=" pb-8 exoFont projectsGrad dark:pt-10">
+      <div className=" pb-8 exoFont projectsGrad pt-10">
         <div className="w3-container pb-[48px] mx-[3vw]  " id="projects">
           <h3
             className="text-3xl tab:text-4xl gradient-border-bottom playfairFont pb-[4px] dark:text-white"

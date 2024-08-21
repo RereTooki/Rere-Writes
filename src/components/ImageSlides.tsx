@@ -71,7 +71,7 @@ const ImageSlides = () => {
 
   const renderSlide = (id: number, quote: string, speaker: string) => (
     <div
-      className={`quoteBG quoteBG${id} mySlides h-[40vh] lg:h-[50vh] text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] px-[10vw] rounded-tr-[0px] rounded-bl-[40px] tab:rounded-bl-[60px] nxl:rounded-bl-[100px] w3-animate-opacitys dark:rounded-none`}
+      className={`quoteBG quoteBG${id} mySlides h-[40vh] lg:h-[50vh] text-center text-white text-[14px] md:text-[16px] nxl:text-[22px] px-[10vw] srounded-tr-[0px] srounded-bl-[40px] tab:srounded-bl-[60px] nxl:srounded-bl-[100px] w3-animate-opacitys rounded-none`}
       key={id}
     >
       <div className="h-full flex flex-col items-center justify-center">
