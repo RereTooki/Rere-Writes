@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import Poem1 from "./pages/Poem1";
+
+import TCOBCard from "./components/TCOBCard";
 import PoemSBM from "./pages/PoemSBM";
 import PoemLK from "./pages/PoemLK";
 import PoemTHUG from "./pages/PoemTHUG";
@@ -20,8 +21,8 @@ const router = createBrowserRouter([
     element: <Homepage />, // Public Route
   },
   {
-    path: "/poem-1", // Poem 1 Route
-    element: <Poem1 />, // Public Route
+    path: "/the-chaos-of-beauty", // Poem 1 Route
+    element: <TCOBCard />, // Public Route
   },
   {
     path: "/stand-by-me", // Stand By Me Route

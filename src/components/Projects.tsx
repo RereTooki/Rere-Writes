@@ -18,6 +18,12 @@ import PoemImageSlides from "./PoemImageSlides";
 
 export const projects = [
   {
+    title: "The Chaos of Beauty",
+    imgSrc: SBMBG,
+    imgAlt: "The Chaos of Beauty",
+    route: "/the-chaos-of-beauty",
+  },
+  {
     title: "Stand By Me",
     imgSrc: SBMBG,
     imgAlt: "Stand By Me",

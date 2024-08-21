@@ -34,7 +34,11 @@ const Hero: React.FC<NavigationBarProps> = ({ contactMeRef }) => {
                   websites !
                 </span>
               </h4>
-              <div className="text-xl xl:text-2xl">
+              <div
+                className="text-xl xl:text-2xl"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 Got a project, an idea, a question, or interested in
                 collaborating on something?
               </div>
@@ -42,7 +46,7 @@ const Hero: React.FC<NavigationBarProps> = ({ contactMeRef }) => {
             <div
               className="w-full max-w-[140px] h-[s400px] shadow-xl rounded-full px-[14%] py-[4%] tab:py-[10px] tab:px-0 bg-white text-black whitespace-nowrap text-center flex items-center justify-center hover:scale-[1.03] tab:text-lg cursor-pointer hover:scale-[1.03] hover:bg-black hover:text-white"
               onClick={() => scrollToSection(contactMeRef)}
-              data-aoss="zoom-in"
+              data-aos="zoom-in"
               data-aos-duration="2500"
             >
               Reach Out!
