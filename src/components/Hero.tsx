@@ -18,7 +18,7 @@ const Hero: React.FC<NavigationBarProps> = ({ contactMeRef }) => {
     <>
       <div
         className="contactMeGrads sh-[100vh] sborder-2 border-black spy-10 exoFont select-none w3-animate-opacityIntro tab:px-[3vw] overflow-x-hiddens relative top-[50px] border-2s dark:static dark:px-0  "
-        data-aoss="fade-up"
+        data-aos="fade-up"
         data-aos-duration="2000"
       >
         <div className="sborder-4">

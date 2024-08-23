@@ -104,7 +104,7 @@ const Projects = () => {
         <div className="w3-container pb-[48px] mx-[3vw]  " id="projects">
           <h3
             className="text-3xl tab:text-4xl gradient-border-bottom playfairFont pb-[4px] dark:text-white"
-            data-aoss="zoom-in"
+            data-aos="zoom-in"
             data-aos-duration="700"
           >
             Poems

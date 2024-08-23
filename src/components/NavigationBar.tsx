@@ -74,8 +74,8 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
 
         <div
           className="w-fit lack lg:hidden"
-          data-aoss="fade-left"
-          data-aoss-duration="900"
+          data-aos="fade-left"
+          data-aos-duration="900"
         >
           <button onClick={() => setNavIsVisible(!navIsVisible)}>
             {!navIsVisible && (

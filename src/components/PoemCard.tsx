@@ -13,7 +13,7 @@ interface PoemCardProps {
 
 const linkMap = {
   Rere: "https://www.linkedin.com/in/rerel-oluwa-tooki-b53396253/",
-  Kevwe: "https://www.linkedin.com/in/kevwe-eghagha-0b7903238/",
+  Kevwe: "https://www.instagram.com/notesbykvw/",
 };
 
 const PoemCard: React.FC<PoemCardProps> = ({
