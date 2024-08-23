@@ -55,8 +55,8 @@ const AboutMe = () => {
           <div className="sborder-2 border-black flex flex-col items-center justify-center">
             <div
               className="relative bottom-[30px] tab:bottom-[70px] nxl:bottom-[70px] w-[65vw] h-[65vw] md:w-[240px] md:h-[240px] tab:w-[300px] tab:h-[300px]  nxl:w-[410px] nxl:h-[410px] z-10 rounded-lg drop-shadow-2xl"
-              data-aos="zoom-in"
-              data-aos-duration="1500"
+              data-aos="fade-uo"
+              data-aos-duration="2500"
             >
               <picture className="">
                 <source className="" media="(min-width: 565px)" srcSet={mp3} />
