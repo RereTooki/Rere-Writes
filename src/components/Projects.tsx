@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
+import TCOBBG from "../assets/images/poemBgs/TCOBBG.webp";
 import WFBG from "../assets/images/poemBgs/WFBG.webp";
 import LKBG from "../assets/images/poemBgs/LKBG.webp";
 import SBMBG from "../assets/images/poemBgs/SBMBG.webp";
@@ -19,7 +19,7 @@ import PoemImageSlides from "./PoemImageSlides";
 export const projects = [
   {
     title: "The Chaos of Beauty",
-    imgSrc: SBMBG,
+    imgSrc: TCOBBG,
     imgAlt: "The Chaos of Beauty",
     route: "/the-chaos-of-beauty",
   },

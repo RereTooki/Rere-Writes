@@ -19,10 +19,11 @@ const THUGCard = () => {
   ];
 
   const titleFont =
-    "meriendaFont underline underline-offset-4 decoration-wavy tab:decoration-dotted text-white tab:text-black";
+    "text-[26px] tab:text-3xl meriendaFont underline underline-offset-4 decoration-wavy tab:decoration-dotted text-white tab:text-black";
   const bodyFont =
-    "shantellFont text-white tab:text-black border-white tab:border-gray-800 text-[35px]";
-  const wtrmFont = "text-black";
+    "shantellFont text-white tab:text-black border-white tab:border-gray-800 text-[18px] tab:text-[15px] xl:text-lg ";
+  const wtrmFont = "text-white tab:text-black";
+  const hrFont = "border-white tab:border-black";
 
   return (
     <>
@@ -56,6 +57,7 @@ const THUGCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
         </div>
       </div>{" "}

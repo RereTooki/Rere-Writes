@@ -16,9 +16,10 @@ const SBMCard = () => {
     `Darling,\nWill you marry me?`,
   ];
   const titleFont =
-    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tab:text-[30px]";
-  const bodyFont = "exoFont";
+    "text-[26px] tab:text-2xl nxl:text-3xl playwriteFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tab:text-[30px]";
+  const bodyFont = "text-[14px] tab:text-[15px] xl:text-lg exoFont";
   const wtrmFont = "text-black";
+  const hrFont = "sborder-2";
 
   return (
     <>
@@ -52,6 +53,7 @@ const SBMCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
         </div>
       </div>{" "}

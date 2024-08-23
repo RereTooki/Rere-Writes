@@ -13,9 +13,10 @@ const LoveIsWarCard = () => {
   ];
 
   const titleFont =
-    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-wide text-[30px]";
-  const bodyFont = "shantellFont text-[20px] lg:text-[20px] nxl:text-[25px]";
+    "text-[46px] tab:text-5xl sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-wide";
+  const bodyFont = "text-[15px] tab:text-[15px] xl:text-2xl  shantellFont ";
   const wtrmFont = "text-black";
+  const hrFont = "sborder-2";
 
   return (
     <>
@@ -49,6 +50,7 @@ const LoveIsWarCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
         </div>
       </div>{" "}

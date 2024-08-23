@@ -17,9 +17,10 @@ const LifeKitchenCard = () => {
   ];
 
   const titleFont =
-    "caveatFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tab:text-[30px]";
-  const bodyFont = "shantellFont";
+    "text-[26px] tab:text-3xl playfairFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tab:text-[30px]";
+  const bodyFont = "text-[14px] tab:text-[15px] xl:text-lg  shantellFont";
   const wtrmFont = "text-black";
+  const hrFont = "sborder-2";
 
   return (
     <>
@@ -53,6 +54,7 @@ const LifeKitchenCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
         </div>
       </div>{" "}

@@ -13,9 +13,11 @@ const TheySaidCard = () => {
   ];
 
   const titleFont =
-    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl text-gray-100 tab:text-black";
-  const bodyFont = "shantellFont text-gray-200 tab:text-black";
-  const wtrmFont = "text-black";
+    "text-[36px] tab:text-4xl xl:text-5xl sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl text-gray-100 tab:text-black";
+  const bodyFont =
+    "text-[17px] tab:text-[15px] xl:text-xl shantellFont text-gray-200 tab:text-black";
+  const wtrmFont = "text-white tab:text-black";
+  const hrFont = "sborder-2";
 
   return (
     <>
@@ -49,6 +51,7 @@ const TheySaidCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
         </div>
       </div>{" "}

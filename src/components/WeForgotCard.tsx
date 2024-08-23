@@ -19,9 +19,11 @@ const WeForgotCard = () => {
     `We're two but you see one\nYou never really care about anyone\nYou only always value your opinion\nOur friendship, nothing more than an illusion `,
   ];
   const titleFont =
-    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl";
-  const bodyFont = "exoFont text-whitess";
+    "text-[26px] tab:text-3xl sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl";
+  const bodyFont =
+    "text-[14px] tab:text-[15px] xl:text-lg exoFont text-whitess";
   const wtrmFont = "text-black";
+  const hrFont = "sborder-2";
 
   return (
     <>
@@ -55,6 +57,7 @@ const WeForgotCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />
         </div>
       </div>{" "}

@@ -16,9 +16,10 @@ const TheMandemCard = () => {
   ];
 
   const titleFont =
-    "exoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "exoFont";
+    "text-[26px] tab:text-3xl exoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
+  const bodyFont = "text-[14px] tab:text-[15px] xl:text-lg  exoFont";
   const wtrmFont = "text-black";
+  const hrFont = "sborder-2";
 
   return (
     <>
@@ -52,6 +53,7 @@ const TheMandemCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
         </div>
       </div>{" "}

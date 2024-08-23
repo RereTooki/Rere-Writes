@@ -21,7 +21,7 @@ const TCOBCard = () => {
 
     `Beauty\nThe chaos of beauty is truly\na question with no solution\nbecause for as many eyes can observe it,\nthere are as many conclusions.`,
 
-    `Authors\n Rere'Oluwa Tooki\nKevwe Eghagha`,
+    `Authors\n[Rerel'Oluwa Tooki, ](Rere)\n[Kevwe Eghagha](Kevwe)`,
   ];
 
   // State to control the modal visibility
@@ -36,6 +36,7 @@ const TCOBCard = () => {
     "glassFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-wide text-[26px] tab:text-3xl ";
   const bodyFont = "playwriteFont text-[14px] text-black nxl:text-lg";
   const wtrmFont = "text-black tab:text-white/80";
+  const hrFont = "sborder-2";
   return (
     <>
       <div className="poemBG poemBG-TCOB min-h-[100vh] tab:h-[100vh] flex flex-col tab:flex-row  tab:items-center tab:justify-center border-4 xl:border-8 border-white/80 border-double select-none rounded-lg">
@@ -68,8 +69,8 @@ const TCOBCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
-          rere
         </div>
       </div>{" "}
     </>

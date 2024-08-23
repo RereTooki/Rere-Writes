@@ -13,9 +13,10 @@ const JoyeuxNoelCard = () => {
   ];
 
   const titleFont =
-    "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "shantellFont";
-  const wtrmFont = "text-black";
+    "text-[26px] tab:text-3xl shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
+  const bodyFont = "text-[15px] tab:text-[15px] xl:text-lg  shantellFont";
+  const wtrmFont = "text-black tab:text-white ";
+  const hrFont = "sborder-2";
 
   return (
     <>
@@ -49,6 +50,7 @@ const JoyeuxNoelCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
         </div>
       </div>{" "}

@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import WritingAnimation from "../animations/WritingAnimation";
-import PoemTextAnimation from "../animations/PoemTextAnimation";
-import { useState, useEffect } from "react";
 import PoemsModal from "./PoemsModal";
 
 interface PoemCardProps {
@@ -10,7 +8,13 @@ interface PoemCardProps {
   titleFont: string;
   bodyFont: string;
   wtrmFont: string;
+  hrFont: string;
 }
+
+const linkMap = {
+  Rere: "https://www.linkedin.com/in/rerel-oluwa-tooki-b53396253/",
+  Kevwe: "https://www.linkedin.com/in/kevwe-eghagha-0b7903238/",
+};
 
 const PoemCard: React.FC<PoemCardProps> = ({
   title,
@@ -18,13 +22,50 @@ const PoemCard: React.FC<PoemCardProps> = ({
   titleFont,
   bodyFont,
   wtrmFont,
+  hrFont,
 }) => {
-  // State to control the modal visibility
   const [isOpen, setIsOpen] = useState(false);
 
-  // Function to open the modal and display task details
   const openDetails = () => {
     setIsOpen(true);
+  };
+
+  const renderVerse = (verse: string) => {
+    return verse.split("\n").map((line, lineIndex) => {
+      const match = line.match(/\[(.*)\]\((.*)\)/);
+      if (match) {
+        const [fullMatch, text, platform] = match;
+
+        // Explicitly type 'platform' as the union of allowed keys
+        const typedPlatform = platform as keyof typeof linkMap;
+        const link = linkMap[typedPlatform] || "#";
+
+        return (
+          <React.Fragment key={lineIndex}>
+            {line.split(fullMatch)[0]}
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 underline"
+            >
+              {text}
+            </a>
+          </React.Fragment>
+        );
+      }
+
+      return (
+        <React.Fragment key={lineIndex}>
+          <span className="leading-tight sborder-2 sunderline stext-xl">
+            {line}
+          </span>
+          <hr
+            className={`h-[5px] decoration-wavy smy-8 border-gray-800 border-t-2 border-double rounded-sm w3-animate-zoomSlow ${hrFont}`}
+          />
+        </React.Fragment>
+      );
+    });
   };
 
   return (
@@ -38,21 +79,14 @@ const PoemCard: React.FC<PoemCardProps> = ({
         {verses.map((verse, index) => (
           <p
             key={index}
-            className={`stext-lg stab:text-lg text-left tracking-wide leadings-10 whitespace-nowraps border-rnowraps border-double border-gray-800 rounded-sm  ${
+            className={`stext-lg stab:text-lg text-left tracking-wide leadings-10 whitespace-nowraps border-rnowraps border-double border-gray-800 rounded-sm ${
               index % 2 !== 0 ? "border-r-4 pr-2" : "border-l-4 pl-2"
             } ${bodyFont}`}
           >
-            {verse.split("\n").map((line, lineIndex) => (
-              <React.Fragment key={lineIndex}>
-                <span className="leading-tight sborder-2 sunderline stext-xl">
-                  {line}
-                </span>
-                <hr className="h-[5px] decoration-wavy  smy-8 border-gray-800 border-t-2 border-double rounded-sm w3-animate-zoomSlow" />
-              </React.Fragment>
-            ))}
+            {renderVerse(verse)}
           </p>
         ))}
-        <div className="flex flex-row justify-end z-20 tab:fixed tab:block bottom-2 right-2 border-black exoFont text-lg">
+        <div className="flex flex-row justify-end z-20 tab:fixed tab:block bottom-2 tab:bottom-1 xl:bottom-2 right-2 border-black exoFont text-lg">
           <button
             className={`py-1 tab:px-3 rounded-md sborder-2  underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] mb-4 tab:mb-2  ${wtrmFont}`}
             onClick={() => openDetails()}
@@ -60,7 +94,6 @@ const PoemCard: React.FC<PoemCardProps> = ({
             Want To Read More?
           </button>
         </div>
-        {/* PoemsModal */}
         <PoemsModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>
     </div>

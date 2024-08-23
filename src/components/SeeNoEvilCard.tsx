@@ -15,9 +15,10 @@ const SeeNoEvilCard = () => {
   ];
 
   const titleFont =
-    "redressedFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
-  const bodyFont = "shantellFont";
+    "text-[26px] tab:text-3xl redressedFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
+  const bodyFont = "text-[14px] tab:text-[15px] xl:text-lg  shantellFont";
   const wtrmFont = "text-black";
+  const hrFont = "sborder-2";
 
   return (
     <>
@@ -51,6 +52,7 @@ const SeeNoEvilCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
         </div>
       </div>{" "}

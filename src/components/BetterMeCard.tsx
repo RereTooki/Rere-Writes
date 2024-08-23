@@ -20,9 +20,10 @@ const BetterMeCard = () => {
   ];
 
   const titleFont =
-    "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted leading-[1.6] tab:leading-[1.4] tracking-relaxed tab:tracking-widez xl:tracking-widest";
-  const bodyFont = "playfairFont ";
+    "text-[28px] tab:text-3xl sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted leading-[1.6] tab:leading-[1.4] tracking-relaxed tab:tracking-widez xl:tracking-widest";
+  const bodyFont = "text-[15px] tab:text-[15px] xl:text-xl  playfairFont ";
   const wtrmFont = "text-black";
+  const hrFont = "sborder-2";
 
   return (
     <>
@@ -56,6 +57,7 @@ const BetterMeCard = () => {
             titleFont={titleFont}
             bodyFont={bodyFont}
             wtrmFont={wtrmFont}
+            hrFont={hrFont}
           />{" "}
         </div>
       </div>{" "}
