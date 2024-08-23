@@ -73,50 +73,49 @@ const Intro = () => {
             </div>
           </div>
           {/* Wrap the left div with LeftDivAnimation */}
-          <LeftDivAnimation>
-            <div className="hidden tab:flex flex-col items-center justify-center gap-[10px] sborder-4 border-[#7f7fd5] z-10">
-              <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
-                <picture className="">
-                  <source
-                    className="dark:hidden"
-                    media="(min-width: 565px)"
-                    srcSet={logo}
-                  />
+          {/* <LeftDivAnimation> */}
+          <div className="hidden tab:flex flex-col items-center justify-center gap-[10px] sborder-4 border-[#7f7fd5] z-10">
+            <div className="w-[45vw] h-[45vw] md:w-[160px] md:h-[160px] tab:w-[180px] tab:h-[180px]  nxl:w-[220px] nxl:h-[220px] w3-animate-zoom w3-animate-opacityIntrog z-10">
+              <picture className="">
+                <source
+                  className="dark:hidden"
+                  media="(min-width: 565px)"
+                  srcSet={logo}
+                />
 
-                  <img
-                    src={logo}
-                    alt="Rere Writes Logo"
-                    className="w-full h-full object-cover dark:hidden"
-                  />
-                </picture>
-                <picture className="">
-                  <source
-                    className="hidden dark:block"
-                    media="(min-width: 565px)"
-                    srcSet={logoDarkMode}
-                  />
+                <img
+                  src={logo}
+                  alt="Rere Writes Logo"
+                  className="w-full h-full object-cover dark:hidden"
+                />
+              </picture>
+              <picture className="">
+                <source
+                  className="hidden dark:block"
+                  media="(min-width: 565px)"
+                  srcSet={logoDarkMode}
+                />
 
-                  <img
-                    src={logoDarkMode}
-                    alt="Rere Writes Logo"
-                    className="w-full h-full object-cover hidden dark:block"
-                  />
-                </picture>
-              </div>
-              <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent dark:text-white bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
-                <WritingAnimation text="RERE WRITES" />
-                <div className="text-xl tab:text-3xl nxl:text-4xl tracking-widest text-center mt-[8px] sacramentoFont">
-                  <WritingAnimationDelay text="stories untold ✍" />
-                </div>
+                <img
+                  src={logoDarkMode}
+                  alt="Rere Writes Logo"
+                  className="w-full h-full object-cover hidden dark:block"
+                />
+              </picture>
+            </div>
+            <div className="text-3xl tab:text-4xl tracking-widest nxl:text-5xl font-bold bg-clip-text text-transparent dark:text-white bg-gradient-to-r hover:bg-gradient-to-l from-[#7F7FD5] to-[#31B7C2] w3-animate-zooms w3-animate-opacityIntros sborder-4 border-black cursor-pointer">
+              <WritingAnimation text="RERE WRITES" />
+              <div className="text-xl tab:text-3xl nxl:text-4xl tracking-widest text-center mt-[8px] sacramentoFont">
+                <WritingAnimationDelay text="stories untold ✍" />
               </div>
             </div>
-          </LeftDivAnimation>
+          </div>
+          {/* </LeftDivAnimation> */}
           {/* Wrap the right div with RightDivAnimation */}
           {/* We'll initially hide the right div using opacity and then show it after the left div has moved */}
-          <RightDivAnimation>
-            {" "}
-            {/* Add an extra second for a smooth transition */}
-            <div className="hidden tab:block sborder-4 border-black z-10 masx-w-[30vw] tab:h-[270px]s  nxl:h-[321px]s tab:w-[270px]  nxl:w-[321px] tab:text-lg tracking-wide nxl:text-xl whitespace-nowrap dark:text-white">
+          {/* <RightDivAnimation> */}{" "}
+          {/* Add an extra second for a smooth transition */}
+          {/* <div className="hidden tab:block sborder-4 border-black z-10 masx-w-[30vw] tab:h-[270px]s  nxl:h-[321px]s tab:w-[270px]  nxl:w-[321px] tab:text-lg tracking-wide nxl:text-xl whitespace-nowrap dark:text-white">
               {" "}
               <div className="">
                 The words of{" "}
@@ -128,11 +127,11 @@ const Intro = () => {
                   Rerel'Oluwa Tooki
                 </a>
               </div>
-              <div>Words are beautiful </div>
+              <div>I have a lot to say </div>
               <div>But even more powerful</div>
               <div>Welcome to my world of words</div>
-            </div>
-          </RightDivAnimation>
+            </div> */}
+          {/* </RightDivAnimation> */}
         </div>
       </div>
     </>
