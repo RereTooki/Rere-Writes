@@ -15,6 +15,7 @@ const LoveIsWarCard = () => {
   const titleFont =
     "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-wide text-[30px]";
   const bodyFont = "shantellFont text-[20px] lg:text-[20px] nxl:text-[25px]";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -47,6 +48,7 @@ const LoveIsWarCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />{" "}
         </div>
       </div>{" "}

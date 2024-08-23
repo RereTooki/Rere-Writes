@@ -21,6 +21,7 @@ const WeForgotCard = () => {
   const titleFont =
     "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl";
   const bodyFont = "exoFont text-whitess";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -53,6 +54,7 @@ const WeForgotCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />
         </div>
       </div>{" "}

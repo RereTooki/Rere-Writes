@@ -9,6 +9,7 @@ interface PoemCardProps {
   verses: string[];
   titleFont: string;
   bodyFont: string;
+  wtrmFont: string;
 }
 
 const PoemCard: React.FC<PoemCardProps> = ({
@@ -16,6 +17,7 @@ const PoemCard: React.FC<PoemCardProps> = ({
   verses,
   titleFont,
   bodyFont,
+  wtrmFont,
 }) => {
   // State to control the modal visibility
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +30,7 @@ const PoemCard: React.FC<PoemCardProps> = ({
   return (
     <div className="sborder-4 tab:container mx-auto py-4 tab:p-4 flex flex-col items-center justify-center">
       <h1
-        className={`text-3xl font-bold text-center mb-6 border-2s w-fit z-20 ${titleFont}`}
+        className={`stext-3xl font-bold text-center mb-6 border-2s w-fit z-20 ${titleFont}`}
       >
         <WritingAnimation text={title} />
       </h1>
@@ -36,7 +38,7 @@ const PoemCard: React.FC<PoemCardProps> = ({
         {verses.map((verse, index) => (
           <p
             key={index}
-            className={`text-lg tab:text-lg text-left tracking-wide leadings-10 whitespace-nowraps border-rnowraps border-double border-gray-800 rounded-sm  ${
+            className={`stext-lg stab:text-lg text-left tracking-wide leadings-10 whitespace-nowraps border-rnowraps border-double border-gray-800 rounded-sm  ${
               index % 2 !== 0 ? "border-r-4 pr-2" : "border-l-4 pl-2"
             } ${bodyFont}`}
           >
@@ -52,7 +54,7 @@ const PoemCard: React.FC<PoemCardProps> = ({
         ))}
         <div className="flex flex-row justify-end z-20 tab:fixed tab:block bottom-2 right-2 border-black exoFont text-lg">
           <button
-            className="py-1 tab:px-3 rounded-md sborder-2  underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] mb-4 tab:mb-2 "
+            className={`py-1 tab:px-3 rounded-md sborder-2  underline underline-offset-2 hover:underline-offset-4 hover:scale-[1.02] mb-4 tab:mb-2  ${wtrmFont}`}
             onClick={() => openDetails()}
           >
             Want To Read More?

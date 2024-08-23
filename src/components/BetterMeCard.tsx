@@ -22,6 +22,7 @@ const BetterMeCard = () => {
   const titleFont =
     "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted leading-[1.6] tab:leading-[1.4] tracking-relaxed tab:tracking-widez xl:tracking-widest";
   const bodyFont = "playfairFont ";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -54,6 +55,7 @@ const BetterMeCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />{" "}
         </div>
       </div>{" "}

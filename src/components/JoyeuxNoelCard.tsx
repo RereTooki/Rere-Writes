@@ -15,6 +15,7 @@ const JoyeuxNoelCard = () => {
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted";
   const bodyFont = "shantellFont";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -47,6 +48,7 @@ const JoyeuxNoelCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />{" "}
         </div>
       </div>{" "}

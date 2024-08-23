@@ -19,6 +19,7 @@ const LifeKitchenCard = () => {
   const titleFont =
     "caveatFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tab:text-[30px]";
   const bodyFont = "shantellFont";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -51,6 +52,7 @@ const LifeKitchenCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />{" "}
         </div>
       </div>{" "}

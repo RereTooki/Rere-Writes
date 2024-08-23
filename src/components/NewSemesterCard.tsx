@@ -18,6 +18,7 @@ const NewSemesterCard = () => {
   const titleFont =
     "shantellFont underline underline-offset-4 decoration-wavy tab:decoration-dotted leading-[1.5] tab:leading-[1.3] text-[20px] tab:text-3xl";
   const bodyFont = "exoFont";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -50,6 +51,7 @@ const NewSemesterCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />{" "}
         </div>
       </div>{" "}

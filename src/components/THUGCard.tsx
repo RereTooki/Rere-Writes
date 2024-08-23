@@ -22,6 +22,7 @@ const THUGCard = () => {
     "meriendaFont underline underline-offset-4 decoration-wavy tab:decoration-dotted text-white tab:text-black";
   const bodyFont =
     "shantellFont text-white tab:text-black border-white tab:border-gray-800 text-[35px]";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -54,6 +55,7 @@ const THUGCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />{" "}
         </div>
       </div>{" "}

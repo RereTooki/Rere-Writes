@@ -22,6 +22,7 @@ const MarriageCard = () => {
   const titleFont =
     "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted text-[40px]";
   const bodyFont = "shantellFont";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -54,6 +55,7 @@ const MarriageCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />{" "}
         </div>
       </div>{" "}

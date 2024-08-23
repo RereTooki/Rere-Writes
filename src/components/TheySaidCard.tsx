@@ -15,6 +15,7 @@ const TheySaidCard = () => {
   const titleFont =
     "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tracking-widest text-4xl text-gray-100 tab:text-black";
   const bodyFont = "shantellFont text-gray-200 tab:text-black";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -47,6 +48,7 @@ const TheySaidCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />{" "}
         </div>
       </div>{" "}

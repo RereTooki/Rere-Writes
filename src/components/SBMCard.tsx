@@ -18,6 +18,7 @@ const SBMCard = () => {
   const titleFont =
     "sacramentoFont underline underline-offset-4 decoration-wavy tab:decoration-dotted tab:text-[30px]";
   const bodyFont = "exoFont";
+  const wtrmFont = "text-black";
 
   return (
     <>
@@ -50,6 +51,7 @@ const SBMCard = () => {
             verses={verses}
             titleFont={titleFont}
             bodyFont={bodyFont}
+            wtrmFont={wtrmFont}
           />{" "}
         </div>
       </div>{" "}
